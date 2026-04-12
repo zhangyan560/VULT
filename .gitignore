@@ -1,11 +1,21 @@
-# Obsidian 缓存与插件
+# Obsidian 缓存与自动生成文件
 .obsidian/cache/
-.obsidian/plugins/
-.obsidian/community-plugins.json
 .obsidian/sync.json
+.obsidian/workspace.json
 .obsidian/appearance.json
 .obsidian/app.json
 .obsidian/hotkeys.json
+
+# 保留 plugins/ 目录结构和 Git 插件配置
+# .obsidian/plugins/ 整个忽略，除了 obsidian-git
+.obsidian/plugins/*
+!.obsidian/plugins/obsidian-git/
+.obsidian/plugins/obsidian-git/*
+!.obsidian/plugins/obsidian-git/manifest.json
+!.obsidian/plugins/obsidian-git/data.json
+
+# 保留社区插件列表
+!.obsidian/community-plugins.json
 
 # 系统文件
 .DS_Store

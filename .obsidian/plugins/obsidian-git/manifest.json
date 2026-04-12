@@ -1,0 +1,11 @@
+{
+  "id": "obsidian-git",
+  "name": "Obsidian Git",
+  "version": "2.39.8",
+  "minAppVersion": "0.13.0",
+  "description": "Backup and sync your Obsidian vault with git",
+  "author": "Vinzent03",
+  "authorUrl": "https://github.com/Vinzent03",
+  "fundingUrl": "https://github.com/sponsors/Vinzent03",
+  "isDesktopOnly": false
+}
