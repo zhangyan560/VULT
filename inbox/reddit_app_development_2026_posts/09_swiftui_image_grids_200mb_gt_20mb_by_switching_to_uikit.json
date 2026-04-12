@@ -1,0 +1,125 @@
+{
+  "id": "1qeof77",
+  "title": "SwiftUI image grids: 200MB -&gt; 20MB by switching to UIKit",
+  "subreddit": "iOSProgramming",
+  "subreddit_prefixed": "r/iOSProgramming",
+  "author": "fryOrder",
+  "score": 82,
+  "upvote_ratio": 1.0,
+  "num_comments": 21,
+  "created_utc": 1768589010.0,
+  "url": "https://www.reddit.com/r/iOSProgramming/comments/1qeof77/swiftui_image_grids_200mb_20mb_by_switching_to/",
+  "permalink": "https://www.reddit.com/r/iOSProgramming/comments/1qeof77/swiftui_image_grids_200mb_20mb_by_switching_to/",
+  "selftext": "I started a Screenshot Organizer iOS app a few weeks ago. And of course, I went all in with SwiftUI. Not only for rapid development, but my UIKit is also rusty and I am pretty much a noob, so why bother?\n\nThe app's gist is simple: display a grid of thumbnails from the photos gallery, and on tap present the fullscreen screenshot. Nothing crazy right?\n\nWhen most people think about SwiftUI performance, they usually think about the Lazy... containers. They give you some ammo you can use to offload heavy objects on row disappear (screenshots!). Apart from view containers, you can also be very picky about the data you request...for 64x64 thumbnails you don't need to load the massive 1179x2556 screenshot. Instead, pass some options and load the small resized image.\n\nWe have 4 thumbnails per row, which gives us 24 thumbnails on the screen of a iPhone 15. With LazyVGrid and heavy scrolling, the memory would spike to around 80mb-100mb. Tapping the screenshot which presents it full screen gorged in 100mb more (who knows why?). We are at around 200mb at this point. I don't know about you, but for something that should be so simple to eat up 200mb memory... it just made my blood boil. \n\nI was confused, I was demoralized. The scroll was not silky smooth, the UI / navigations showed signs of hiccups. But I did everything by the book! All the articles, truffle snippets I sniffed around public github projects. All for a shitty experience. I couldn't call it a day nor call it a night. I needed to get this done properly. The right way. The creamy buttery way. The pity UIKitty way. (sorry, I couldn't help myself!). And I am not talking about the shy UIViewRepresentable way. But the all in kinda way.\n\nThe GalleryViewController is pretty simple. We have an UICollectionView with a diffable data source. Photos synchronization is handled in the background and the data source snapshot is provided by a NSFetchedResultsController. The ScreenshotViewController (the fullscreen screenshot view) has the full screen image view, and some toolbar buttons.\n\nCan you guess what my memory usage is now? 14MB on cold launch. Stone Cold Austin cold. Scrolling like a maniac spikes it to 17MB usage. Opening the full screen screenshot is now at 20mb. \n\nI don't know about you, but these are some darn impressive numbers. And I'm not saying this like I'm licking my own arse, but the gap is pretty insane (no pun intended) compared to SwiftUI. SwiftUI felt like I was pushing a huge rock uphill, while with UIKit I am riding a bulldozer.\n\nTo wrap it up, what are your real-world strategies for keeping SwiftUI fast and furious with image grids? Is there any pagan prayer I've missed? Or are we all just quietly accepting that for some tasks, you still gotta get your hands dirty with UICollectionView?\n\nI never had any issues with SwiftUI before, but right now I'm side eyeing it. I feel like UIKit is too underrated in 2026\n\n",
+  "is_self": true,
+  "link_flair_text": "Discussion",
+  "_rel": 1.5,
+  "_weighted": 123.0,
+  "comments": [
+    {
+      "author": "TheKevinGibbons",
+      "score": 67,
+      "body": "One of the apps I work on has many high-resolution multi-image workflows; we ran into multi-gigabyte RAM spikes in the early days due to presumably the same memory issue your post speaks to. Good news! We found a relatively simple SwiftUI-compatible fix.   \n  \nUnder-the-hood, SwiftUI does some aggressive in-memory caching of assets presented via \\`Image(...)\\`. Even if the SwiftUI View itself is removed from the screen via scrolling in a Lazy container, the memory cache isn't purged consistently. \n\nDepending on how you're passing images into the \\`Image(...)\\` init, it might be worth looking into spinning up UIImages via this constructor: [https://developer.apple.com/documentation/uikit/uiimage/init(contentsoffile:)](https://developer.apple.com/documentation/uikit/uiimage/init(contentsoffile:))\n\nWhen UIImages are initialized via \\`UIImage(named: ...)\\` (if the image is coming from your local Assets) or \\`UIImage(data: ...)\\` (if it's coming from a remote location), then the image data itself is retained in memory until the UIImage is deallocated. I assume this is what SwiftUI is using under-the-hood. \n\n\\`UIImage(contentsOfFile: ...)\\`, however, loads the underlying image into memory ephemerally. Whenever the data of the image is not being used, it is freed. The UIImage instance itself keeps a reference to the file at which it can re-read the image data when needed. \n\nIn our experience, this dropped the incremental RAM cost of image presentation to basically zero when used in conjunction with SwiftUI's \\`Image(uiImage: ...)\\` initializer.",
+      "created_utc": 1768591437.0,
+      "replies": [
+        {
+          "author": "fryOrder",
+          "score": 9,
+          "body": "Thanks for sharing! This is an interesting quirk that I had no clue about\n\nIn my case, I was storing the `UIImage` in an optional  `@State`, and eagerly loading  / unloading it on the `onAppear` / `onDisappear` modifiers. Even with that, memory was off the charts. Your comment makes me wonder if the caching behaviour you've described just overpowers those lifecycle modifiers\n\nReally appreciate the concrete suggestions! This is exactly the kind of secret knowledge the community should share more often"
+        },
+        {
+          "author": "Integeritis",
+          "score": 3,
+          "body": "What if your image is not a file and is coming from network? How would you initialize it?"
+        }
+      ]
+    },
+    {
+      "author": "Glad_Strawberry6956",
+      "score": 10,
+      "body": "Thanks for sharing!! Using a lazy container is not usually recommended for that specific use case since it doesn’t reuse the elements. Probably a List would be comparable, but it doesn’t support grids out of the box. There’s nothing wrong with UIKit, as a matter of fact Apple is still updating it as today, people is just too afraid of dealing with Autolayout IMHO",
+      "created_utc": 1768589392.0,
+      "replies": [
+        {
+          "author": "MrVegetableMan",
+          "score": 5,
+          "body": "LazyVGrid does use reuse, but its not as aggressive as collectionView. it generally works on simple views with id data, reuse underlying rendering resources"
+        },
+        {
+          "author": "banaslee",
+          "score": 3,
+          "body": "I think fundamentally the declarative nature of SwiftUI means that there’re less states to manage. People have been trying to move away from it for a while. \n\nThe other reason is that many engineers feel they’re doing something wrong if they need to lean on UIKit. And that’s wrong. I take it as a red flag if I hear that a relatively large app is 100% SwiftUI. Such lack of nuance may mean more dogmatism than a deliberate and informed choice. "
+        }
+      ]
+    },
+    {
+      "author": "steve2sloth",
+      "score": 9,
+      "body": "Idk, maybe share the swiftui body code so that we can see how you messed up. Swiftui gives you plenty of rope to hang yourself with and even if there's a dozen valid ways to lay out your view, some will be far more efficient than others. FYI be very wary of passing closures around in swiftui as they cannot be diffed and cause a lot of redraws",
+      "created_utc": 1768590697.0,
+      "replies": []
+    },
+    {
+      "author": "tetek",
+      "score": 7,
+      "body": "Show the SwiftUI code ",
+      "created_utc": 1768600048.0,
+      "replies": []
+    },
+    {
+      "author": "try-catch-finally",
+      "score": 6,
+      "body": "If you want to really be amazed at speed - give ObjC a try. \n\nSame identical code for some pixel processing went from 60ms in swift to 6 ms in ObjC.  (Frame by frame video processing)\n\nSeems like Apples been answering questions no one asked.",
+      "created_utc": 1768608978.0,
+      "replies": []
+    },
+    {
+      "author": "MrVegetableMan",
+      "score": 3,
+      "body": "you can also prefetch in collectionView or tableView to load upcoming views even faster by prefetching and caching the images. \nas inconvenient as uikit as compare to swiftui, performance wise i still flock to uikit for very heavy apps.",
+      "created_utc": 1768590221.0,
+      "replies": []
+    },
+    {
+      "author": "dreaminginbinary",
+      "score": 3,
+      "body": "Years in with SwiftUI I still use UIKit for situation like this, and SwiftUI for everything else.",
+      "created_utc": 1768666138.0,
+      "replies": []
+    },
+    {
+      "author": "car5tene",
+      "score": 1,
+      "body": "Did you use Grid or just nested Lazy Containers?",
+      "created_utc": 1768591066.0,
+      "replies": [
+        {
+          "author": "fryOrder",
+          "score": 1,
+          "body": "I'd say nested containers. As far as I know there is no \"native\" SwiftUI way to render your data by sections (like in UICollectionView), so I had a LazyVStack wrapping LazyVGrid sections. The thumbnails were truly lazy, the rows were not calling the load function unless they appeared via scrolling. The thumbnails that disappeared released the image object. But overall everything was eating a lot more resources than a pretty generic UICollectionView implementation. No clever hacks, no secret tricks. Just using the framework as it was intended to be used."
+        }
+      ]
+    },
+    {
+      "author": "Leeonardoo",
+      "score": 1,
+      "body": "It really looks like you also didn’t use any proper image loading library (like Kingfisher), right? Even though SwiftUI lazy containers have these issues it looks more like a image loading issue to me",
+      "created_utc": 1768750442.0,
+      "replies": []
+    },
+    {
+      "author": "CurveAdvanced",
+      "score": -2,
+      "body": "Anyone have advice for what architecture to use for a social media feed? I’m using Kingfisher + List but it’s very choppy and laggy.",
+      "created_utc": 1768594378.0,
+      "replies": []
+    },
+    {
+      "author": "dartanyanyuzbashev",
+      "score": -3,
+      "body": "SwiftUI is bad at lists with complex cells and images, this has been known since it launched\n\nYou're presenting this like some revelation but anyone who's built a real app with media grids figured this out years ago. UICollectionView with proper cell reuse and manual memory management will always beat SwiftUI's lazy containers for this use case\n\nThe 200MB memory spike from presenting a fullscreen image suggests you weren't properly releasing the previous view or you had retain cycles somewhere. That's not a SwiftUI problem that's an implementation problem\n\nUIKit isn't underrated, SwiftUI just isn't production-ready for every scenario yet and Apple keeps pretending it is",
+      "created_utc": 1768633677.0,
+      "replies": []
+    }
+  ]
+}

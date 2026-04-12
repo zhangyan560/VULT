@@ -1,0 +1,294 @@
+{
+  "id": "stlbhx",
+  "title": "I manage 350 Adsense sites, Ask me anything.",
+  "subreddit": "juststart",
+  "subreddit_prefixed": "r/juststart",
+  "author": "dailyhustler",
+  "score": 252,
+  "upvote_ratio": 0.98,
+  "num_comments": 177,
+  "created_utc": 1644980843.0,
+  "url": "https://www.reddit.com/r/juststart/comments/stlbhx/i_manage_350_adsense_sites_ask_me_anything/",
+  "permalink": "https://www.reddit.com/r/juststart/comments/stlbhx/i_manage_350_adsense_sites_ask_me_anything/",
+  "selftext": "I’m selling 50% of my Adsense portfolio this week so I thought I’d post an AMA to answer any questions anyone has regarding Adsense. \n\nI’ve been apart of the Adsense network for 9 years and surprisingly I still use the original account I signed up with, for anyone that doesn’t know Adsense has a history of banning people for whatever reasons, that being said I keep my operations white hat legit and all natural. \n\nStats: \nLowest earning site: ~$15-20/monthly\nMedian earning site: $50-102monthly \nHighest earning site: $6800/monthly\n\nMy process: \nNiche selection \nNiche research\nNiche sub category research \nSite buildout \n\n- 80% use WordPress, 20% use custom CMS I’m slowly migrating each site over\n\n- 2 VPS, $185 ea monthly, different providers in case outages I can switch them over. I do my own server admin \n\n- When I began I used free themes but knew instantly that wasn’t the way to go because of how fragile WP is and it’s vulnerabilities. \n\n- I made a very basic bootstrap framework theme for all development (moving to tailwindcss framework now) \n\n- The only plugins I use are Yoast SEO and a caching plugin I have serious trust issues with any other plugin\n\n- Do everything in your will power to get your google speed score to 90 or above. Make sacrifices on scripts and plugins just make it happen that’s what I do.  \n\n\nContent: \nThere are 2 different types of Adsense I make, one is a site that has actual articles and content with images that people are going to read and retain for a specific reason. I will write articles myself or hire someone write articles about the main keywords and sub category niche keywords, I rely heavily on tools like ahrefs for things like questions, similar keywords, long tail keywords, etc. Make sure your sub pages are linking to your main pages and each page has proper SEO title and meta tags and proper inter linking throughout the whole site. Not one page shouldn’t have no links coming to it. \n\nthe second kind of site is what I call “inventory” sites…yes I made that up don’t go google for it because there won’t be anything. An inventory site is something like a “Job/Career” website something that has data on many items., another example could be “Restaurants” on a website about best restaurants meaning you have hundreds of different kind of restaurants and people are finding your website by googling “best BBQ restaurants” your website would have something like .com/restaurants/toms-bbq-shack\nThese inventory sites don’t really require content and can be scraped (google doesn’t permit scraped data sites unless you are using it in a helpful manner, read their tos) and formatted better to help the user. A real example would be you scraped a list of dentists and made a site best dentist but you formatted the data in a way to show nearest, best rates, insurance options, etc. For these sites I just scrape a ton of data and put it in a database and organize it neatly for the users. \n\nSEO\nSeo for me has always been a mindf** so I just stick to the basics and it’s gotten me pretty far. Yes there are tinhat seo folks who preach a lot of stuff like pbns,etc etc which work but idk I don’t get involved in much because everyday it’s something new and I just decided to stop keeping up and focus on 5 things \n- Fast site 90+ on speed test\n- Proper interlinking \n- Good non spammy content  \n- Legit inbound links\n- Constant updates \n\nI spend a lot of time in the planning stages of what links my competitors have using ahrefs and things like that to see if I can also get a link. Link building itself is a behemoth of a topic but for me I try to find links where it makes sense, I stopped trying to email 1000 people if they want a free link back etc..now a days I just find websites that also blog frequently and go from there. If a site hasn’t updated their site since 2009 It probably means they have the hosting on auto bill and haven’t touched their site in years and has no idea wtf a link is at this point I cba working with those people and focus on people who know what I’m trying to do. \n\nIf you have to, spend the money on SEO. Good natural links can boost you heavily if done correctly. It’s rare that I see success when someone buys a 500 link package on fiverr..but you never know seo is wicked like that. \n\nQuick tips:\nFacebooks groups was a god send from the Adsense gods up above because holy cow insane traffic\n\nSome niches need YouTube vids and interactive content to reach it to the next level.. infographics, videos, snaps, tiktok \n\nBoring niches are often profitable. \n\nA super basic web site template will take you very far. When people need to find information they will do whatever it takes to find it. \n\nSometimes it’s worth it to just build a different site and move on. \n\nTiktok traffic can convert if placed correctly\n\nAlways brand. ALWAYS. \n\nI met a girl who had a site that had thousands of infographics on different topics it was clearing 18k a month and the site was super basic. Sometimes less is more. \n\n Some niches will do amazing with some real production you can take it really far there is no limit. Tie this in with good branding. \n\nDon’t be afraid to sell products. Partner up with other professionals in your space that sell physical products. Always be looking for alternative revenue streams. I tied in a Hotel API to show hotels and just by placing a widget made me an extra $107 that month. \n\nI can go on but I’m pretty sure there’s a limit. AMA.",
+  "is_self": true,
+  "link_flair_text": "",
+  "_rel": 1.5,
+  "_weighted": 378.0,
+  "comments": [
+    {
+      "author": "[deleted]",
+      "score": 19,
+      "body": "Why are you using adsense when it pays the lowest of all ad networks?",
+      "created_utc": 1644986605.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 12,
+          "body": "Ease of access, set it and forget it, and googles main product is AdWords which correlates to Adsense they spend billions to perfect their system so I just go with them. I’ve tried other networks and didn’t find it as appealing especially for my use case of 350 sites, what has been your experience with other networks?"
+        }
+      ]
+    },
+    {
+      "author": "Robotsapiens",
+      "score": 12,
+      "body": "Can you please elaborate on your Facebook Groups strategy. Did you just post your content? Or did you focus on creating value within community? You created a group or joined others? What is you strategy using Groups? Thank you for your time.",
+      "created_utc": 1644989815.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 6,
+          "body": "I like groups because you have a whole group that has interests in a specific niche and you can actually freely promote your sites as long as they are relevant to the groups interests and or not trying to sell some crappy product. I’ve created my own groups, and also partnered up with some group owners. Get some automated posters to post on groups you can get a steady amount of traffic"
+        }
+      ]
+    },
+    {
+      "author": "question_ev3rything",
+      "score": 10,
+      "body": "Interesting post - thanks for sharing!\n\n\\+What does your typical day look like? \n\n\\+How much do you work?\n\n\\+How often are you building/creating sites?\n\n\\+What does your team look like?",
+      "created_utc": 1644985410.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 17,
+          "body": "I begin delegating tasks to team members and asses yesterday’s work and check in with anyone that is not on the right track. Up until 3 months ago I was actually a one operation but I hired this guy to help me with small manual jobs and he’s recently taking up more tasks and responsibilities. After tasks are assigned I’ll go over the content queue (I just give them titles and they make content based off that) and review what’s being written, which is then uploaded onto the site. I do all dev tasks so if there’s any downtime or errors I’ll try to fix. Rest of my day is consumed by other ventures non Adsense related. \n\nOn Adsense stuff maybe 10-25 hours a week depending on what’s going on. On average I work 80-90 hours a week all in total. \n\nI target specific niches and make multiple sub niche sites so depending on the niche well create 5-10 a month. My approach is a little different but I enjoy it. \n\nI have 1 VA Thats hourly. Automation and scaling have been the forefront of my this operation. And because of that it’s helped me scale technically and focus on what matters the most"
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 10,
+      "body": "How much does a person with 90 sites make?",
+      "created_utc": 1645011348.0,
+      "replies": []
+    },
+    {
+      "author": "simonmerch",
+      "score": 8,
+      "body": "Total revenue across all 300 sites?",
+      "created_utc": 1645063078.0,
+      "replies": []
+    },
+    {
+      "author": "ramakant102",
+      "score": 5,
+      "body": "How you manage all website\nAny software or tool for management",
+      "created_utc": 1644991021.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 6,
+          "body": "I like trello for project management, rely heavily on google sheets and have a daily site checker for downtime. Screamingfrog for websites audits"
+        }
+      ]
+    },
+    {
+      "author": "ofs3c",
+      "score": 6,
+      "body": "Thanks for Sharing detailed overview of your work.\n\nQuestions:\n\n- What tools/services do you work with/rely on currently for Niche selection to Writing your first article.\n\n- Can you share How do you manage your workflow along with Tools used for content planning, team management &amp; scheduling?\n\n- You must have written lots of content in different niche, So any tips for researching your niche, formatting articles, What do you focus on, anything important that actually impact your ranking/results?\n\n- Can you share how you generally find KWS, Which one ones do you pick to target and Finally which one you decide to actually write about?\n\n- Are there any small changes on sites/articles that you thought won't matter but ended up impacting your overall results?\n\n- (unrelated): Other than blogging/seo/adsense, What do you invest/spend your money on(online stuff only) ?\n\n\nThanks for doing this.. Wish you all the best with your sites.",
+      "created_utc": 1644997385.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 23,
+          "body": "Ahrefs for keyword research \nNiche selection is random I could come across a random article and be introduced to a niche Idk anything about and go from there \nWriting my first article goes something like this: \n\nFind the niche, find the questions in the niche, find the main keywords, write 2k words about main niche keywords then 1k word article for sub niche link back to main niche. I’m sorry this sounds extremely vague but it really differs from niche to niche for example say you were doing “ski resorts in Colorado” \n\nI would make a main ski resorts pages list about 20-50 ski resorts listed on it with 1k word of relaxant content then make sub pages like “kid friendly ski resorts” link back to main resort page..and do that for each sub niche \n\nOn the main ski resort page I would link to a FAQ page or just list faq on that page with some questions about ski resort. You can have a blog and make posts like “things every beginner should know” and post weekly. \n\nJoin ski Facebook groups and post links to your site that others would find helpful and not spammy. Reach out to ski resorts and ask for partnership they might turn you down but reach out again in 6 months once traffic is increased they want to make money too\n\nIf there’s anything happening in the ski industry you better have a post on your site about it. Keep the content light and fun. Every article doesn’t have to be a masterpiece \n\nWorkflow is something like \nI buy the domain\n\nSetup the environment/ install theme \n\nGet 10-14 articles made and start google crawl process\n\nPublish articles and submit to google, make your social accounts and connect everything together. Day by day add to your site and think of ways to network and get links to your site. \n\nFor faster results look into buying links but tread carefully."
+        }
+      ]
+    },
+    {
+      "author": "SmoothVeterinarian",
+      "score": 5,
+      "body": "1. Would you recommend ghost cms for Adsense?\n2. Apart from Adsense what else is good?\n3. Is there anything like Adsense where I can get accepted without significant traffic?\n4. What is this business called? is there any name to it?",
+      "created_utc": 1644985430.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 3,
+          "body": "I’ve heard about Ghost CMS but nothing too in depth, as long as content is not rendered via js (some js frameworks are seo friendly I would check docs) and accessible to googles crawler it doesn’t matter what kind of CMS you use \n\nApart from Adsense I do a lot of lead gen, saas development, affiliate marketing, cpa marketing \n\nDepending on your niche there may be affiliate program options that fits your needs. Adsense doesn’t particularly need traffic to be accepted just a site with some content that isn’t bad \n\nEhh blogging? Not sure 🤔 people use MFA “made for Adsense” a lot"
+        }
+      ]
+    },
+    {
+      "author": "Independent-Salad-27",
+      "score": 3,
+      "body": "How to get 90+ pagespeed core while using Adsense? Without AdSense, my site is 95 on mobile from the field data. with AdSense, it is 65.",
+      "created_utc": 1644986631.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 4,
+          "body": "It’s hard to debug without knowing the exact vitals of the site, are you loading Adsense AFTER everything is loaded? That usually helps. Look into async and defer, do you really need 80% of js and css you’re loading? Start small and tweak along the way"
+        },
+        {
+          "author": "[deleted]",
+          "score": 2,
+          "body": "[removed]"
+        }
+      ]
+    },
+    {
+      "author": "isthisdutch",
+      "score": 3,
+      "body": "Really inspirational. Thank you! How do you scout for new opportunities?",
+      "created_utc": 1644993552.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 3,
+          "body": "I’ve stopped looking for new opportunities as I’m retiring Adsense efforts and just keeping 50% of my inventory"
+        }
+      ]
+    },
+    {
+      "author": "Asnoboy9",
+      "score": 3,
+      "body": "Thanks for the very informative post.\n\n1. Are you looking for any part timers/ interns? \n\n2. How would you advise a beginner to start learning. Other than just starting ofc.\nIn other words, do you have any recommended knowledge sources/books/blogs/ things one really needs to know?",
+      "created_utc": 1645043559.0,
+      "replies": []
+    },
+    {
+      "author": "THEBLACKLISTGS",
+      "score": 2,
+      "body": "One of the best posts i have read about SEO so far , great success bro keep up the good work ?\n\nSo i want to make a full SEO dropshipping website \n\nMy question would be :\nHow to do that ?\nWhere to start ?\nWhat do i need to use as tools ?\n\nThank you so much",
+      "created_utc": 1644988322.0,
+      "replies": []
+    },
+    {
+      "author": "MinimumViableMedia",
+      "score": 2,
+      "body": "Are you familiar with the Income School guys? Is your method similar to what they teach?\n\nWhy are you selling 50% of your portfolio? Do you need a break or is it something like it’s getting harder? I’ve got 16+ years in SEO/SEM and it seems like it’s an industry with diminishing returns, would you agree (years since I’ve been on the affiliate side)?",
+      "created_utc": 1644990281.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 3,
+          "body": "Not familiar with those guys what’s their method? \n\nChoosing to sell half to focus on my other ventures and just cash out. I’m getting pretty bored of it"
+        }
+      ]
+    },
+    {
+      "author": "yanks28th",
+      "score": 2,
+      "body": "I think I've built a really great product in [RacetotheWH.com](https://RacetotheWH.com), which breaks down the political battleground using data to show how likely both parties are to win in every state. I'm now getting 5-7k views a day, and I think one of the keys to growing my site more is to get it cited much more often in newspapers and blogs.   \n\n\nThis might just be a mental block, but I find it really hard to reach out to journalists and bloggers that I have no relationship with. I think you touched on doing this in your post. Do you have any recommendations on the best way to do this, and get good results?  \n\n\nThanks for your help!",
+      "created_utc": 1644990409.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 3,
+          "body": "Setup an automation system or hire someone to outreach all day that’s what I do. I’ll gather a list of 100-250 sites and have my guys email them and follow up 3x if nothing prevails move on to next list. I can see your site doing good on Facebook look into partnering with a political page and having them share an article off your website"
+        }
+      ]
+    },
+    {
+      "author": "spdaghost",
+      "score": 2,
+      "body": "does domain name matter?\n\nyour go-to's for increasing revenue?\n\never had trouble with invalid traffic? if so what did you do?",
+      "created_utc": 1644994413.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 3,
+          "body": "It does, but it doesn’t. Branded is Ok. Having the Kw in domain is Ok. Buying a domain with good links is Ok."
+        },
+        {
+          "author": "dailyhustler",
+          "score": 2,
+          "body": "More aggressive ad placements. Think sticky, pop ups, etc. \n\nI use a massive disallow sheet for bot traffic and block a few counties out that I’ve had problems with."
+        }
+      ]
+    },
+    {
+      "author": "dennismfrancisart",
+      "score": 2,
+      "body": "Brings me back to the old days. I ran article sites and one day I didn't. Thanks Google. I'm just getting back into building an authority site for local wellness professionals. I hate WordPress with a passion. It's actually more stable these days than back in the day.\n\nThere were days when I'd wake up to some guy named Vlad's skull and crossbones image blaring midi tunes across my home page. Thanks WordPress.\n\nGood times.",
+      "created_utc": 1644998590.0,
+      "replies": []
+    },
+    {
+      "author": "AndheraKayaamRahega",
+      "score": 2,
+      "body": "&gt;The only plugins I use are Yoast SEO and a caching plugin I have serious trust issues with any other plugin\n\nJust two? No security plugins like Wordfence, or something to make the site components look \"pretty\" - like Ultimate Blocks etc?",
+      "created_utc": 1645000017.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 5,
+          "body": "I limit permissions on my server to prevent writeable directories and code ejection. I’ve seen wordfebce sites get hacked too. \n\nFor pretty blocks i keep it minimal"
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 2,
+      "body": "[removed]",
+      "created_utc": 1645011910.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 2,
+          "body": "Gotta keep the lights on somehow hehe"
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 2,
+      "body": "[deleted]",
+      "created_utc": 1645013491.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 7,
+          "body": "Haha it’s why I’m selling 50% of my assets. It’s worked out for me and I’ve been profitable since inception and it was a way for me test a scaling method, I did get carried away after the 50th site but 10/10 would deff do it all over again"
+        }
+      ]
+    },
+    {
+      "author": "OnlineDopamine",
+      "score": 2,
+      "body": "You’ll be getting fleeced on those sales. Somebody will just slap on Ezoic (or other) ads and literally double the site’s valuation.",
+      "created_utc": 1645021870.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 2,
+          "body": "Good point, but it’s why I’m selling half of my inventory there’s people with a lot more time that can devote time and energy into these sites to really get them cracking"
+        }
+      ]
+    },
+    {
+      "author": "ManyDate891",
+      "score": 2,
+      "body": "With having 350+ sites, how do you come up with names for the sites, logos, any socials? this is very impressive and honestly like the idea of this. what made you get into doing this and how long did it take for you to get comfortable with making sites quickly?",
+      "created_utc": 1645030911.0,
+      "replies": []
+    },
+    {
+      "author": "SteveUrkelDidThat",
+      "score": 2,
+      "body": "how do you pick your niche? \n\nare you set up as a single llc with many dbas?",
+      "created_utc": 1645732941.0,
+      "replies": []
+    },
+    {
+      "author": "Arrival117",
+      "score": 2,
+      "body": "Old post - still in business after all those years and AI \"revolution\"? :)",
+      "created_utc": 1739446142.0,
+      "replies": [
+        {
+          "author": "dailyhustler",
+          "score": 3,
+          "body": "Yes &amp; Thriving! :)"
+        }
+      ]
+    },
+    {
+      "author": "SayedYounasSadat",
+      "score": 1,
+      "body": "This guide of yours, it is more beneficial than the whole official AdSense forum",
+      "created_utc": 1729056739.0,
+      "replies": []
+    }
+  ]
+}

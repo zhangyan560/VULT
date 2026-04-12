@@ -1,0 +1,193 @@
+{
+  "id": "1p2084g",
+  "title": "RN dev learning SwiftUI: do you guys get ALL THESE OUT OF THE BOX?!",
+  "subreddit": "iOSProgramming",
+  "subreddit_prefixed": "r/iOSProgramming",
+  "author": "couchpotatonumerouno",
+  "score": 120,
+  "upvote_ratio": 0.95,
+  "num_comments": 40,
+  "created_utc": 1763636204.0,
+  "url": "https://www.reddit.com/r/iOSProgramming/comments/1p2084g/rn_dev_learning_swiftui_do_you_guys_get_all_these/",
+  "permalink": "https://www.reddit.com/r/iOSProgramming/comments/1p2084g/rn_dev_learning_swiftui_do_you_guys_get_all_these/",
+  "selftext": "Started to learn native iOS development starting with SwiftUI as a react native dev, since our company is planning to transition our app into native in 2026. And I’m blown away by the API and all the features you get out of the box.  I mean you pretty much get the design system for free and most of the UI decisions are made for you, like spacing, typography etc. Even a simple component like NavigationSplitView blew my mind, like it just works both on iPad and iphone based on each platform’s best practices. In RN it would’ve taken me at least a thousand lines to get it to work. Just writing the SwiftUI code genuinely feels intuitive and delightful. From now on I’ll always be using it for my side projects. ",
+  "is_self": true,
+  "link_flair_text": "Discussion",
+  "_rel": 1.5,
+  "_weighted": 180.0,
+  "comments": [
+    {
+      "author": "DystopiaDrifter",
+      "score": 112,
+      "body": "Welcome to the world of native app development. \"One codebase for all\" is the non-technical peoples idea of cost saving, developing mobile apps with Swift and Kotlin respectively is way more efficient and scalable in the long run.",
+      "created_utc": 1763639136.0,
+      "replies": [
+        {
+          "author": "jjaacckkyy12",
+          "score": -25,
+          "body": "ehh i just really like JS"
+        }
+      ]
+    },
+    {
+      "author": "time-lord",
+      "score": 36,
+      "body": "You know how people say Javascript sucks? Yeah... ",
+      "created_utc": 1763638290.0,
+      "replies": [
+        {
+          "author": "TheShortTimer",
+          "score": 18,
+          "body": "Javascript is a dumpsterfire"
+        },
+        {
+          "author": "aerial-ibis",
+          "score": 5,
+          "body": "its really the browser's fault more than anything... though that is the cost of a platform woth maximum compatibility and openess i suppose "
+        }
+      ]
+    },
+    {
+      "author": "EquivalentTrouble253",
+      "score": 23,
+      "body": "And people don’t understand why I say RN and non native sucks for mobile apps. \n\nNative wins. Every. Singe. Time. \n\nWelcome!",
+      "created_utc": 1763639436.0,
+      "replies": []
+    },
+    {
+      "author": "thehumanbagelman",
+      "score": 14,
+      "body": "I hate to say we told you so, but… 🙃",
+      "created_utc": 1763643521.0,
+      "replies": [
+        {
+          "author": "couchpotatonumerouno",
+          "score": 3,
+          "body": "totally fair lol. the funny thing is that I’ve always been a huge advocate of RN, and would argue that it’s on par with native all the time"
+        }
+      ]
+    },
+    {
+      "author": "bradruck",
+      "score": 12,
+      "body": "Coming from Flutter after 6 YOE recently, I feel the same. I am doing faster development in SwiftUI and everything is just better.\n\nI feel as a developer iOS is more rewarding than whatever Android will ever be.",
+      "created_utc": 1763639223.0,
+      "replies": [
+        {
+          "author": "EquivalentTrouble253",
+          "score": 18,
+          "body": "To be fair I think Kotlin and android development has come a long way since the early days. \n\nAndroid studio is still keeping laptops warm though…"
+        },
+        {
+          "author": "pemungkah",
+          "score": 3,
+          "body": "People who complain about Xcode’s tooling really need to try out Flutter’s. \n\nI used to develop in Scala, same build tools. Ick."
+        }
+      ]
+    },
+    {
+      "author": "VibeLearning",
+      "score": 11,
+      "body": "I want to give everyone on this post a hug, because I feel exactly like that after just a month of learning SwiftUI. 🤗",
+      "created_utc": 1763646074.0,
+      "replies": []
+    },
+    {
+      "author": "kbcool",
+      "score": 8,
+      "body": "RN provides primitives. It's not an opinionated framework. It's not even a framework.\n\nThere are pros and cons to that approach. If you just want to make an iOS app that conforms to Apple's style guide then this approach doesn't make sense. However, if you want a cross platform app with your own look and feel then it does.\n\nAs much as people in this sub live in their own reality  there is a big demand for the latter",
+      "created_utc": 1763648167.0,
+      "replies": []
+    },
+    {
+      "author": "Unknown_coderr",
+      "score": 8,
+      "body": "I moved from Flutter to SwiftUI and Jetpack Compose and the only thing I’d say is, I have NEVER once said, “hmm, I miss cross platform development with Flutter”. \n\nDon’t get me wrong, I love that framework. But in my opinion, native will always be superior.",
+      "created_utc": 1763645467.0,
+      "replies": [
+        {
+          "author": "Ok_Refrigerator_1908",
+          "score": 1,
+          "body": "How do you do SwiftUI and Jetpack compose. I am trying to do same"
+        }
+      ]
+    },
+    {
+      "author": "m1_weaboo",
+      "score": 6,
+      "body": "I’m glad more people get to realize the truth.\nSwiftUI &gt;&gt;&gt;&gt;&gt; Any cross platform alternatives.",
+      "created_utc": 1763641325.0,
+      "replies": []
+    },
+    {
+      "author": "Vybo",
+      "score": 5,
+      "body": "Many companies have their own design libraries to skin the apps, but they are built on top of SwiftUI and are easy to write.\n\nAnyway, I'm very happy that your company went the other way around, I mostly hear about native ones going multiplatform. I think you'll enjoy native development more and don't be afraid of it :)",
+      "created_utc": 1763645891.0,
+      "replies": []
+    },
+    {
+      "author": "KnightofWhatever",
+      "score": 5,
+      "body": "From what I’ve seen jumping between RN and native, the “out of the box” feeling in SwiftUI is legit. Apple hands you a ton of decisions you’d normally grind through in RN... spacing, typography, navigation structure — and it all behaves the way an iOS app *should* without you hacking around pixel quirks.\n\nThe part that surprised me most was how quickly things start to feel consistent. In RN I'd burn hours getting something to look right on both tablet and phone. In SwiftUI, half the time you write the view, check the preview, and you’re basically done.\n\nThe mindset shift is the real adjustment. RN makes you think like a front-end dev building mobile. SwiftUI pushes you into thinking about the platform — how iOS expects layouts to behave, how state should flow, how transitions feel native. Once that clicks, you move fast.\n\nIf you’re already solid in RN, you’re not starting from zero. You’ll just notice you’re fighting the framework way less.",
+      "created_utc": 1763650979.0,
+      "replies": []
+    },
+    {
+      "author": "offeringathought",
+      "score": 3,
+      "body": "Obviously Apple has put a high value on UI/UX for decades. I think they've put a huge amount of work in trying to make the easy path for developers be the one that leads to a intuitive, high quality UI. And you get great accessibility for free.\n\nIt's far from perfect and change comes slower than many would like but I respect the strategy and results.",
+      "created_utc": 1763649018.0,
+      "replies": []
+    },
+    {
+      "author": "kudoshinichi-8211",
+      "score": 3,
+      "body": "I wish companies in India knew about this instead of shipping shit with React Native and Flutter",
+      "created_utc": 1763692610.0,
+      "replies": []
+    },
+    {
+      "author": "stripedlemur",
+      "score": 2,
+      "body": "Native is orders of magnitude better than cross-platform",
+      "created_utc": 1763646593.0,
+      "replies": []
+    },
+    {
+      "author": "Meliodas1108",
+      "score": 2,
+      "body": "One word i could say is: Intuitive. I've felt this about swift as well as SwiftUI. I haven't had exposure to anything else tho. Other than go and c++. \nXCode is still a bit of pain sometimes. And I wish it was a more open platform. Other than that it's pretty good. Wish you good luck!!",
+      "created_utc": 1763651217.0,
+      "replies": []
+    },
+    {
+      "author": "ColonelKlanka",
+      "score": 2,
+      "body": "have a look at kotlin multi platform (swift ui for ios, compose for android and then shared business logic classes ). best of both worlds if ypur coming from RN and want actual savings.\n\nps I'm a 15+ year native and hybrid mobile developer. so love native. but sometimes client wants savings.",
+      "created_utc": 1764007090.0,
+      "replies": []
+    },
+    {
+      "author": "BlossomBuild",
+      "score": 1,
+      "body": "Love how fast you can build in SwiftUI",
+      "created_utc": 1763638034.0,
+      "replies": []
+    },
+    {
+      "author": "vanvoorden",
+      "score": 1,
+      "body": "Overall I think Swift is a far superior language for building declarative UI. Swift is not a \"true\" functional language… but the first-class support for value semantics and immutable data collections is a *big* win once you start moving away from MVC.\n\nAs for SwiftUI… I think it is ambitious and I think Apple does many things right. But you will see some \"missing pieces\" coming from a ReactJS background. There are not as many explicit performance hooks for you as a product engineer. View Components in SwiftUI are memoized for you and compared during diffing. There is not an explicit API for \"should component update\" for you to control diffing. You can sort of use the `==` operator here… but this is still not completely supported and documented AFAIK.\n\nWe also don't have first class support for memoizing callback closure blocks. If your view component is constructed with a closure block you don't usually have an easy way to prevent rendering if your props did not change. You can write your own code to test for component equality on your component props *and* the captured state the closure depends on… but SwiftUI does not ship some kind of wrapper out of the box to make that easier for you.\n\nAlso keep in mind that this implicit memoization and diffing will compare your immutable data collections across renders. But since immutable data collections in Swift are value types this diffing will compare a *deep* equality check… which is not the *shallow* equality check you might be used to when optimizing performance from ReactJS components.\n\nAnd SwiftUI also performs *a lot* of this work on `main`. You don't usually have an easy way to dispatch rendering or diffing to the background. You usually have to assume that *any* work that happens in your render *and* the work to diff that render across time is all bound to `main`.",
+      "created_utc": 1763670983.0,
+      "replies": []
+    },
+    {
+      "author": "HelpRespawnedAsDee",
+      "score": 0,
+      "body": "Since I love my first act of the morning being to be a contrarian: I love swift, but i’m moving to RN with my biggest client. Too much work handling two code bases and i know enough of native Android and iOS dev to go down when needed (and I will need to for several proprietary libraries too). Despite that it’ll be less work than maintaining two codebases. \n\nHell I’ve been doing consulting for another RN client for some of their native ios needs. Just optimizing for $$$ but wouldn’t really recommend it unless it’s a business decision.",
+      "created_utc": 1763654757.0,
+      "replies": []
+    }
+  ]
+}

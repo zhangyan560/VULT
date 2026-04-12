@@ -1,0 +1,109 @@
+{
+  "id": "1sdvsti",
+  "title": "Ad network suggestions for quiz site",
+  "subreddit": "adops",
+  "subreddit_prefixed": "r/adops",
+  "author": "pratik10_9",
+  "score": 10,
+  "upvote_ratio": 0.92,
+  "num_comments": 14,
+  "created_utc": 1775473735.0,
+  "url": "https://www.reddit.com/r/adops/comments/1sdvsti/ad_network_suggestions_for_quiz_site/",
+  "permalink": "https://www.reddit.com/r/adops/comments/1sdvsti/ad_network_suggestions_for_quiz_site/",
+  "selftext": "Hey,\n\nMy quiz-based website recently started getting organic traffic from search over the past week. Right now it’s doing around 2.5K+ daily users, with about 60% of the traffic coming from Tier 1 countries (US, UK, AUS).\n\nIt’s mostly interactive quiz content, and traffic seems to be growing steadily.\n\nWhich ad networks or monetization platforms would work best for this kind of site ?\n\nThanks!",
+  "is_self": true,
+  "link_flair_text": "Publisher",
+  "_rel": 1.5,
+  "_weighted": 15.0,
+  "comments": [
+    {
+      "author": "Upbeat_Quit7362",
+      "score": 2,
+      "body": "Mediavine requires 50k sessions per month so you are not far off if the growth continues at this pace. Worth applying as soon as you hit that threshold because the RPMs for engaged Tier 1 quiz traffic on their network are significantly higher than most alternatives at your stage.",
+      "created_utc": 1775476200.0,
+      "replies": [
+        {
+          "author": "pratik10_9",
+          "score": 1,
+          "body": "Thank you , I will check it"
+        }
+      ]
+    },
+    {
+      "author": "kskbg",
+      "score": 2,
+      "body": "Check pubpower.io",
+      "created_utc": 1775505044.0,
+      "replies": []
+    },
+    {
+      "author": "Confuse_Pigeon",
+      "score": 1,
+      "body": "At your current stage, Adsense will do the trick!",
+      "created_utc": 1775474618.0,
+      "replies": []
+    },
+    {
+      "author": "Sea-Rub-7139",
+      "score": 1,
+      "body": "Quiz sites with interactive content can perform really well with the right setup. Since you’re already getting 2.5K+ daily users with 60% Tier 1 traffic, there’s definitely solid monetization potential.\n\nWe’re actually working with another quiz site publisher right now and have seen RPM growth after optimizing ad placement and formats. Networks that tend to do well for quiz/interactive content usually include those with strong native and programmatic demand, as they blend better with user engagement and don’t disrupt the experience\n\nIf you want, feel free to share your site and I can give a closer look at what formats and setup could work best to maximize RPM.",
+      "created_utc": 1775476210.0,
+      "replies": []
+    },
+    {
+      "author": "Mean-Bluejay-1498",
+      "score": 1,
+      "body": "\nWith 60% tier 1 traffic and interactive content you’re actually in a pretty good spot. I ran a similar setup and honestly the CPMs on US/UK traffic through AdPlunge were way higher than I expected, quiz content tends to hold attention longer so the engagement metrics work in your favor. At 2.5k daily you’re close to where it starts making a real difference — they’re not for tiny sites so the timing is decent. Just don’t panic when the stats take a few days to update, everyone does that the first time.​​​​​​​​​​​​​​​​",
+      "created_utc": 1775513177.0,
+      "replies": []
+    },
+    {
+      "author": "ClueInternational454",
+      "score": 1,
+      "body": "Send me a DM, I have a proposal for you.",
+      "created_utc": 1775528830.0,
+      "replies": []
+    },
+    {
+      "author": "Heavy_Description322",
+      "score": 1,
+      "body": "what is your current traffic amount?",
+      "created_utc": 1775533740.0,
+      "replies": [
+        {
+          "author": "pratik10_9",
+          "score": 1,
+          "body": "3k/ day"
+        }
+      ]
+    },
+    {
+      "author": "Tough-Adagio1019",
+      "score": 1,
+      "body": "Nice traffic, especially with Tier 1  that’s actually a really solid position to monetize 👌",
+      "created_utc": 1775566065.0,
+      "replies": []
+    },
+    {
+      "author": "Own-Switch-3895",
+      "score": 1,
+      "body": "Have you thought of Native Ads? Taboola and Outbrain used to render good eCPM's in the underarticle; now they seem to be slowly moving away from that to indeterminate new formats (they became Realize and Teads), but maybe you can still give them a try; or try Mgid and similar ones. In Spain, local players perform well for websites where the user is eager to interact (and yours probably is one of those), but I don't know if in your geos there are strong local players other than those behemots.",
+      "created_utc": 1775596620.0,
+      "replies": []
+    },
+    {
+      "author": "stovetopmuse",
+      "score": 1,
+      "body": "At that volume you’re kind of in the “test everything” phase.\n\nI’d try a couple in parallel and just watch RPM + bounce. Quiz traffic can look great on paper but some networks absolutely tank session time. Also keep an eye on invalid clicks, I’ve had quiz pages trigger weird patterns that got flagged later.\n\nIf Tier 1 holds, you should see pretty clear winners within a week or two.",
+      "created_utc": 1775613874.0,
+      "replies": []
+    },
+    {
+      "author": "Acrobatic_Key_1300",
+      "score": 1,
+      "body": "The two top tier partners that work with small but growing sites are Mediavine with their 50k session per month limit and Raptive that has a 25k pageview per month limit (there may be a session limit too so be sure your sessions are at 20k before applying just in case).\n\nThere are a couple more but they only work with big sites.  Everyone else is significantly hobbled by not being included in many advertising campaigns because of either quality issues or being too small.\n",
+      "created_utc": 1775739041.0,
+      "replies": []
+    }
+  ]
+}

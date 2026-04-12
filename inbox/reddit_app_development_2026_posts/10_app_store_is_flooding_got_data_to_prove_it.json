@@ -1,0 +1,265 @@
+{
+  "id": "1qeo2ke",
+  "title": "App Store is flooding... got data to prove it",
+  "subreddit": "iOSProgramming",
+  "subreddit_prefixed": "r/iOSProgramming",
+  "author": "LowFruit25",
+  "score": 81,
+  "upvote_ratio": 0.92,
+  "num_comments": 53,
+  "created_utc": 1768588248.0,
+  "url": "https://www.reddit.com/r/iOSProgramming/comments/1qeo2ke/app_store_is_flooding_got_data_to_prove_it/",
+  "permalink": "https://www.reddit.com/r/iOSProgramming/comments/1qeo2ke/app_store_is_flooding_got_data_to_prove_it/",
+  "selftext": "I've been analyzing developer activity metrics in the iOS market trying to figure out the impact of this new app building hype. Here are the results I found:\n\nAs of January 2026, there are:\n\n* 2,092,759 apps in the App Store\n* 888,388 active dev accounts with apps in the store\n\n[Number of apps published weekly](https://preview.redd.it/z40sr6th7rdg1.png?width=1698&amp;format=png&amp;auto=webp&amp;s=7aaa9bf1e66abd8d4fc307d7b7839f11c1bccfdb)\n\nWeekly published apps are heavily increasing in 2026 above their usual levels from late 2025 before the holidays.\n\nThe most striking data point is the downloads for React Native companion libraries. React Native is a common framework used by AI tools.\n\n[react-native-purchases weekly downloads](https://preview.redd.it/o16ihpji7rdg1.png?width=720&amp;format=png&amp;auto=webp&amp;s=0b40c00da95c5701c1ba9228b0dc019f9d41df2d)\n\nThe above chart shows a sharp spike and continuation in downloads for the `react-native-purchases` package which is often used to handle subscriptions, a common setup in \"AI slop\" apps.\n\nThe conclusion is: App Store is about to flood assuming the trends continue.   \nMany tools are now sold to non-devs to build their apps as a shovel to get rich.  \n  \nWhat do you guys think about this?",
+  "is_self": true,
+  "link_flair_text": "Discussion",
+  "_rel": 1.5,
+  "_weighted": 121.5,
+  "comments": [
+    {
+      "author": "goldio_games",
+      "score": 62,
+      "body": "I think its really cool you are getting into data anlysis and want to encourage you to keep going. Just some minor feedback. Last weeks of December and first week of January are usually down weeks for development in general as devs take the time off for the holidays. You'll want to analyze this week vs the same week last year as a better comparison.",
+      "created_utc": 1768588717.0,
+      "replies": [
+        {
+          "author": "LowFruit25",
+          "score": 4,
+          "body": "Yes that's true and I took it into account. I was researching this data since the start of 2025. But I noticed higher spikes than usual even during holiday season, especially in package downloads. That's why I made the post."
+        }
+      ]
+    },
+    {
+      "author": "civman96",
+      "score": 43,
+      "body": "Bro posts 2 data points and calls it analyzing 😂",
+      "created_utc": 1768588847.0,
+      "replies": [
+        {
+          "author": "TheFern3",
+          "score": 22,
+          "body": "Trust me bro ChatGPT said App Store is flooding… 😭"
+        }
+      ]
+    },
+    {
+      "author": "ileeeb",
+      "score": 16,
+      "body": "apple is making bank with their 99usd developer fee",
+      "created_utc": 1768593263.0,
+      "replies": [
+        {
+          "author": "SerRobertTables",
+          "score": 2,
+          "body": "Just think of how much money Anthropic would be making off of slop-slingers paying $200/mo for Claude if it were actually profitable."
+        },
+        {
+          "author": "ThrowRA-579965",
+          "score": 1,
+          "body": "and a fact that you can’t make apps on windows or base model macs"
+        }
+      ]
+    },
+    {
+      "author": "_Serus_",
+      "score": 12,
+      "body": "All those apps will be removed when the first force-library-update will occurr",
+      "created_utc": 1768593751.0,
+      "replies": [
+        {
+          "author": "Rare_Prior_",
+          "score": 2,
+          "body": "What do you mean ?"
+        }
+      ]
+    },
+    {
+      "author": "FaceRekr4309",
+      "score": 10,
+      "body": "Don’t worry. It’s only new habit trackers. That is unless you’re building another habit tracker. Then maybe worry a little.",
+      "created_utc": 1768614040.0,
+      "replies": [
+        {
+          "author": "MarioWollbrink",
+          "score": 5,
+          "body": "Glad I am Building a new to do List App."
+        },
+        {
+          "author": "Commercial_Life5145",
+          "score": 1,
+          "body": "Goal setting apps too"
+        }
+      ]
+    },
+    {
+      "author": "dot90zoom",
+      "score": 5,
+      "body": "There’s a pretty new and big vibe coding company who has been paying creators on Twitter to create apps using their tool. They even offered me and I only have 300 followers lol (I declined).\n\nI think a lot of people are just seeing these tools as a way to get something to the App Store and end up using them even if they are uploading some dogslop app.\n\nAnyways this is probably not the only factor. Holidays just ended meaning both More developers are publishing apps and There are likely more Apple employees reviewing and accepting apps",
+      "created_utc": 1768589725.0,
+      "replies": [
+        {
+          "author": "dot90zoom",
+          "score": 4,
+          "body": "I think it’d be cool to compare these numbers to the same time last year to see if there’s actually something changing or it’s just holiday season"
+        },
+        {
+          "author": "LucaLindholm",
+          "score": 1,
+          "body": "When I was an emergent Windows UWP developer back in 2018-2019, a company specialized in tracking and monitoring users habits contacted me and wanted me to put a little script package into my apps just to track my users. 😅"
+        },
+        {
+          "author": "soul_of_code",
+          "score": 1,
+          "body": "Replit? lol"
+        },
+        {
+          "author": "AsleepDragonfly967",
+          "score": 1,
+          "body": "Are you referring to Rork?"
+        }
+      ]
+    },
+    {
+      "author": "cristi_baluta",
+      "score": 4,
+      "body": "Poor sloppers, they don’t know you can’t make money anymore for at least a decade",
+      "created_utc": 1768628943.0,
+      "replies": [
+        {
+          "author": "Previous-Fee8164",
+          "score": 1,
+          "body": "Go on Twitter, and every post is about how “I published an app a week ago, and I've made a thousand dollars. Three more apps are on the way.”"
+        }
+      ]
+    },
+    {
+      "author": "Grayson_Cheng",
+      "score": 4,
+      "body": "It’s great to be able to code something with leverage of AI tool therefore I don’t mind and not surprise about the trend. Just it’s not about making, it is also related to marketing and promotion and if this really solves a real world issue( even you do, you need to market it so people use them people verify it)\n\nProbably best tool to make now is the marketing tool!",
+      "created_utc": 1768640011.0,
+      "replies": []
+    },
+    {
+      "author": "lftlogicsucks",
+      "score": 4,
+      "body": "It’s cool that you show the data and everything, but how does that actually affect us? A good app is a good app, no matter if it was built by a developer or a vibe coder. What matters is the idea and the execution, not how it was made, and not how many other apps exist if yours is the one that stands out.",
+      "created_utc": 1768663751.0,
+      "replies": []
+    },
+    {
+      "author": "Third-Floor-47",
+      "score": 3,
+      "body": "Ive restricted myself several times to not release some small games as I felt it would drown by the many. And there will now be even more. \nMy assumption is that the rule Apple made some years back that the apps should fulfill a unique purpose -perhaps it’s time to start cleaning. ",
+      "created_utc": 1768637655.0,
+      "replies": [
+        {
+          "author": "imamark_",
+          "score": 1,
+          "body": "Let’s hope they do. More restrictions and clean up"
+        }
+      ]
+    },
+    {
+      "author": "m3kw",
+      "score": 2,
+      "body": "All the shtty vibe quick 1 hour vibe coded apps will force Apple to rate limit developers submissions to maybe once per 2 weeks or something",
+      "created_utc": 1768592702.0,
+      "replies": []
+    },
+    {
+      "author": "Rare_Prior_",
+      "score": 2,
+      "body": "I’m curious, what do you think the rejection rate will be? Do you think it’s going to spike?",
+      "created_utc": 1768765004.0,
+      "replies": [
+        {
+          "author": "LowFruit25",
+          "score": 1,
+          "body": "I think it’s going to initially spike because it’s easy to make low effort apps now. However, only Apple will decide what quality level they want to maintain in the store."
+        }
+      ]
+    },
+    {
+      "author": "Desperate_Tailor6627",
+      "score": 1,
+      "body": "The vibe coding and AI has made developing app easier and many new developer joined.That maybe a good thing?",
+      "created_utc": 1768632872.0,
+      "replies": []
+    },
+    {
+      "author": "Free-Pound-6139",
+      "score": 1,
+      "body": "AImegeddon is here! Slop to the max.\n\nGet ready for more trackers, recipe makers, calorie analyzers, sub managers and bookmark helpers.",
+      "created_utc": 1768651041.0,
+      "replies": []
+    },
+    {
+      "author": "imike3049",
+      "score": 1,
+      "body": "I kind of wish Apple would introduce some sort of \"Made with AI / no-code\" disclosure, similar to TikTok's AI label. Not to ban these apps, but at least give users some transparency about what they're downloading. With the volume trends you're showing, discoverability and trust are going to get rough fast.",
+      "created_utc": 1768794558.0,
+      "replies": []
+    },
+    {
+      "author": "soul_of_code",
+      "score": 1,
+      "body": "They better be doing a good job of filtering apps because one of mine got rejected for being 'too similar' to others (apparently) 🤨",
+      "created_utc": 1768801856.0,
+      "replies": []
+    },
+    {
+      "author": "muutax",
+      "score": 1,
+      "body": "But surely you can't just vibe code many similar apps since apple will reject it as \"spam\"",
+      "created_utc": 1768826416.0,
+      "replies": []
+    },
+    {
+      "author": "No_Emphasis8025",
+      "score": 1,
+      "body": "J'ai voulu faire un test ouvert de mon application de tirage de carte oracle et tarot de Marseille je me suis pris un 4.3 (b) bien violent\n\nHello, \n\n\nThank you for your submission. We noticed some issues that require your attention. Please see below for additional information.\n\n\nIf you have any questions, we are here to help. Reply to this message in App Store Connect and let us know.\n\n\n\nReview Environment\n\n\nReview date: January 18, 2026\n\nReview Device: iPad Air 11-inch (M3)\n\nBuild version reviewed: 1.0.0 (3)\n\n\nGuideline 4.3(b) - Design - Spam\n\nYour app primarily features astrology, horoscopes, palm reading, fortune telling or zodiac reports that duplicate the content and functionality of similar apps in a saturated category.\n\n\nThese app features may be useful, informative or entertaining, and your app may include features or characteristics that distinguish it. However, there are already enough of these apps on the App Store.\n\n\nNext Steps\n\n\nWe encourage you to reconsider your app concept and submit a new app that provides a unique experience not already found on the App Store.\n\n\nResources\n\n\n- You may consider creating a web app, which looks and behaves like a native app when the user adds it to their Home screen. See Configuring Web Applications for more information.\n\n- To learn more about our policies for saturated app categories, see App Review Guideline 4.3(b) - Spam.",
+      "created_utc": 1768859640.0,
+      "replies": []
+    },
+    {
+      "author": "Ryland990",
+      "score": 1,
+      "body": "The trend is been up since beginning of December! The approval process would take several hours and now hardly less then a day.",
+      "created_utc": 1768893463.0,
+      "replies": []
+    },
+    {
+      "author": "[deleted]",
+      "score": 1,
+      "body": "[removed]",
+      "created_utc": 1769170734.0,
+      "replies": [
+        {
+          "author": "AutoModerator",
+          "score": 1,
+          "body": "Hey /u/Necessary-Deal9745, your content has been removed because **Reddit** has marked your account as having a low **C**ontributor #**Q**uality **S**core. This may result from, but is not limited to, activities such as spamming the same links across multiple #subreddits, submitting posts or comments that receive a high number of downvotes, a lack of activity, or an unverified account.\n\nPlease be assured that this action is not a reflection of your participation in our subreddit.\n\nIf you believe you have been mistakenly targeted, you may request an exemption by clicking on the message link provided below.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/iOSProgramming) if you have any questions or concerns.*"
+        }
+      ]
+    },
+    {
+      "author": "Any_Peace_4161",
+      "score": 0,
+      "body": "Basically it comes down to this: people shouldn't hang their goals and hopes on the app store. Treat it like it's just a warehouse where you keep your bits and do your regular marketing and advertising. \n\n\n\nThe App Store provides \\*\\*some\\*\\* of that, but it's stupid to rely only on that. \n\n\n\nSo... those stats are materially useless for anything but discussion, or being short sighted enough to only rely on the App Store. \\*\\* shrug \\*\\*",
+      "created_utc": 1768590314.0,
+      "replies": []
+    },
+    {
+      "author": "HelpRespawnedAsDee",
+      "score": -2,
+      "body": "lmao, i know this sub hates RN, but to even pretend you can't create AI slop without RN is just silly. If anything, the bootstrapping of an app with RN is more complicated than bootstrapping an iOS only app, and trust me, LLMs struggle with complex build settings.",
+      "created_utc": 1768590324.0,
+      "replies": [
+        {
+          "author": "jaybutts",
+          "score": 2,
+          "body": "I mean i started creating iOS apps with the help of AI but ive been a developer or devops working in the software industry for a long time and i know all the steps, processes,  a ton about testing and common problems, etc , I just never came to iOS cause frankly i thought it was a pain in the ass , thats no longer the case with ai helpers"
+        }
+      ]
+    }
+  ]
+}

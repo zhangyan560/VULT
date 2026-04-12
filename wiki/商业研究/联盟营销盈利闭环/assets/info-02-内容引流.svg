@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="1000" fill="#f8fffe"/>
+
+  <!-- Title Banner -->
+  <rect x="0" y="0" width="800" height="80" fill="#0f9d58"/>
+  <rect x="0" y="72" width="800" height="8" fill="#00897b"/>
+  <text x="400" y="32" text-anchor="middle" fill="white" font-size="22" font-weight="700" letter-spacing="2">联盟营销</text>
+  <text x="400" y="60" text-anchor="middle" fill="#b2dfdb" font-size="14" letter-spacing="4">内容创作与引流技巧</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- SECTION 1: 高转化内容形式 -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="24" y="96" width="752" height="30" rx="4" fill="#e8f5e9"/>
+  <rect x="24" y="96" width="6" height="30" rx="2" fill="#0f9d58"/>
+  <text x="42" y="116" fill="#1b5e20" font-size="14" font-weight="700">01  高转化内容形式</text>
+  <text x="740" y="116" text-anchor="end" fill="#43a047" font-size="11">4 种类型</text>
+
+  <!-- Content type cards row 1 -->
+  <!-- Card: 清单类 -->
+  <rect x="24" y="134" width="174" height="118" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.5"/>
+  <rect x="24" y="134" width="174" height="32" rx="8" fill="#0f9d58"/>
+  <rect x="24" y="150" width="174" height="16" fill="#0f9d58"/>
+  <text x="111" y="155" text-anchor="middle" fill="white" font-size="13" font-weight="700">清单类</text>
+  <text x="36" y="178" fill="#2e7d32" font-size="10.5" font-weight="600">"2025最佳XX产品"</text>
+  <line x1="36" y1="185" x2="186" y2="185" stroke="#c8e6c9" stroke-width="1"/>
+  <circle cx="40" cy="197" r="3" fill="#0f9d58"/>
+  <text x="48" y="200" fill="#424242" font-size="10">覆盖面广</text>
+  <circle cx="40" cy="212" r="3" fill="#0f9d58"/>
+  <text x="48" y="215" fill="#424242" font-size="10">首屏对比表</text>
+  <circle cx="40" cy="227" r="3" fill="#0f9d58"/>
+  <text x="48" y="230" fill="#424242" font-size="10">搜索量大</text>
+  <rect x="148" y="224" width="42" height="16" rx="8" fill="#e8f5e9"/>
+  <text x="169" y="235" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">广覆盖</text>
+
+  <!-- Card: 教程类 -->
+  <rect x="210" y="134" width="174" height="118" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.5"/>
+  <rect x="210" y="134" width="174" height="32" rx="8" fill="#00897b"/>
+  <rect x="210" y="150" width="174" height="16" fill="#00897b"/>
+  <text x="297" y="155" text-anchor="middle" fill="white" font-size="13" font-weight="700">教程类</text>
+  <text x="222" y="178" fill="#00695c" font-size="10.5" font-weight="600">"如何使用XX"</text>
+  <line x1="222" y1="185" x2="372" y2="185" stroke="#b2dfdb" stroke-width="1"/>
+  <circle cx="226" cy="197" r="3" fill="#00897b"/>
+  <text x="234" y="200" fill="#424242" font-size="10">产品嵌入自然</text>
+  <circle cx="226" cy="212" r="3" fill="#00897b"/>
+  <text x="234" y="215" fill="#424242" font-size="10">说服力强</text>
+  <circle cx="226" cy="227" r="3" fill="#00897b"/>
+  <text x="234" y="230" fill="#424242" font-size="10">适合视频格式</text>
+  <rect x="334" y="224" width="42" height="16" rx="8" fill="#e0f2f1"/>
+  <text x="355" y="235" text-anchor="middle" fill="#00695c" font-size="9" font-weight="600">高说服</text>
+
+  <!-- Card: 测评类 -->
+  <rect x="396" y="134" width="174" height="118" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.5"/>
+  <rect x="396" y="134" width="174" height="32" rx="8" fill="#43a047"/>
+  <rect x="396" y="150" width="174" height="16" fill="#43a047"/>
+  <text x="483" y="155" text-anchor="middle" fill="white" font-size="13" font-weight="700">测评类</text>
+  <text x="408" y="178" fill="#2e7d32" font-size="10.5" font-weight="600">"XX深度测评"</text>
+  <line x1="408" y1="185" x2="558" y2="185" stroke="#c8e6c9" stroke-width="1"/>
+  <circle cx="412" cy="197" r="3" fill="#43a047"/>
+  <text x="420" y="200" fill="#424242" font-size="10">高购买意向用户</text>
+  <circle cx="412" cy="212" r="3" fill="#43a047"/>
+  <text x="420" y="215" fill="#424242" font-size="10">信任度高</text>
+  <circle cx="412" cy="227" r="3" fill="#43a047"/>
+  <text x="420" y="230" fill="#424242" font-size="10">适合长内容</text>
+  <rect x="520" y="224" width="42" height="16" rx="8" fill="#e8f5e9"/>
+  <text x="541" y="235" text-anchor="middle" fill="#2e7d32" font-size="9" font-weight="600">高意向</text>
+
+  <!-- Card: 对比类 (highlighted) -->
+  <rect x="582" y="134" width="194" height="118" rx="8" fill="#fff8e1" stroke="#ffd54f" stroke-width="2"/>
+  <rect x="582" y="134" width="194" height="32" rx="8" fill="#f57c00"/>
+  <rect x="582" y="150" width="194" height="16" fill="#f57c00"/>
+  <text x="679" y="153" text-anchor="middle" fill="white" font-size="13" font-weight="700">对比类</text>
+  <text x="594" y="178" fill="#e65100" font-size="10.5" font-weight="600">"XX vs YY"</text>
+  <line x1="594" y1="185" x2="764" y2="185" stroke="#ffe082" stroke-width="1"/>
+  <circle cx="598" cy="197" r="3" fill="#f57c00"/>
+  <text x="606" y="200" fill="#424242" font-size="10">最后决策阶段</text>
+  <circle cx="598" cy="212" r="3" fill="#f57c00"/>
+  <text x="606" y="215" fill="#424242" font-size="10">转化率最高</text>
+  <circle cx="598" cy="227" r="3" fill="#f57c00"/>
+  <text x="606" y="230" fill="#424242" font-size="10">明确购买需求</text>
+  <rect x="702" y="220" width="62" height="20" rx="10" fill="#f57c00"/>
+  <text x="733" y="233" text-anchor="middle" fill="white" font-size="9" font-weight="700">★ 转化最高</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- SECTION 2: 三大流量渠道 -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="24" y="268" width="752" height="30" rx="4" fill="#e8f5e9"/>
+  <rect x="24" y="268" width="6" height="30" rx="2" fill="#0f9d58"/>
+  <text x="42" y="288" fill="#1b5e20" font-size="14" font-weight="700">02  三大流量渠道</text>
+
+  <!-- Traffic channel cards -->
+  <!-- SEO -->
+  <rect x="24" y="306" width="236" height="150" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.5"/>
+  <rect x="24" y="306" width="236" height="46" rx="8" fill="#0f9d58"/>
+  <rect x="24" y="334" width="236" height="18" fill="#0f9d58"/>
+  <!-- SEO icon area -->
+  <circle cx="55" cy="329" r="14" fill="rgba(255,255,255,0.2)"/>
+  <text x="55" y="334" text-anchor="middle" fill="white" font-size="14">🔍</text>
+  <text x="120" y="326" text-anchor="middle" fill="white" font-size="13" font-weight="700">SEO 搜索流量</text>
+  <text x="120" y="344" text-anchor="middle" fill="#b2dfdb" font-size="10">长期稳定</text>
+  <!-- SEO details -->
+  <text x="38" y="370" fill="#424242" font-size="11">关键词：</text>
+  <rect x="90" y="358" width="52" height="18" rx="9" fill="#e8f5e9"/>
+  <text x="116" y="371" text-anchor="middle" fill="#0f9d58" font-size="10" font-weight="600">最佳</text>
+  <rect x="148" y="358" width="52" height="18" rx="9" fill="#e8f5e9"/>
+  <text x="174" y="371" text-anchor="middle" fill="#0f9d58" font-size="10" font-weight="600">测评</text>
+  <rect x="206" y="358" width="46" height="18" rx="9" fill="#e8f5e9"/>
+  <text x="229" y="371" text-anchor="middle" fill="#0f9d58" font-size="10" font-weight="600">对比</text>
+  <line x1="36" y1="382" x2="248" y2="382" stroke="#e8f5e9" stroke-width="1"/>
+  <text x="38" y="396" fill="#616161" font-size="10.5">生命周期：数年</text>
+  <text x="38" y="412" fill="#616161" font-size="10.5">流量属性：免费 · 被动</text>
+  <text x="38" y="428" fill="#616161" font-size="10.5">核心优势：复利效应</text>
+  <!-- progress bar -->
+  <text x="38" y="446" fill="#9e9e9e" font-size="9">稳定性</text>
+  <rect x="72" y="437" width="170" height="8" rx="4" fill="#e8f5e9"/>
+  <rect x="72" y="437" width="153" height="8" rx="4" fill="#0f9d58"/>
+
+  <!-- Social Media -->
+  <rect x="276" y="306" width="236" height="150" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.5"/>
+  <rect x="276" y="306" width="236" height="46" rx="8" fill="#00897b"/>
+  <rect x="276" y="334" width="236" height="18" fill="#00897b"/>
+  <circle cx="307" cy="329" r="14" fill="rgba(255,255,255,0.2)"/>
+  <text x="307" y="334" text-anchor="middle" fill="white" font-size="14">📱</text>
+  <text x="372" y="326" text-anchor="middle" fill="white" font-size="13" font-weight="700">社交媒体</text>
+  <text x="372" y="344" text-anchor="middle" fill="#b2dfdb" font-size="10">算法推荐 · 爆发快</text>
+  <!-- Social details -->
+  <text x="290" y="370" fill="#424242" font-size="10.5">平台：</text>
+  <rect x="328" y="358" width="58" height="18" rx="9" fill="#e0f2f1"/>
+  <text x="357" y="371" text-anchor="middle" fill="#00695c" font-size="10" font-weight="600">TikTok</text>
+  <rect x="392" y="358" width="64" height="18" rx="9" fill="#e0f2f1"/>
+  <text x="424" y="371" text-anchor="middle" fill="#00695c" font-size="10" font-weight="600">Instagram</text>
+  <line x1="288" y1="382" x2="500" y2="382" stroke="#e0f2f1" stroke-width="1"/>
+  <text x="288" y="398" fill="#616161" font-size="10.5">生命周期：数天—数周</text>
+  <text x="288" y="414" fill="#616161" font-size="10.5">流量属性：免费/付费</text>
+  <text x="288" y="430" fill="#616161" font-size="10.5">核心优势：快速爆发</text>
+  <text x="290" y="446" fill="#9e9e9e" font-size="9">爆发力</text>
+  <rect x="324" y="437" width="170" height="8" rx="4" fill="#e0f2f1"/>
+  <rect x="324" y="437" width="155" height="8" rx="4" fill="#00897b"/>
+
+  <!-- Email -->
+  <rect x="528" y="306" width="248" height="150" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.5"/>
+  <rect x="528" y="306" width="248" height="46" rx="8" fill="#1565c0"/>
+  <rect x="528" y="334" width="248" height="18" fill="#1565c0"/>
+  <circle cx="561" cy="329" r="14" fill="rgba(255,255,255,0.2)"/>
+  <text x="561" y="334" text-anchor="middle" fill="white" font-size="14">✉</text>
+  <text x="638" y="326" text-anchor="middle" fill="white" font-size="13" font-weight="700">邮件列表</text>
+  <text x="638" y="344" text-anchor="middle" fill="#bbdefb" font-size="10">私域流量 · 高价值</text>
+  <!-- Email details -->
+  <text x="542" y="370" fill="#424242" font-size="10.5">自动化序列</text>
+  <rect x="618" y="358" width="66" height="18" rx="9" fill="#e3f2fd"/>
+  <text x="651" y="371" text-anchor="middle" fill="#1565c0" font-size="10" font-weight="600">摆脱平台依赖</text>
+  <line x1="540" y1="382" x2="764" y2="382" stroke="#e3f2fd" stroke-width="1"/>
+  <text x="542" y="398" fill="#616161" font-size="10.5">生命周期：永久持有</text>
+  <text x="542" y="414" fill="#616161" font-size="10.5">流量属性：私域 · 可控</text>
+  <text x="542" y="430" fill="#616161" font-size="10.5">核心优势：不受算法影响</text>
+  <text x="542" y="446" fill="#9e9e9e" font-size="9">可控性</text>
+  <rect x="576" y="437" width="170" height="8" rx="4" fill="#e3f2fd"/>
+  <rect x="576" y="437" width="160" height="8" rx="4" fill="#1565c0"/>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- SECTION 3: TikTok vs YouTube 对比 -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="24" y="472" width="752" height="30" rx="4" fill="#e8f5e9"/>
+  <rect x="24" y="472" width="6" height="30" rx="2" fill="#0f9d58"/>
+  <text x="42" y="492" fill="#1b5e20" font-size="14" font-weight="700">03  TikTok vs 传统 YouTube</text>
+
+  <!-- Comparison table -->
+  <rect x="24" y="510" width="752" height="200" rx="8" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Table header -->
+  <rect x="24" y="510" width="752" height="36" rx="8" fill="#f5f5f5"/>
+  <rect x="24" y="530" width="752" height="16" fill="#f5f5f5"/>
+  <text x="220" y="533" text-anchor="middle" fill="#757575" font-size="11" font-weight="600">对比维度</text>
+  <line x1="330" y1="510" x2="330" y2="710" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="330" y="510" width="223" height="36" rx="0" fill="#1c1c1c" opacity="0.85"/>
+  <rect x="330" y="510" width="223" height="36" fill="none"/>
+  <text x="441" y="533" text-anchor="middle" fill="white" font-size="12" font-weight="700">TikTok / Shorts</text>
+  <line x1="553" y1="510" x2="553" y2="710" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="553" y="510" width="223" height="36" rx="0" fill="#ff0000" opacity="0.85"/>
+  <text x="664" y="533" text-anchor="middle" fill="white" font-size="12" font-weight="700">YouTube 长视频</text>
+
+  <!-- Row 1 -->
+  <rect x="24" y="546" width="752" height="40" fill="white"/>
+  <text x="220" y="571" text-anchor="middle" fill="#616161" font-size="11">流量来源</text>
+  <line x1="24" y1="586" x2="776" y2="586" stroke="#f5f5f5" stroke-width="1"/>
+  <rect x="355" y="554" width="88" height="22" rx="11" fill="#e8f5e9"/>
+  <text x="399" y="569" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="600">算法推荐驱动</text>
+  <rect x="578" y="554" width="88" height="22" rx="11" fill="#fff3e0"/>
+  <text x="622" y="569" text-anchor="middle" fill="#e65100" font-size="11" font-weight="600">搜索意图驱动</text>
+
+  <!-- Row 2 -->
+  <rect x="24" y="586" width="752" height="40" fill="#fafafa"/>
+  <text x="220" y="611" text-anchor="middle" fill="#616161" font-size="11">内容导向</text>
+  <line x1="24" y1="626" x2="776" y2="626" stroke="#f5f5f5" stroke-width="1"/>
+  <text x="441" y="611" text-anchor="middle" fill="#424242" font-size="11">娱乐性 · 情绪共鸣</text>
+  <text x="664" y="611" text-anchor="middle" fill="#424242" font-size="11">教育性 · 解决问题</text>
+
+  <!-- Row 3 -->
+  <rect x="24" y="626" width="752" height="40" fill="white"/>
+  <text x="220" y="651" text-anchor="middle" fill="#616161" font-size="11">内容生命周期</text>
+  <line x1="24" y1="666" x2="776" y2="666" stroke="#f5f5f5" stroke-width="1"/>
+  <rect x="355" y="634" width="78" height="22" rx="11" fill="#ffebee"/>
+  <text x="394" y="649" text-anchor="middle" fill="#c62828" font-size="11" font-weight="600">爆发短消退快</text>
+  <rect x="578" y="634" width="78" height="22" rx="11" fill="#e8f5e9"/>
+  <text x="617" y="649" text-anchor="middle" fill="#2e7d32" font-size="11" font-weight="600">数年持续复利</text>
+
+  <!-- Row 4 -->
+  <rect x="24" y="666" width="752" height="44" rx="8" fill="#fafafa"/>
+  <text x="220" y="693" text-anchor="middle" fill="#616161" font-size="11">联属链接方式</text>
+  <text x="441" y="689" text-anchor="middle" fill="#424242" font-size="11">集成购物 / Shop</text>
+  <text x="441" y="703" text-anchor="middle" fill="#9e9e9e" font-size="10">视频内嵌</text>
+  <text x="664" y="689" text-anchor="middle" fill="#424242" font-size="11">视频描述栏链接</text>
+  <text x="664" y="703" text-anchor="middle" fill="#9e9e9e" font-size="10">固定位置</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- SECTION 4: 内容创作要点 -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="24" y="724" width="752" height="30" rx="4" fill="#e8f5e9"/>
+  <rect x="24" y="724" width="6" height="30" rx="2" fill="#0f9d58"/>
+  <text x="42" y="744" fill="#1b5e20" font-size="14" font-weight="700">04  内容创作要点</text>
+
+  <!-- Three key point cards -->
+  <!-- Hook -->
+  <rect x="24" y="762" width="234" height="110" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.5"/>
+  <circle cx="60" cy="795" r="22" fill="#0f9d58"/>
+  <text x="60" y="801" text-anchor="middle" fill="white" font-size="18" font-weight="900">1</text>
+  <text x="95" y="790" fill="#1b5e20" font-size="13" font-weight="700">Hook 钩子</text>
+  <text x="95" y="806" fill="#616161" font-size="10.5">前 1–2 秒抓住注意力</text>
+  <line x1="36" y1="822" x2="246" y2="822" stroke="#e8f5e9" stroke-width="1"/>
+  <text x="36" y="840" fill="#424242" font-size="10">· 开头直接抛出核心价值</text>
+  <text x="36" y="856" fill="#424242" font-size="10">· 用问题或数字制造悬念</text>
+
+  <!-- 真实感 -->
+  <rect x="282" y="762" width="234" height="110" rx="8" fill="white" stroke="#a5d6a7" stroke-width="1.5"/>
+  <circle cx="318" cy="795" r="22" fill="#00897b"/>
+  <text x="318" y="801" text-anchor="middle" fill="white" font-size="18" font-weight="900">2</text>
+  <text x="353" y="790" fill="#004d40" font-size="13" font-weight="700">真实感</text>
+  <text x="353" y="806" fill="#616161" font-size="10.5">真人出镜 > AI 生成内容</text>
+  <line x1="294" y1="822" x2="504" y2="822" stroke="#e0f2f1" stroke-width="1"/>
+  <text x="294" y="840" fill="#424242" font-size="10">· 展示真实使用场景</text>
+  <text x="294" y="856" fill="#424242" font-size="10">· 诚实说明优缺点</text>
+
+  <!-- CTA -->
+  <rect x="540" y="762" width="236" height="110" rx="8" fill="#e8f5e9" stroke="#0f9d58" stroke-width="2"/>
+  <circle cx="576" cy="795" r="22" fill="#f57c00"/>
+  <text x="576" y="801" text-anchor="middle" fill="white" font-size="18" font-weight="900">3</text>
+  <text x="611" y="790" fill="#e65100" font-size="13" font-weight="700">CTA 行动召唤</text>
+  <text x="611" y="806" fill="#616161" font-size="10.5">转化的最后一步</text>
+  <line x1="552" y1="822" x2="764" y2="822" stroke="#c8e6c9" stroke-width="1"/>
+  <text x="552" y="840" fill="#424242" font-size="10">· 联属链接置顶 / 简介栏</text>
+  <text x="552" y="856" fill="#424242" font-size="10">· 加专属折扣码提升点击</text>
+
+  <!-- Flow arrows between cards -->
+  <text x="258" y="822" text-anchor="middle" fill="#0f9d58" font-size="18" font-weight="300">→</text>
+  <text x="516" y="822" text-anchor="middle" fill="#0f9d58" font-size="18" font-weight="300">→</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Footer -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="0" y="898" width="800" height="102" fill="#0f9d58"/>
+  <rect x="0" y="898" width="800" height="4" fill="#00897b"/>
+
+  <!-- Summary pills -->
+  <rect x="36" y="916" width="120" height="28" rx="14" fill="rgba(255,255,255,0.15)"/>
+  <text x="96" y="934" text-anchor="middle" fill="white" font-size="11" font-weight="600">4 种内容类型</text>
+  <rect x="174" y="916" width="120" height="28" rx="14" fill="rgba(255,255,255,0.15)"/>
+  <text x="234" y="934" text-anchor="middle" fill="white" font-size="11" font-weight="600">3 大流量渠道</text>
+  <rect x="312" y="916" width="140" height="28" rx="14" fill="rgba(255,255,255,0.15)"/>
+  <text x="382" y="934" text-anchor="middle" fill="white" font-size="11" font-weight="600">平台差异化运营</text>
+  <rect x="470" y="916" width="140" height="28" rx="14" fill="rgba(255,255,255,0.15)"/>
+  <text x="540" y="934" text-anchor="middle" fill="white" font-size="11" font-weight="600">3 步创作要点</text>
+
+  <line x1="36" y1="956" x2="764" y2="956" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="400" y="975" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="10">联盟营销盈利闭环 · 内容引流模块 · 02</text>
+  <text x="400" y="990" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="9">内容为王 · 流量为基 · 转化为本</text>
+</svg>

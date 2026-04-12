@@ -1,0 +1,12 @@
+
+/skill-creator I want to create a skill that searches YouTube and returns structured video results. It should use yt-dlp to search for videos by query, return the top 20 results by default, and include metadata for each video - title, channel name, subscriber count, view count, duration, upload date, and URL. It should to the last 6 months by default but support a --months flag to change that. It should also calculate a views-to-subscribers ratio as an engagement metric.The output should be nicely formatted with dividers between each result and human-readable numbers.
+
+
+
+/skill-creator I want to create Youtube
+Centrally research pipeline skill that combines the YT Dash search skill in our Notebook LM skill so when I use this new Youtube pipeline skill I want it to take what I told it to do research on go onto Youtube find 10 relevant videos that fit right using the YT Dash search skill I then wanted to use the Notebook LM skill to create a new notebook I wanted to give it those sources it found with the YT search skill then I wanted to do analysis on that topic based on what I said when I originally
+invoked the skill so when I invoked this Youtube Pipeline skill I should say what I'm trying to do research on and what I want the analysis to be analysis to be furthermore you should ask me if I furthermore I also wanted to use the Notebook LMS skill to use to create a deliverable right because Notebook LM can create things like flash cards or infographics or whatever if I don't tell it to do a deliverable just assume no deliverable I can add a deliverable if I want and then after it does all the analysis obviously bring all that analysis back to me in a markdown file as well the chat and I also want included in that analysis is all the Youtube search data we got right I want to know what sources we actually use and all that development metadata
+
+
+/youtube-research-pipeline So I want to do research on Claude code and MCP servers I want to know what the top 5 MCP servers are for Claude code and I also want to see sort of like how are these Claude code and MCP video type videos doing like what
+are the outliers what are people responding to some gaps that we're seeing in these videos so push 10 sources to notebook LM in a new notebook for that and then also based on that analysis I want an infographic depicting that analysis for me

@@ -1,0 +1,236 @@
+{
+  "id": "1raw4tc",
+  "title": "My month-long NZ trip pushed me to finally ship this app",
+  "subreddit": "iOSProgramming",
+  "subreddit_prefixed": "r/iOSProgramming",
+  "author": "TravelCodeRepeat",
+  "score": 123,
+  "upvote_ratio": 0.91,
+  "num_comments": 48,
+  "created_utc": 1771692959.0,
+  "url": "https://www.reddit.com/gallery/1raw4tc",
+  "permalink": "https://www.reddit.com/r/iOSProgramming/comments/1raw4tc/my_monthlong_nz_trip_pushed_me_to_finally_ship/",
+  "selftext": "I travel a lot and somehow still forget the most obvious things. While planning trips, I realized I was repeatedly looking up the same information - plug types, typical weather, activity-specific gear I shouldn't forget, etc. That’s when I decided to build something that brings all of that together in one place.\n\nApple approved it this week (right before my 40th birthday!), and it’s now live on the App Store as **journeybot: packing &amp; travel**.\n\nIt focuses on smart packing preparation and a clean overview of your journey - without need to create accounts, without showing any ads, everything synced via iCloud. Works offline, keeps your data private.\n\n# 1. Tech Stack Used\n\n**Frameworks &amp; Languages:**\n\nSwiftUI, Swift, sprinkles of UIKit, Metal shaders for creating cool card effects\n\n**Data &amp; Sync:**\n\nSwiftData with CloudKit sync\n\n**AI:**\n\nApple Foundation Models (on-device only) for packing list generation\n\n**In-App Purchases:**\n\nStoreKit 2 (subscription + lifetime unlock)\n\n**Other Integrations:**\n\n* WidgetKit (countdown widgets)\n* MapKit (destination handling, maps)\n* WeatherKit (forecasts, and historical weather data for journeys in the future)\n* Keychain for secure premium status storage\n* TelemetryDeck for anonymised usage statistics (no personal data is collected)\n* Sentry for error reporting\n\nThe goal was to stay fully native and privacy-first. I am planning my own API for the future, which will provide additional journey data such as visa or vaccination requirements.\n\n# 2. Development Challenge + How I Solved It\n\nOne of the biggest challenges was making SwiftData + CloudKit behave reliably across devices.\n\nCloudKit has strict requirements:\n\n* Every model property must be optional or have a default value\n* All relationships must be optional\n* Enum defaults must be fully qualified\n* Improper modelling causes runtime crashes, not compile errors\n\nEarly on, I ran into sync failures and confusing CloudKit runtime errors. The fix was restructuring all models to strictly follow CloudKit rules and redesigning relationships to be optional while keeping the UI logic clean.\n\nAnother interesting challenge was AI-powered packing generation.\n\nI wanted:\n\n* Fully on-device generation (no API calls)\n* **Streaming-style feedback**\n* Deterministic enhancements (e.g., power plug suggestions)\n\nThe solution:\n\n* Use Foundation Models for the base packing suggestions\n* Post-process results with rule-based logic (for adapters, structured categories, etc.)\n* Only deduct free-tier credits on successful generation\n\nBalancing \"AI magic\" with predictable output required combining generative output with structured validation and cleanup before displaying it in the UI.\n\n# 3. AI Disclosure\n\nAI-assisted; main driver Claude Code\n\nI come from a web dev+design background (20+ yrs). Last year I decided to leverage new tools to jump-start learning native iOS development. I put together a game where I gained some basic skills regarding writing in SwiftUI, models, GameplayKit integration, etc. This gave me good basics for my next project.\n\nNow, I know what I want to build, what tools I need to achieve, and this way I steer the AI-assisted development. I don't see a point in manually writing chunks of code, but I know what end result I am aiming for and try to perfect the code on my own. Doing this in small batches, and always hand-polishing before moving on to the next part. The UX is completely mine.\n\n\n\nGlad to answer any questions regarding my setup.\n\n  \nLearn more about journeybot: [https://journeybot.app](https://journeybot.app)\n\nApp Store: [https://apps.apple.com/us/app/journeybot-packing-travel/id6756543673](https://apps.apple.com/us/app/journeybot-packing-travel/id6756543673)",
+  "is_self": false,
+  "link_flair_text": "App Saturday",
+  "_rel": 1.5,
+  "_weighted": 184.5,
+  "comments": [
+    {
+      "author": "AnthonyJrWTF",
+      "score": 17,
+      "body": "Love the UI, especially the ticket concept on the main screen. Might want to lean into that design a tiny bit more so the ticket border and tear section stand out.\n\nHow as integrating Apple's Foundational Model for packing. I'm working on something for my profession and I was considering using AFM to generate lists. Was it pretty easy to integrate or a pain in the ass?\n\nAnd yes, CloudKit + SwiftData can be a pain at first but works pretty seamlessly once sorted out with the schema and models.",
+      "created_utc": 1771693962.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 5,
+          "body": "Thanks for the nice feedback regarding the UI! I am particularly fond of the cards, and am already sketching up ideas how to take it to the next level.  \n  \nRegarding AFM: The integration is actually pretty straight forward. Apple has free resources available to help you kick-start it. Streaming the response was a bit tricky as I wanted to show the suggestions for the packing list as it is being generated, and then hand-off that to the actual created entities. Also, one of the big pain points is that AFM are only available on devices set to certain languages, and even if the users sets the app's language to one of the supported locales, it still won't work unless the whole device is set up for Apple Intelligence. I guess this will only get better with 26.4 onward, we'll see. Also, I was not able to get \"Tools\" working in a setup where you just provide one set of instructions and the initial prompt - the model would never call them, looks like it would be working in a chat-like environment though. So I'm injecting tools' responses to the prompt. What it's not good is giving it negative boundaries: for instance if I tell the model to NOT include certain items, it DOES in fact include them, and puts a note to the items \"excluded as per request\" or something similar. I also hope this will get better as the technology progresses. The on-device generation takes a couple of seconds, obviously the better the phone, the faster it gets, but I've tested on iPhone 16e, M1 MacBook Pro, and iPhone 17 Pro, and they were all pretty swift. Feel free to ask followup questions, I'm just rambling at this point!\n\nRegarding CC+SD: Totally agree. One thing I've learned to appreciate is the cloudkit console where you need to push changes to the schema to the produciton database etc. I think they did a pretty good job with this. I am hoping they will add support for SwiftData sharing, as this would be a great addition to the app - where users would be able to collaborate on shared packing lists (great for families etc.)."
+        }
+      ]
+    },
+    {
+      "author": "EkoChamberKryptonite",
+      "score": 3,
+      "body": "Nice UI especially the cards and background. Did you design it up yourself?",
+      "created_utc": 1771699051.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thanks, I appreciate that! Yep, with input from my very good friend, and several rounds of refinements and fine-tunings. Although I would say nowadays it's very hard to create something truly unique in a world where it seems that everything was already thought of. So often, I feel my work is a remix of what's already out there, put together in a unique way.   \n  \nAlso, the photos for the homescreen background (it's customisable) are all my work, kinda like to have a place to showcase various skills :). "
+        }
+      ]
+    },
+    {
+      "author": "SolutionOk7700",
+      "score": 3,
+      "body": "looks great!!\n\n",
+      "created_utc": 1771701978.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thank you very much!"
+        }
+      ]
+    },
+    {
+      "author": "Cute-Blueberry-9534",
+      "score": 3,
+      "body": "UI looks really good!",
+      "created_utc": 1771708085.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Cheers! Glad you like it."
+        }
+      ]
+    },
+    {
+      "author": "ComplexPeace43",
+      "score": 2,
+      "body": "Nice! Looks beautiful",
+      "created_utc": 1771694628.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "I appreciate you!"
+        }
+      ]
+    },
+    {
+      "author": "kurucu83",
+      "score": 2,
+      "body": "This is lovely. Within a trip, it would be good to list towns and dates, as that affects the weather profile and baggage options.",
+      "created_utc": 1771748869.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 3,
+          "body": "Thanks for giving it a try! Hundred percent with you on this one. This will be the next major release - support for multiple legs of the journey. On top of that, I'd also like to be able to track my flights and other reservations within the app. So it becomes sort of a hub to everything I need for planning. For now, I'm not focusing on itinerary planning though, as there are already many apps that do this great and I would like to think it through before I head that direction. Generated itineraries are often cool, but I'm not feeling it for this app, on top of that it sort of destroys the business of travel content creators who put together wonderful itineraries in their time."
+        }
+      ]
+    },
+    {
+      "author": "gamedeckdev",
+      "score": 2,
+      "body": "Looks promising. I’ll download it and give it a try.",
+      "created_utc": 1771751306.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thank you, please do - and any feedback would be much appreciated!"
+        }
+      ]
+    },
+    {
+      "author": "barisaygen1",
+      "score": 2,
+      "body": "Tickets look amazing!",
+      "created_utc": 1771754630.0,
+      "replies": []
+    },
+    {
+      "author": "Snoo_24581",
+      "score": 2,
+      "body": "Congrats on shipping! Love the story about the NZ trip being the catalyst. Sometimes you just need that change of scenery to gain perspective.\n\nWhat was the biggest technical hurdle you had to overcome to get it done? Curious about your experience as a solo dev.",
+      "created_utc": 1771763855.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thanks! Actually I am just leaving for NZ now - the idea was to get the app ready for my journey so I wouldn't have stress too much about what to pack! That part worked. Stressing about other things regarding a month-long solo trip? Not so much! :D\n\nRegarding technical hurdles: I would say getting a strong foundation that can be built upon. A lot of thinking before coding - basically I've set up the whole architecture, models, etc., before - and then I found out some obstacles that needed ironing out: such as CloudKit requirements etc. Next, as I come from a web dev environment, I figured there's a lot I need to learn about performance in mobile dev. So right after I released v 1.0, I rushed to fix a lot of performance issues I noticed in Sentry after the app launched and I started getting real user data. There's a lot of great resources that teach about optimizing SwiftUI performance.\n\nRegarding other hurdles: it seems nowadays it's getting easier and easier to make an app. But to get it out to people? The marketing, the \"selling your soul\" part - as an introvert, I find it difficult. I know I should do more social media, perhaps TikTok, but I feel it's so out of my comfort zone... I guess we all need to start somewhere!"
+        }
+      ]
+    },
+    {
+      "author": "Ambitious-Age3295",
+      "score": 2,
+      "body": "Your screenshots look great. What did you use to make them?",
+      "created_utc": 1771774564.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thanks! I used Pixelmator Pro. It has nice templates for App Store screenshots, I just set up the typography and colors to match my app visuals."
+        }
+      ]
+    },
+    {
+      "author": "sailing-far-away",
+      "score": 2,
+      "body": "Looks amazing!! One noob question regarding top and bottom toolbar buttons. How did you place a button next to the search field? In swiftUI whenever I set .searchable() modifier and try to place any of the .toolbar items in bottom position then the search field relocates to right under the top toolbar. Also how do you color toolbar buttons. The only way I found to color a toolbar button was to use .buttonStyle(.glassProminent) modifier (that only makes the button the prominent color of my app blue by default). Did you achieve those toolbar arrangements and button backgrounds with swiftUI or was there some UIKit involved there? Thanks!",
+      "created_utc": 1771779026.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thanks! Great questions.\n\nWhenever you have .searchable and want to add another button to the same row, you can do something like this:\n\n    .searchable(...)\n    .toolbar {\n        ToolbarItem(placement: .bottomBar) {\n          // place your button / filter / etc. here\n        }\n    \n        ToolbarSpacer(.flexible, placement: .bottomBar)\n    \n        // use this to render the searchbar on the same row\n        DefaultToolbarItem(kind: .search, placement: .bottomBar)\n    }\n\nRegarding the colored button style: I found SwiftUI does this automatically if you have the button in a toolbaritem with .confirmationAction placement:\n\n    ToolbarItem(placement: .confirmationAction) {\n        Button(\"Done\", systemImage: \"checkmark\") {\n            dismiss()\n        }\n    }\n\nHope that helps!"
+        }
+      ]
+    },
+    {
+      "author": "_kdtk",
+      "score": 2,
+      "body": "Holy UI😩❤️",
+      "created_utc": 1771866082.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "😍😍"
+        }
+      ]
+    },
+    {
+      "author": "iSan4eZ",
+      "score": 2,
+      "body": "I love the idea and design! Is the lifetime purchase family-shareable?",
+      "created_utc": 1771876989.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thanks! Yes, for anyone in your iCloud family."
+        }
+      ]
+    },
+    {
+      "author": "cuongnt3010",
+      "score": 2,
+      "body": "Super solid build, and congrats on shipping. Your CloudKit notes are gold, especially the \"optional/default + optional relationships\" constraints that only show up as runtime pain. I also like the hybrid AI approach: Foundation Models for base generation, then deterministic rule passes for trust and consistency. That feels like the right pattern for user-facing output.  \n🧐 Curious: how are you handling SwiftData/CloudKit schema evolution across app updates without causing sync regressions?",
+      "created_utc": 1772145979.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thank you and sorry for the late reply - been focusing on my New Zealand campervan journey these days :).\n\nRegarding the schema evolution: I'll need to get back to you once I cross that bridge - so far the app has only seen minor upgrades with no schema changes. From what I gathered, it should be a pretty straight forward thing as long as you know what you're doing – via the CloudKit console, you should publish any changes to the schema from the development database to the production one. What has worked for you?"
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 1,
+      "body": "[removed]",
+      "created_utc": 1771703638.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "Thank you so much. Glad you like it! Are you building anything as well? I've seen your question regarding app store review wait times. (Btw yes, I think I submitted Thursday, and got approved like Tuesday.)"
+        }
+      ]
+    },
+    {
+      "author": "qlwkerjqewlkr",
+      "score": 1,
+      "body": "Being in that shithole for a month does this to a person.",
+      "created_utc": 1771774315.0,
+      "replies": [
+        {
+          "author": "TravelCodeRepeat",
+          "score": 1,
+          "body": "I am just on my way there right now! Sorry I didn’t make that clear from the title 🙈"
+        }
+      ]
+    },
+    {
+      "author": "oldmonk90",
+      "score": 1,
+      "body": "Congrats! I also shipped my first React Native/Expo app with the help of Claude Code!",
+      "created_utc": 1771833998.0,
+      "replies": []
+    },
+    {
+      "author": "Unlucky-Ad-8835",
+      "score": 1,
+      "body": "Hey u/TravelCodeRepeat \\- check your dms! ",
+      "created_utc": 1774182172.0,
+      "replies": []
+    }
+  ]
+}

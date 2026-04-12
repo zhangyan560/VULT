@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="900" viewBox="0 0 800 900">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3949ab;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7b1fa2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sectionGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8eaf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3e5f5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffebee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fce4ec;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="900" fill="#fafafa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="90" fill="url(#headerGrad)"/>
+  <text x="400" y="38" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700" fill="white" text-anchor="middle">联盟营销</text>
+  <text x="400" y="68" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="700" fill="white" text-anchor="middle">合规披露与收款指南</text>
+
+  <!-- Badge -->
+  <rect x="320" y="77" width="160" height="22" rx="11" fill="white" opacity="0.2"/>
+  <text x="400" y="92" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="white" text-anchor="middle" opacity="0.9">Compliance &amp; Payment</text>
+
+  <!-- ============ SECTION 1: FTC合规要求 ============ -->
+  <rect x="24" y="108" width="752" height="198" rx="10" fill="url(#sectionGrad1)" filter="url(#shadow)"/>
+  <rect x="24" y="108" width="6" height="198" rx="3" fill="#3949ab"/>
+
+  <!-- Section 1 Title -->
+  <rect x="36" y="118" width="36" height="36" rx="8" fill="#3949ab"/>
+  <text x="54" y="141" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">1</text>
+  <text x="82" y="133" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700" fill="#3949ab">FTC 合规要求</text>
+  <text x="82" y="150" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#5c6bc0">Federal Trade Commission — 联邦贸易委员会</text>
+
+  <!-- Rule -->
+  <rect x="36" y="163" width="728" height="30" rx="6" fill="#3949ab" opacity="0.1"/>
+  <text x="52" y="183" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="600" fill="#283593">&#9654;  必须在显著位置披露联属关系，让读者/观众在点击链接前即可看到</text>
+
+  <!-- Correct example -->
+  <rect x="36" y="200" width="340" height="52" rx="6" fill="white" stroke="#43a047" stroke-width="1.5"/>
+  <rect x="36" y="200" width="340" height="18" rx="6" fill="#e8f5e9"/>
+  <rect x="36" y="212" width="340" height="6" fill="#e8f5e9"/>
+  <text x="52" y="213" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" font-weight="700" fill="#2e7d32">✓  正确示例</text>
+  <text x="52" y="232" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#1b5e20">"本文含联属链接，购买不额外收费，</text>
+  <text x="52" y="247" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#1b5e20">我可能获得佣金"</text>
+
+  <!-- Wrong examples -->
+  <rect x="390" y="200" width="374" height="52" rx="6" fill="white" stroke="#e53935" stroke-width="1.5"/>
+  <rect x="390" y="200" width="374" height="18" rx="6" fill="#ffebee"/>
+  <rect x="390" y="212" width="374" height="6" fill="#ffebee"/>
+  <text x="406" y="213" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" font-weight="700" fill="#c62828">✗  错误示例</text>
+  <text x="406" y="232" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#b71c1c">① 隐藏在页脚小字中</text>
+  <text x="560" y="232" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#b71c1c">② 完全不披露</text>
+  <text x="406" y="247" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#b71c1c">③ 披露语言模糊不清</text>
+
+  <!-- Consequences -->
+  <rect x="36" y="259" width="728" height="34" rx="6" fill="#7b1fa2" opacity="0.08"/>
+  <text x="52" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#6a1b9a">&#9888;  违规后果：</text>
+  <text x="140" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#4a148c">法律诉讼</text>
+  <text x="200" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#9e9e9e">|</text>
+  <text x="212" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#4a148c">高额罚款</text>
+  <text x="272" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#9e9e9e">|</text>
+  <text x="284" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#4a148c">平台封号</text>
+  <text x="344" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#9e9e9e">|</text>
+  <text x="356" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#4a148c">永久失去观众信任</text>
+  <text x="484" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#9e9e9e">|</text>
+  <text x="496" y="276" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#4a148c">品牌合作终止</text>
+
+  <!-- ============ SECTION 2: 5条红线 ============ -->
+  <rect x="24" y="320" width="752" height="190" rx="10" fill="url(#redGrad)" filter="url(#shadow)"/>
+  <rect x="24" y="320" width="6" height="190" rx="3" fill="#c62828"/>
+
+  <!-- Section 2 Title -->
+  <rect x="36" y="330" width="36" height="36" rx="8" fill="#c62828"/>
+  <text x="54" y="353" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">2</text>
+  <text x="82" y="345" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700" fill="#b71c1c">绝对禁止行为</text>
+  <text x="82" y="362" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#c62828">5 条红线 — 触碰即封号/法律风险</text>
+
+  <!-- Red line items — 2 columns -->
+  <!-- Left column -->
+  <rect x="36" y="375" width="354" height="38" rx="6" fill="white" stroke="#e53935" stroke-width="1" opacity="0.9"/>
+  <rect x="36" y="375" width="8" height="38" rx="4" fill="#e53935"/>
+  <text x="56" y="390" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#c62828">✕</text>
+  <text x="70" y="390" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#b71c1c">用自己的联盟链接自购</text>
+  <text x="70" y="407" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c62828">违反平台条款，佣金撤销+封号</text>
+
+  <rect x="36" y="420" width="354" height="38" rx="6" fill="white" stroke="#e53935" stroke-width="1" opacity="0.9"/>
+  <rect x="36" y="420" width="8" height="38" rx="4" fill="#e53935"/>
+  <text x="56" y="435" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#c62828">✕</text>
+  <text x="70" y="435" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#b71c1c">推广虚假或违法产品</text>
+  <text x="70" y="452" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c62828">共同承担法律责任，消费者可起诉</text>
+
+  <rect x="36" y="465" width="354" height="38" rx="6" fill="white" stroke="#e53935" stroke-width="1" opacity="0.9"/>
+  <rect x="36" y="465" width="8" height="38" rx="4" fill="#e53935"/>
+  <text x="56" y="480" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#c62828">✕</text>
+  <text x="70" y="480" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#b71c1c">伪造佣金收益截图</text>
+  <text x="70" y="497" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c62828">FTC欺诈罪，影响整个行业生态</text>
+
+  <!-- Right column -->
+  <rect x="402" y="375" width="362" height="38" rx="6" fill="white" stroke="#e53935" stroke-width="1" opacity="0.9"/>
+  <rect x="402" y="375" width="8" height="38" rx="4" fill="#e53935"/>
+  <text x="422" y="390" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#c62828">✕</text>
+  <text x="436" y="390" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#b71c1c">Cookie填充等技术作弊</text>
+  <text x="436" y="407" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c62828">程序化欺诈，可追究刑事责任</text>
+
+  <rect x="402" y="420" width="362" height="38" rx="6" fill="white" stroke="#e53935" stroke-width="1" opacity="0.9"/>
+  <rect x="402" y="420" width="8" height="38" rx="4" fill="#e53935"/>
+  <text x="422" y="435" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#c62828">✕</text>
+  <text x="436" y="435" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#b71c1c">特定受限品类推广</text>
+  <text x="436" y="452" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c62828">酒类/烟草/博彩等无联盟推广资格</text>
+
+  <!-- ============ SECTION 3: 收款流程 ============ -->
+  <rect x="24" y="524" width="752" height="198" rx="10" fill="url(#sectionGrad1)" filter="url(#shadow)"/>
+  <rect x="24" y="524" width="6" height="198" rx="3" fill="#7b1fa2"/>
+
+  <!-- Section 3 Title -->
+  <rect x="36" y="534" width="36" height="36" rx="8" fill="#7b1fa2"/>
+  <text x="54" y="557" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">3</text>
+  <text x="82" y="549" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700" fill="#7b1fa2">收款流程</text>
+  <text x="82" y="566" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#ab47bc">Payment Process — 门槛 · 周期 · 方式 · 税务</text>
+
+  <!-- 4 payment cards -->
+  <!-- Card 1: 门槛 -->
+  <rect x="36" y="578" width="166" height="128" rx="8" fill="white" filter="url(#shadow)"/>
+  <rect x="36" y="578" width="166" height="32" rx="8" fill="#7b1fa2"/>
+  <rect x="36" y="596" width="166" height="14" fill="#7b1fa2"/>
+  <text x="119" y="599" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">提现门槛</text>
+  <text x="119" y="626" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700" fill="#7b1fa2" text-anchor="middle">$50</text>
+  <text x="119" y="643" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#9e9e9e" text-anchor="middle">— $100</text>
+  <text x="119" y="662" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#616161" text-anchor="middle">通常最低提现金额</text>
+  <text x="119" y="678" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#616161" text-anchor="middle">各平台略有差异</text>
+  <text x="119" y="698" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#9e9e9e" text-anchor="middle">未达门槛自动结转</text>
+
+  <!-- Card 2: 周期 -->
+  <rect x="214" y="578" width="166" height="128" rx="8" fill="white" filter="url(#shadow)"/>
+  <rect x="214" y="578" width="166" height="32" rx="8" fill="#5c6bc0"/>
+  <rect x="214" y="596" width="166" height="14" fill="#5c6bc0"/>
+  <text x="297" y="599" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">结算周期</text>
+  <text x="297" y="626" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700" fill="#3949ab" text-anchor="middle">每月结算</text>
+  <text x="297" y="648" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#9e9e9e" text-anchor="middle">延迟 30–60 天</text>
+  <text x="297" y="666" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#616161" text-anchor="middle">等待退款窗口关闭</text>
+  <text x="297" y="682" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#616161" text-anchor="middle">退款产生的佣金会</text>
+  <text x="297" y="698" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#9e9e9e" text-anchor="middle">从账户中扣除</text>
+
+  <!-- Card 3: 方式 -->
+  <rect x="392" y="578" width="166" height="128" rx="8" fill="white" filter="url(#shadow)"/>
+  <rect x="392" y="578" width="166" height="32" rx="8" fill="#ab47bc"/>
+  <rect x="392" y="596" width="166" height="14" fill="#ab47bc"/>
+  <text x="475" y="599" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">收款方式</text>
+  <text x="410" y="626" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#6a1b9a">&#9632;  PayPal</text>
+  <text x="410" y="644" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#9e9e9e">最常用，需验证账号</text>
+  <text x="410" y="662" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#6a1b9a">&#9632;  银行电汇 (ACH)</text>
+  <text x="410" y="680" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#9e9e9e">美国银行账户直汇</text>
+  <text x="410" y="698" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#6a1b9a">&#9632;  支票</text>
+
+  <!-- Card 4: 税务 -->
+  <rect x="570" y="578" width="194" height="128" rx="8" fill="white" filter="url(#shadow)"/>
+  <rect x="570" y="578" width="194" height="32" rx="8" fill="#3949ab"/>
+  <rect x="570" y="596" width="194" height="14" fill="#3949ab"/>
+  <text x="667" y="599" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">税务表格</text>
+  <rect x="582" y="616" width="86" height="44" rx="5" fill="#e8eaf6" stroke="#3949ab" stroke-width="1"/>
+  <text x="625" y="633" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700" fill="#1a237e" text-anchor="middle">W-9</text>
+  <text x="625" y="648" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#3949ab" text-anchor="middle">美国居民</text>
+  <text x="625" y="661" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#9e9e9e" text-anchor="middle">/ 公民</text>
+  <rect x="676" y="616" width="76" height="44" rx="5" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1"/>
+  <text x="714" y="633" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#4a148c" text-anchor="middle">W-8BEN</text>
+  <text x="714" y="648" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#7b1fa2" text-anchor="middle">非美国居民</text>
+  <text x="714" y="661" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#9e9e9e" text-anchor="middle">外国个人</text>
+  <text x="667" y="682" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#616161" text-anchor="middle">年收入超$600需提交1099表</text>
+  <text x="667" y="698" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#9e9e9e" text-anchor="middle">平台通常会要求提前填写</text>
+
+  <!-- ============ SECTION 4: 账号保护 ============ -->
+  <rect x="24" y="736" width="752" height="140" rx="10" fill="url(#sectionGrad1)" filter="url(#shadow)"/>
+  <rect x="24" y="736" width="6" height="140" rx="3" fill="#5c6bc0"/>
+
+  <!-- Section 4 Title -->
+  <rect x="36" y="746" width="36" height="36" rx="8" fill="#5c6bc0"/>
+  <text x="54" y="769" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle">4</text>
+  <text x="82" y="761" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="700" fill="#3949ab">账号保护要点</text>
+  <text x="82" y="778" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#5c6bc0">Account Protection — 保护核心资产</text>
+
+  <!-- Checklist items -->
+  <rect x="36" y="792" width="228" height="34" rx="6" fill="white" stroke="#5c6bc0" stroke-width="1"/>
+  <rect x="40" y="804" width="14" height="14" rx="3" fill="#3949ab"/>
+  <text x="47" y="814" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="white" text-anchor="middle">✓</text>
+  <text x="62" y="813" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1a237e">每个平台保持独立账号</text>
+  <text x="62" y="821" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#9e9e9e"> 不共用登录信息</text>
+
+  <rect x="276" y="792" width="228" height="34" rx="6" fill="white" stroke="#5c6bc0" stroke-width="1"/>
+  <rect x="280" y="804" width="14" height="14" rx="3" fill="#3949ab"/>
+  <text x="287" y="814" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="white" text-anchor="middle">✓</text>
+  <text x="302" y="813" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1a237e">严格遵守各平台服务条款</text>
+  <text x="302" y="821" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#9e9e9e"> 定期重新阅读 ToS 更新</text>
+
+  <rect x="516" y="792" width="248" height="34" rx="6" fill="white" stroke="#5c6bc0" stroke-width="1"/>
+  <rect x="520" y="804" width="14" height="14" rx="3" fill="#3949ab"/>
+  <text x="527" y="814" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="white" text-anchor="middle">✓</text>
+  <text x="542" y="813" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1a237e">保留完整推广记录备查</text>
+  <text x="542" y="821" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="9" fill="#9e9e9e"> 截图/存档推广内容+披露文字</text>
+
+  <!-- Additional tips row -->
+  <rect x="36" y="834" width="360" height="28" rx="6" fill="#e8eaf6"/>
+  <text x="52" y="852" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#3949ab">&#9679;  争议发生时主动与平台沟通，保留沟通记录</text>
+
+  <rect x="408" y="834" width="356" height="28" rx="6" fill="#f3e5f5"/>
+  <text x="424" y="852" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" fill="#7b1fa2">&#9679;  单一平台收入超60%时开始分散风险</text>
+
+  <!-- Footer -->
+  <rect x="0" y="876" width="800" height="24" fill="url(#headerGrad)" opacity="0.85"/>
+  <text x="400" y="892" font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="white" text-anchor="middle" opacity="0.8">合规经营 · 长期稳健 · 联盟营销盈利闭环系列 04</text>
+</svg>

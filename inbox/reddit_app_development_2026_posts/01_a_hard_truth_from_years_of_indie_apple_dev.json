@@ -1,0 +1,332 @@
+{
+  "id": "1q6ewlc",
+  "title": "A hard truth from years of indie Apple dev",
+  "subreddit": "iOSProgramming",
+  "subreddit_prefixed": "r/iOSProgramming",
+  "author": "29satnam",
+  "score": 415,
+  "upvote_ratio": 0.97,
+  "num_comments": 165,
+  "created_utc": 1767791292.0,
+  "url": "https://i.redd.it/es092594fxbg1.jpeg",
+  "permalink": "https://www.reddit.com/r/iOSProgramming/comments/1q6ewlc/a_hard_truth_from_years_of_indie_apple_dev/",
+  "selftext": "After years of Apple development and finally reaching a stable, good-enough income as an indie, this is the biggest thing I’ve learned:\n\nOnly complex, out of the ordinary apps make real money, and they have to be excellent.\n\nSimple apps turn into a race to the bottom. If something is easy to build, it’s easy to copy. The apps that worked for me were the ones that took longer, were harder to get right, and looked boring from the outside, but were invaluable to the people who needed them.\n\nThe App Store doesn’t reward shortcuts. It rewards depth, polish, and persistence.\n\nCurious if others felt the same.",
+  "is_self": false,
+  "link_flair_text": "Discussion",
+  "_rel": 1.5,
+  "_weighted": 622.5,
+  "comments": [
+    {
+      "author": "rennarda",
+      "score": 59,
+      "body": "If your apps aren’t easy to copy, why not post links here? I’m curious what you’ve actually built.",
+      "created_utc": 1767792378.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 84,
+          "body": "Totally fair question, but I prefer not to share links here. I’m not trying to promote anything, just sharing lessons from the journey. \nHappy to discuss the ideas and process though. 😁"
+        },
+        {
+          "author": "m3kw",
+          "score": 26,
+          "body": "No he made a good decision, even if low risk, the post make it seem like a challenge for people if he posts his link"
+        }
+      ]
+    },
+    {
+      "author": "MyCallBag",
+      "score": 37,
+      "body": "I think it’s more about providing value than complexity. But agreed if easy to copy you’re in trouble.",
+      "created_utc": 1767793707.0,
+      "replies": [
+        {
+          "author": "spinozasrobot",
+          "score": 13,
+          "body": "I think complexity is often a proxy of domain value.  It would be hard to duplicate an app with deep domain expertise, which is what OP is alluding to.  If you had an app that did a single simple thing, say a calculation, it might provide significant value, but if it's easy to copy, it's that race to the bottom.\n\nAn example are marine navigation apps. There aren't that many that really get the domain right at scale."
+        },
+        {
+          "author": "sandspiegel",
+          "score": 2,
+          "body": "I wonder what all vibe coders gonna do once they realize their AI powered Gym Tracker is one of hundreds released recently and has no value especially long term."
+        }
+      ]
+    },
+    {
+      "author": "NiceEbb5997",
+      "score": 15,
+      "body": "Some apps look simple on the surface but are brutally hard underneath because they sit in a real workflow (edge cases, reliability, trust)",
+      "created_utc": 1767792595.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 6,
+          "body": "That’s the kind of app that usually work, but only after time, real usage, and a lot of user feedback to refine it."
+        }
+      ]
+    },
+    {
+      "author": "japanesesword",
+      "score": 13,
+      "body": "Great work and all. But the fact that we’re all fawning over $5k/month is… something.",
+      "created_utc": 1767795619.0,
+      "replies": [
+        {
+          "author": "M00SEK",
+          "score": 53,
+          "body": "5k/month is literally a salary, and majority of the work is done. He isn’t working 9-5, 5 days a week for $5k a month. Hes probably putting in a few hours of upgrades and maintenance a month, if that. \n\nThat is incredible and you’re naive to think otherwise."
+        },
+        {
+          "author": "postsantum",
+          "score": 10,
+          "body": "5k/month is literally taking your life back. It's a huge deal actually\n\nNot in numbers, but in the quality of life"
+        },
+        {
+          "author": "razzededge",
+          "score": 5,
+          "body": "in most countries in the world 4k~5k usd is a ton of money"
+        },
+        {
+          "author": "29satnam",
+          "score": 6,
+          "body": "If you compare it to someone making much more, you’re right. But if you compare it to apps that get little to no attention, then that comparison doesn’t really hold 🥲"
+        },
+        {
+          "author": "TekRabbit",
+          "score": 3,
+          "body": "$5k a month is almost 100k year for 9-5ers after taxes depending on where you live. It’s insane. You acting like thats not good as passive income is… something."
+        },
+        {
+          "author": "eldamien",
+          "score": 2,
+          "body": "$5k a month for apps that are already built and now basically in maintenance mode is...something, yes. It's what a lot of indie devs aspire to. \n\nI live in Japan. $5k a month is more than most *dual income* homes make in the majority of the country. And you're making it while also being able to still work on other things, as a recurring income."
+        }
+      ]
+    },
+    {
+      "author": "Rock_665",
+      "score": 8,
+      "body": "I developed about 4 months “SOS” app but got only ~70 downloads per month 😁 I think besides the unique app it needs to do some other things as well like promotion with SM?",
+      "created_utc": 1767791679.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 3,
+          "body": "I’ve never spent a single dollar on promotion. Honestly, I think if I did, I could probably make 5× what I make right now 😁\nThat said, you’re right, marketing is one way even shitty apps manage to sell"
+        }
+      ]
+    },
+    {
+      "author": "is_that_a_thing_now",
+      "score": 8,
+      "body": "As someone who has been working on a quite complicated app for quite some time, I want to thank you for posting this!\n\nCheers!",
+      "created_utc": 1767798012.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 3,
+          "body": "You’re very welcome.\nI hope your app gets the attention it deserves and finds its users."
+        }
+      ]
+    },
+    {
+      "author": "WestonP",
+      "score": 6,
+      "body": "It's only been this way for well over a decade. Yeah, the first flashlight and fart noise apps made good money in like 2009, but simple apps have been a race to the bottom ever since. Don't waste your time or further clutter the App Store with quick cash grab attempts. Build something actually unique and useful.",
+      "created_utc": 1767799576.0,
+      "replies": []
+    },
+    {
+      "author": "Away_Expression_3713",
+      "score": 3,
+      "body": "how did u ACTUALLY levaraged aso? like something u feel that this worked  \nhow u put in your researchkeywords?\n\nusing difficulty and popular score or suggested keywords?",
+      "created_utc": 1767794513.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 7,
+          "body": "I’m not afraid of targeting highly competitive keywords. That mainly matters for App Store Search Ads, not ASO. For ASO, the key is to use as many relevant keywords as possible without repeating any.\n\nThe most important keywords should go in the app title, secondary ones in the subtitle, then the keyword field for the primary language, followed by localized keywords for other languages."
+        }
+      ]
+    },
+    {
+      "author": "siar619",
+      "score": 3,
+      "body": "do you use swift for development?",
+      "created_utc": 1767803257.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 3,
+          "body": "Yep!"
+        }
+      ]
+    },
+    {
+      "author": "ernestobad",
+      "score": 2,
+      "body": "Interestingly I was just reading this list of “Consumer AI predictions” by a startup founder (Wabi). The 5th prediction, “performance marketing for apps is dead”, is actually describing the same thing as you: https://x.com/ekuyda/status/2008611849189945662?s=46",
+      "created_utc": 1767800010.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 2,
+          "body": "Interesting, that makes sense. Ads are working less, so having a genuinely good product that grows organically matters more now."
+        }
+      ]
+    },
+    {
+      "author": "Nunu_Shonnashi",
+      "score": 2,
+      "body": "You are 100% on the money. Bandwagon products ultimately are a race to the bottom. There is no shortcut, only iteration",
+      "created_utc": 1767804019.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 2,
+          "body": "Couldn’t agree more. 👍"
+        }
+      ]
+    },
+    {
+      "author": "MC68328",
+      "score": 2,
+      "body": "&gt; The App Store doesn’t reward shortcuts.\n\nNo, it rewards shortcuts, you just haven't kept your expenses low enough for that to be profitable. Those copies are there for a reason.\n\nSure, they're better about filtering than Google, but don't glaze Apple, they have no love for you, you only exist for them to extract rent from.",
+      "created_utc": 1767805960.0,
+      "replies": []
+    },
+    {
+      "author": "KausHere",
+      "score": 2,
+      "body": "Nice. But promotion is also important. You could have the best app but no point if no one knows.",
+      "created_utc": 1767808422.0,
+      "replies": []
+    },
+    {
+      "author": "fukofukofuko",
+      "score": 2,
+      "body": "Do you think you can keep it as a primary source of income in 2026? Or do you think vibe coded apps will break Appstore for indie devs?",
+      "created_utc": 1767808474.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 5,
+          "body": "Vibe-coded apps might flood the store, but they won’t break it.\nQuality, trust, and real product value will still matter, especially for indie devs who iterate and listen to users."
+        }
+      ]
+    },
+    {
+      "author": "Mammoth_Try_2479",
+      "score": 2,
+      "body": "Strong numbers — steady weekly revenue with clear growth in IAPs is a great sign. Love how balanced the chart looks instead of a single spike. Curious what change drove the IAP jump during this window.",
+      "created_utc": 1767853531.0,
+      "replies": []
+    },
+    {
+      "author": "funnybitcreator",
+      "score": 2,
+      "body": "Great to hear this, so many is saying the opposite. That you should just pump out low quality, low effort apps. At least one per month until one sticks. I was really disappointed that so many had this attitude",
+      "created_utc": 1767858245.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 2,
+          "body": "One per month? That sounds insane. If someone has the time and energy for that, it makes more sense to build one really solid app and market it properly instead of pumping out low-effort stuff and hoping something sticks."
+        }
+      ]
+    },
+    {
+      "author": "OrkhanALikhanov",
+      "score": 2,
+      "body": "That's incredible. If I read correctly, you have multiple apps some with in app purchases some are sold upfront. Even a bundle. Hard work pays off.",
+      "created_utc": 1767992719.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 2,
+          "body": "Thank you! Yeah, I’ve tried a few different models, upfront, IAPs, and even a bundle. \nIt’s been a lot of trial and error, but consistent effort and iteration really do pay off over time."
+        }
+      ]
+    },
+    {
+      "author": "Majestic-Tap9810",
+      "score": 2,
+      "body": "Thanks for sharing your learning and experience.\nI would like to get answered before questions, I am new in indie development space:-\n1. What is the biggest mistake that one can do while choosing what app to build? For example:Is it choosing to build an app that has lot of competition? Or is it solving a more general not niche problem? anything else?\n\n2. How do you validate that what you are building or going to build would be worth it? Do you actually build it and many people pay for it, then only you can know or we can test before building it completely? \n\n3. Do you target android and ios store both in the beginning or you validate your app on one of the stores and then make effort to launch on other as well?\n\n\n4. How much hours of time for development does it take maximum and minimum for any app( this question is more generic, you can take example of any app and answer from that perspective). I'm asking this to make sure that I'm not spending unusua(very high or very low)l time duration.\n\n\n5. What type of app should we strictly avoid to build as an indie developer? For example; heavy games etc\n\n\nThanks in advance for patiently reading and replying.",
+      "created_utc": 1768129198.0,
+      "replies": []
+    },
+    {
+      "author": "Correct-Hearing255",
+      "score": 1,
+      "body": "Really valuable lesson :)",
+      "created_utc": 1767798656.0,
+      "replies": []
+    },
+    {
+      "author": "Heffertron",
+      "score": 1,
+      "body": "I tend to flip from a few in depth complicated apps, to some throwaway apps wondering where best to spend my time. \n\nDo you do anything above ASO and Apple Ads to help market your apps?",
+      "created_utc": 1767800342.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 2,
+          "body": "I usually target a niche first, then refine my ASO, test, and give it time. I focus on making the app really good and rely on peer-to-peer sharing. \nMy users end up spreading the word, so I don’t do any marketing at all."
+        }
+      ]
+    },
+    {
+      "author": "lavafrank",
+      "score": 1,
+      "body": "There's a caveat to what you're saying. The most complex apps don't win. I'll argue that they're actually a competitive disadvantage. There's a reason all these AI building tools say they can \"clone Spotify and Netflix\" in seconds. Those are wildly successful businesses, but the distribution is dead simple. Netflix is a video player. Spotify is a music player. They're best in class because of operations, not technology.",
+      "created_utc": 1767802320.0,
+      "replies": [
+        {
+          "author": "29satnam",
+          "score": 4,
+          "body": "I don’t think AI can truly clone Spotify or Netflix, and calling their distribution “dead simple” isn’t fair. What we see today is the result of thousands of refinements over years. They’re best in class because they excel at both product and technology, not just operations."
+        },
+        {
+          "author": "Doctor_Fegg",
+          "score": 2,
+          "body": "Well, they're best in class because of the content. Users don't differentiate between content and tech: they just see what the app can do for them."
+        }
+      ]
+    },
+    {
+      "author": "emirsolinno",
+      "score": 1,
+      "body": "How many years are we talking about?",
+      "created_utc": 1767808499.0,
+      "replies": []
+    },
+    {
+      "author": "arafatshahed",
+      "score": 1,
+      "body": "How do you validate idea?",
+      "created_utc": 1767811627.0,
+      "replies": []
+    },
+    {
+      "author": "Background_Badger544",
+      "score": 1,
+      "body": "Happy for you. I have been struggling to convert to paid users.",
+      "created_utc": 1767816670.0,
+      "replies": []
+    },
+    {
+      "author": "chakie2",
+      "score": 1,
+      "body": "You have succeeded really well with your app. I guess you’re in the top 1% of apps with revenue like that. I can’t lie and say I’m not jealous. :) Been working on my app for 7-8 years now and on good months I get 800€ before Apple’s huge cut. I’ve put in probably 100k€ worth of time into my app over the years but fortunately it’s just a side hustle and its success isn’t critical for my survival. It’s a great testbed for testing new stuff and ultimately for keeping my SwiftUI skills up to date.",
+      "created_utc": 1767819480.0,
+      "replies": []
+    },
+    {
+      "author": "gcampos",
+      "score": 1,
+      "body": "When the App Store was new, you could make some cash with low effort ideas.\n\nIn 2026, either you “product” is just a marketing machine or you truly have something unique",
+      "created_utc": 1767820169.0,
+      "replies": []
+    }
+  ]
+}

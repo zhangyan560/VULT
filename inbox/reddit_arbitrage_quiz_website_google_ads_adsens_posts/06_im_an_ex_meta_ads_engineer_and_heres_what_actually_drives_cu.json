@@ -1,0 +1,339 @@
+{
+  "id": "1gfsir1",
+  "title": "I'm an ex-Meta ads engineer, and here's what actually drives customer acquisition",
+  "subreddit": "DigitalMarketing",
+  "subreddit_prefixed": "r/DigitalMarketing",
+  "author": "Green_Database9919",
+  "score": 1123,
+  "upvote_ratio": 0.99,
+  "num_comments": 180,
+  "created_utc": 1730310267.0,
+  "url": "https://www.reddit.com/r/DigitalMarketing/comments/1gfsir1/im_an_exmeta_ads_engineer_and_heres_what_actually/",
+  "permalink": "https://www.reddit.com/r/DigitalMarketing/comments/1gfsir1/im_an_exmeta_ads_engineer_and_heres_what_actually/",
+  "selftext": "Hi everyone, I'm an ex-Meta engineer who spent 5+ years working on the ads algorithm team. And then I worked at Reddit as a Senior Engineer in their ads department as well.\n\nEdit: After leaving, I founded [Aimerce](https://www.aimerce.ai/?utm_source=reddit) to help Shopify brands fix the exact tracking and delivery issues I saw from the inside and honestly, it’s wild how many of the same patterns still show up.\n\nBased on my experience helping 120+ brands since leaving Meta, here's what actually works:\n\nI won't dive into details about idea validation or market fit—that should come before product creation. But if you already have a product in commerce or B2B, here's some underrated solutions to try to boost your rev:\n\n**Optimization**  \nFrom my time building Meta's ad delivery system, I know this is crucial. Your website needs perfect technical implementation or you're throwing money away. Key technical elements that feed into ad algorithms:\n\n* Server-side API integration (crucial since iOS 14)\n* First-party cookie implementation\n* Advanced matching parameters\n* Custom conversion events\n* Real-time event logging\n\nMost importantly: track every meaningful user interaction server-side. At Meta, we saw 3-4x better ad performance with proper server events vs client-side only.\n\n**First-Party Data Collection**  \nThis is what powers modern ad algorithms. Essential data points to collect:\n\n* User behavior patterns\n* Conversion paths\n* Time-to-conversion\n* Cart abandonment signals\n* Feature usage metrics\n\nPro tip: Log these events immediately server-side. There's a 30% data loss on average with client-side only. This means having your own first party data pixel or first party intelligence app instead of relying on third party pixels like the default you get from Meta, Google, or whatever ad platform you're using.\n\n**Algorithm Optimization**  \nHaving built these systems, here's what actually matters:\n\n* Event quality scores. These are more accurate when tracked server-side instead of a third party pixel.\n* Server-side conversion matching\n* Bidding strategy alignment\n* Creative performance signals. This one is most obvious.\n\nThe algorithm weighs server-sent signals 2-3x more than pixel data.\n\n**Email Engagement**  \nI'm a huge advocate of having a combination of paid and email marketing. When they work in tandem, you get the highest quality signals that can feed into each other for retargeting. Here's some flow that people usually miss:\n\n* abandoned cart for ecommerce\n* abandoned intent for b2b\n\nNote that abandoned cart/intent are explicitly different from abandoned checkout. At the checkout stage, you've already collected email address and have high-intent for conversion. Email marketing is going to be even more effective at the stage right before. For ecommerce, its going to be at the point of adding the cart. For B2B, it could be viewing the pricing page.\n\nMost people don't implement these flows because it often requires some manual work but if you're able to stitch user sessions across their history, you can use your cookies to understand if the visitor has shown interest in purchasing before and have a specific email flow for it! This is probably the most underrated solutions.\n\nPro Tip: Sync email engagement data back to ad platforms via server events. This improves targeting by 25-30%.\n\nThe key is quality first-party data feeding into platforms' algorithms. With proper implementation, I regularly see 2-3x ROAS improvement.\n\nWe’re seeing the same delivery issues pop up again and again especially in accounts using duplicated pixel setups or relying too heavily on GTM. At Aimerce, I've audited hundreds of Shopify brands this year alone, and it’s always the same root causes. Fix those and performance usually rebounds.\n\nMessage me if you need help with technical implementation details! I might do a dedicated post on this if there's interest!a",
+  "is_self": true,
+  "link_flair_text": "Discussion",
+  "_rel": 0.3,
+  "_weighted": 336.9,
+  "comments": [
+    {
+      "author": "AutoModerator",
+      "score": 1,
+      "body": "[If this post doesn't follow the rules report it to the mods](https://www.reddit.com/r/DigitalMarketing/about/rules/). Have more questions? [Join our community Discord!](https://discord.gg/looking-for-marketing-discussion-811236647760298024)\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/DigitalMarketing) if you have any questions or concerns.*",
+      "created_utc": 1768610271.0,
+      "replies": []
+    },
+    {
+      "author": "SnooEpiphanies7718",
+      "score": 93,
+      "body": "I would love a dedicated post for this!! Thanks for this valuable knowledge by the way!! 👏👏",
+      "created_utc": 1730313287.0,
+      "replies": [
+        {
+          "author": "Green_Database9919",
+          "score": 31,
+          "body": "Working on a post right now on how to \\*implement\\* first-party data tracking! Will leave a comment here when ready! Hopefully within the next day :)"
+        },
+        {
+          "author": "jstover777",
+          "score": 6,
+          "body": "Second this!"
+        },
+        {
+          "author": "PlantainUpstairs5845",
+          "score": 4,
+          "body": "I am interested too."
+        }
+      ]
+    },
+    {
+      "author": "kreativo03",
+      "score": 17,
+      "body": "Do you recommend both server side and client event tracking or only SST?",
+      "created_utc": 1730319773.0,
+      "replies": [
+        {
+          "author": "Dlamm10",
+          "score": 6,
+          "body": "This 👆"
+        },
+        {
+          "author": "Green_Database9919",
+          "score": 5,
+          "body": "I recommend using both, but prioritize server-side tracking as your source of truth. Server-side is more reliable for conversions and high-value actions (especially post-iOS 14), while client-side is good for capturing user behavior and serves as a backup. Having both gives you the most complete data picture, just make sure to implement deduplication logic to avoid double-counting events."
+        },
+        {
+          "author": "Thirtysixx",
+          "score": 3,
+          "body": "Both"
+        }
+      ]
+    },
+    {
+      "author": "ConBroMitch2247",
+      "score": 13,
+      "body": "Ok, but will my META rep ever return my email?",
+      "created_utc": 1730333074.0,
+      "replies": [
+        {
+          "author": "Green_Database9919",
+          "score": 3,
+          "body": "LOL you'd be surprise how often I get asked a question like this"
+        },
+        {
+          "author": "[deleted]",
+          "score": 3,
+          "body": "Haha that will never happen"
+        }
+      ]
+    },
+    {
+      "author": "PressOnRegardless",
+      "score": 10,
+      "body": "From a consumer standpoint, cart abandonment prompts or reminders about what I've been browsing on an retail site are ultimately creepy, intrusive, annoying, completely unwanted, ineffective, and usually cause me to unsubscribe from a mailing list and/or avoid revisiting a site. Just my reaction, though. I'm sure everyone else just loves those reminders.",
+      "created_utc": 1730333854.0,
+      "replies": [
+        {
+          "author": "SuccessfulCourage800",
+          "score": 12,
+          "body": "Quite the opposite if done right. I’ve gotten some great coupons or promotions for leaving my cart or not completing checkout.     \n\nIn fact, unless I need it right away, I wait 1-3 days to see what offers I’ll get. I probably save around $200 to $300 a month for my business. Half that for personal shopping "
+        }
+      ]
+    },
+    {
+      "author": "Autotransportg",
+      "score": 9,
+      "body": "Great post. Are you hirable for these services as a freelancer?",
+      "created_utc": 1730325669.0,
+      "replies": [
+        {
+          "author": "jefftala",
+          "score": 28,
+          "body": "I think that’s the entire point of his post."
+        }
+      ]
+    },
+    {
+      "author": "antijub",
+      "score": 9,
+      "body": "Ex-Meta of 10 years in ads in sales and product. Can confirm everything the OP has advocated for you to do. There are other things such as campaign simplification, awareness of creative fatigue and most importantly brand + dr to fuel full funnel optimization.",
+      "created_utc": 1730340273.0,
+      "replies": [
+        {
+          "author": "jstover777",
+          "score": 3,
+          "body": "Is Facebook Blueprint still a good resource to learn about running ads?"
+        }
+      ]
+    },
+    {
+      "author": "CartographerThat4286",
+      "score": 6,
+      "body": "My word, this needs to be deleted! I can’t charge $1000 USD for an initial consultation anymore.",
+      "created_utc": 1730310674.0,
+      "replies": []
+    },
+    {
+      "author": "benl5442",
+      "score": 7,
+      "body": "Do you know the server side integration, does it help in the eu if you run it off a ga4 tag. Eg, I have a server side gtm. I use ga4 to send events to my server gtm and then send to the capi. Does this work better than sending straight via the meta pixel?\n\nMy initial thoughts are that as you need consent for ga4 and the meta pixel, there would be no difference or does iOS lock the meta pixel but not ga4",
+      "created_utc": 1730315335.0,
+      "replies": []
+    },
+    {
+      "author": "Adapowers",
+      "score": 5,
+      "body": "Thank you for doing this! Please do a dedicated post!",
+      "created_utc": 1730321946.0,
+      "replies": []
+    },
+    {
+      "author": "crushingcorporate",
+      "score": 5,
+      "body": "Dedicated post please",
+      "created_utc": 1730317569.0,
+      "replies": []
+    },
+    {
+      "author": "No_Nobody_8948",
+      "score": 4,
+      "body": "We need a dedicated post!!",
+      "created_utc": 1730321737.0,
+      "replies": []
+    },
+    {
+      "author": "pettipapi",
+      "score": 4,
+      "body": "Just here to add that we need a dedicated post \n\nThanks for the write up and SUPER valuable information OP",
+      "created_utc": 1730343266.0,
+      "replies": []
+    },
+    {
+      "author": "jpdejean",
+      "score": 4,
+      "body": "![gif](emote|free_emotes_pack|thumbs_up)",
+      "created_utc": 1730318336.0,
+      "replies": []
+    },
+    {
+      "author": "randomasitisormore",
+      "score": 2,
+      "body": "Yes, dedicated post please!",
+      "created_utc": 1730314626.0,
+      "replies": []
+    },
+    {
+      "author": "ClackamasLivesMatter",
+      "score": 3,
+      "body": "&gt; Pro Tip: Sync email engagement data back to ad platforms via server events. This improves targeting by 25-30%.\n\nVanna, can I buy a vowel?",
+      "created_utc": 1730319601.0,
+      "replies": []
+    },
+    {
+      "author": "lolipopccy",
+      "score": 3,
+      "body": "I have heard so many times about this first-party data concept now!! Interesting that you mentioned about it? How do you help the brands you mentioned? Is there a tool?",
+      "created_utc": 1730327088.0,
+      "replies": []
+    },
+    {
+      "author": "bodhisattvass",
+      "score": 3,
+      "body": "Very informative post and I agree with everything you said. I’ve been working in this business for 10 years and every time I mention things like SST, leveraging first-hand data, custom events etc. to clients they shy away from the topic completely and confidently and blindly stumble through their advertising relying on next to nothing in terms of data insights and just banking on what has worked for them in the past.",
+      "created_utc": 1730354892.0,
+      "replies": []
+    },
+    {
+      "author": "Miserable_Cupcake_75",
+      "score": 3,
+      "body": "Hello, sir! Thank you for your valuable info. As affiliate marketers we have a lot of voodoo moves that sometimes tend to work and sometimes don't. One of these - is sharing the same pixel for different accounts that run offers from the same vertical. Some people say that it makes their campaigns find the right audience faster/better, some (like me) don't see any difference. Do you happen to know if pixel sharing makes any change or is it just cargo cult?",
+      "created_utc": 1730725227.0,
+      "replies": []
+    },
+    {
+      "author": "ZeroToHeroInvest",
+      "score": 2,
+      "body": "Imagine if you would build something that does this out of the box :)",
+      "created_utc": 1730326803.0,
+      "replies": []
+    },
+    {
+      "author": "Oscll8or",
+      "score": 2,
+      "body": "Yes, dedicated post, please. Amazing breakdown.",
+      "created_utc": 1730327259.0,
+      "replies": []
+    },
+    {
+      "author": "Jabburr",
+      "score": 2,
+      "body": "What happened to the days of just posting a simple ad and getting a positive return?",
+      "created_utc": 1730337225.0,
+      "replies": [
+        {
+          "author": "ApprehensiveTruth729",
+          "score": 3,
+          "body": "Those are pre iOS 14 days. Welcome to the post iOS 14 era. "
+        }
+      ]
+    },
+    {
+      "author": "magnet598",
+      "score": 2,
+      "body": "Phenomenal post I’ll come back to this for sure",
+      "created_utc": 1730344124.0,
+      "replies": []
+    },
+    {
+      "author": "gregariousone",
+      "score": 2,
+      "body": "RemindMe! 7 days",
+      "created_utc": 1730344517.0,
+      "replies": []
+    },
+    {
+      "author": "Embarrassed_Group127",
+      "score": 2,
+      "body": "For 1P data collection, what tools would you recommend? Building a consumer-facing app and saw Mixpanel but wondering if the process here would be different from an e-commerce website?",
+      "created_utc": 1730355037.0,
+      "replies": []
+    },
+    {
+      "author": "ratherberidingbikes",
+      "score": 2,
+      "body": "RemindMe! 5 days",
+      "created_utc": 1730357551.0,
+      "replies": []
+    },
+    {
+      "author": "ratherberidingbikes",
+      "score": 2,
+      "body": "Dedicated post please!!",
+      "created_utc": 1730357629.0,
+      "replies": []
+    },
+    {
+      "author": "caffeinatedppc",
+      "score": 2,
+      "body": "Dedicated post please!",
+      "created_utc": 1730361680.0,
+      "replies": []
+    },
+    {
+      "author": "[deleted]",
+      "score": 2,
+      "body": "How would you do all this with a Wordpress website?",
+      "created_utc": 1730362767.0,
+      "replies": []
+    },
+    {
+      "author": "Alno1",
+      "score": 2,
+      "body": "This is amazing. Dedicated post on this please. Also, are there tools/sass that facilitate implementation?",
+      "created_utc": 1730366776.0,
+      "replies": []
+    },
+    {
+      "author": "innovatekit",
+      "score": 2,
+      "body": "Dedicated post please!!!",
+      "created_utc": 1730366890.0,
+      "replies": []
+    },
+    {
+      "author": "rabailpervezabbasi",
+      "score": 2,
+      "body": "Remindme! 3 days",
+      "created_utc": 1730369418.0,
+      "replies": []
+    },
+    {
+      "author": "sunurban_trn",
+      "score": 2,
+      "body": "Gold post. Therefore, using Meta pixel to track traffic on the landing page is not the optimal solution? What do you mean with server-side tracking etc.?",
+      "created_utc": 1730373080.0,
+      "replies": []
+    },
+    {
+      "author": "phyziro",
+      "score": 2,
+      "body": "Hello, please DM me! Would love to discuss this in detail. I’m the founder of a startup company that has a Smart Cart™️ product. We do a good portion of what you discussed already but I’d like to possibly collaborate with you on improving the product!😁",
+      "created_utc": 1730393335.0,
+      "replies": []
+    },
+    {
+      "author": "Specific-Wafer8426",
+      "score": 2,
+      "body": "This is a great post, thank you for this!  \nAs someone working in health martech, SS and first party data implementation for following HIPAA is essential. Difference between SS and client side is big when it comes to collecting necessary data vs just collecting everything",
+      "created_utc": 1730399623.0,
+      "replies": []
+    },
+    {
+      "author": "[deleted]",
+      "score": 2,
+      "body": "Thanks for these valuable insights",
+      "created_utc": 1730409036.0,
+      "replies": []
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+# Obsidian 缓存与插件
+.obsidian/cache/
+.obsidian/plugins/
+.obsidian/community-plugins.json
+.obsidian/sync.json
+.obsidian/appearance.json
+.obsidian/app.json
+.obsidian/hotkeys.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+.dropbox
+
+# 敏感信息
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# 临时文件
+*.tmp
+*.log
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Node/其他包管理
+node_modules/
+.npm
+package-lock.json
+yarn.lock

@@ -1,0 +1,356 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <!-- Orange gradient -->
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f57c00"/>
+      <stop offset="100%" stop-color="#ff8f00"/>
+    </linearGradient>
+    <!-- Amber gradient -->
+    <linearGradient id="amberGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff8f00"/>
+      <stop offset="100%" stop-color="#ffc107"/>
+    </linearGradient>
+    <!-- Card gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e2a45"/>
+      <stop offset="100%" stop-color="#162035"/>
+    </linearGradient>
+    <!-- Funnel gradients -->
+    <linearGradient id="funnelGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f57c00" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff8f00" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="funnelGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e65100" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f57c00" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="funnelGrad3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#bf360c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e64a19" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="funnelGrad4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8d1f00" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#bf360c" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="funnelGrad5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4e0000" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#6d0000" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glowOrange">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Arrow marker -->
+    <marker id="arrowOrange" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ff8f00"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ffc107"/>
+    </marker>
+    <marker id="arrowWhite" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="rgba(255,255,255,0.6)"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)"/>
+
+  <!-- Decorative top bar -->
+  <rect x="0" y="0" width="800" height="4" fill="url(#orangeGrad)"/>
+
+  <!-- Subtle background shapes -->
+  <circle cx="720" cy="120" r="140" fill="#f57c00" fill-opacity="0.04"/>
+  <circle cx="80" cy="880" r="100" fill="#ff8f00" fill-opacity="0.04"/>
+
+  <!-- ===== HEADER ===== -->
+  <rect x="40" y="20" width="720" height="70" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="40" y="20" width="5" height="70" rx="2" fill="url(#orangeGrad)"/>
+  <text x="400" y="50" text-anchor="middle" fill="#ff8f00" font-size="11" font-weight="600" letter-spacing="4">联盟营销系列 · 第三篇</text>
+  <text x="400" y="74" text-anchor="middle" fill="white" font-size="22" font-weight="700">转化率优化 · 完整方法论</text>
+
+  <!-- ===== SECTION 1: 转化追踪机制 ===== -->
+  <!-- Section label -->
+  <rect x="40" y="108" width="160" height="26" rx="4" fill="url(#orangeGrad)"/>
+  <text x="120" y="125" text-anchor="middle" fill="white" font-size="12" font-weight="700">01  转化追踪机制</text>
+
+  <!-- Main tracking flow card -->
+  <rect x="40" y="142" width="720" height="78" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="40" y="142" width="720" height="2" rx="1" fill="url(#orangeGrad)"/>
+
+  <!-- Flow steps -->
+  <!-- Step 1 -->
+  <rect x="56" y="158" width="118" height="46" rx="6" fill="#f57c00" fill-opacity="0.18"/>
+  <rect x="56" y="158" width="118" height="2" rx="1" fill="#f57c00"/>
+  <text x="115" y="178" text-anchor="middle" fill="#ffc107" font-size="10" font-weight="700">唯一联属链接</text>
+  <text x="115" y="193" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="9">Affiliate Link</text>
+
+  <!-- Arrow -->
+  <line x1="178" y1="181" x2="198" y2="181" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 2 -->
+  <rect x="202" y="158" width="100" height="46" rx="6" fill="#ff8f00" fill-opacity="0.18"/>
+  <rect x="202" y="158" width="100" height="2" rx="1" fill="#ff8f00"/>
+  <text x="252" y="178" text-anchor="middle" fill="#ffc107" font-size="10" font-weight="700">Cookie 植入</text>
+  <text x="252" y="193" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="9">浏览器存储</text>
+
+  <!-- Arrow -->
+  <line x1="306" y1="181" x2="326" y2="181" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 3 -->
+  <rect x="330" y="158" width="128" height="46" rx="6" fill="#f57c00" fill-opacity="0.18"/>
+  <rect x="330" y="158" width="128" height="2" rx="1" fill="#f57c00"/>
+  <text x="394" y="178" text-anchor="middle" fill="#ffc107" font-size="10" font-weight="700">有效期内购买</text>
+  <text x="394" y="193" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="9">Cookie 期内成交</text>
+
+  <!-- Arrow -->
+  <line x1="462" y1="181" x2="482" y2="181" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 4 -->
+  <rect x="486" y="158" width="100" height="46" rx="6" fill="#ff8f00" fill-opacity="0.18"/>
+  <rect x="486" y="158" width="100" height="2" rx="1" fill="#ff8f00"/>
+  <text x="536" y="178" text-anchor="middle" fill="#ffc107" font-size="10" font-weight="700">佣金归属</text>
+  <text x="536" y="193" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="9">自动结算</text>
+
+  <!-- Cookie duration -->
+  <rect x="600" y="158" width="152" height="46" rx="6" fill="rgba(255,193,7,0.1)" stroke="#ffc107" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="676" y="173" text-anchor="middle" fill="#ffc107" font-size="9" font-weight="700">Cookie 有效期</text>
+  <text x="676" y="187" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8.5">Amazon: 24h</text>
+  <text x="676" y="199" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8.5">大多平台: 30–90天</text>
+
+  <!-- ===== SECTION 2: 高转化5大法则 ===== -->
+  <rect x="40" y="236" width="160" height="26" rx="4" fill="url(#orangeGrad)"/>
+  <text x="120" y="253" text-anchor="middle" fill="white" font-size="12" font-weight="700">02  高转化 5 大法则</text>
+
+  <!-- Law cards - row 1 -->
+  <!-- Law 1 -->
+  <rect x="40" y="270" width="224" height="92" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="40" y="270" width="224" height="3" rx="1" fill="#f57c00"/>
+  <circle cx="64" cy="289" r="12" fill="url(#orangeGrad)"/>
+  <text x="64" y="294" text-anchor="middle" fill="white" font-size="11" font-weight="800">1</text>
+  <text x="84" y="293" fill="#ff8f00" font-size="12" font-weight="700">对比原则</text>
+  <!-- Before/After mini flow -->
+  <rect x="52" y="306" width="70" height="28" rx="4" fill="rgba(150,150,150,0.2)"/>
+  <text x="87" y="319" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="9" font-weight="600">Before</text>
+  <text x="87" y="330" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="8">用户痛点</text>
+  <line x1="126" y1="320" x2="142" y2="320" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+  <rect x="146" y="306" width="70" height="28" rx="4" fill="rgba(245,124,0,0.25)"/>
+  <text x="181" y="319" text-anchor="middle" fill="#ffc107" font-size="9" font-weight="600">After</text>
+  <text x="181" y="330" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="8">产品解决</text>
+  <text x="152" y="353" fill="rgba(255,255,255,0.5)" font-size="8">视觉反差最大化点击欲望</text>
+
+  <!-- Law 2 -->
+  <rect x="288" y="270" width="224" height="92" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="288" y="270" width="224" height="3" rx="1" fill="#ff8f00"/>
+  <circle cx="312" cy="289" r="12" fill="url(#orangeGrad)"/>
+  <text x="312" y="294" text-anchor="middle" fill="white" font-size="11" font-weight="800">2</text>
+  <text x="332" y="293" fill="#ff8f00" font-size="12" font-weight="700">CTA 置顶</text>
+  <rect x="300" y="304" width="200" height="22" rx="4" fill="rgba(245,124,0,0.3)" stroke="#f57c00" stroke-width="1"/>
+  <text x="304" y="319" fill="#ffc107" font-size="9" font-weight="700">[ 点击获取 30% 独家折扣 → ]</text>
+  <text x="305" y="342" fill="rgba(255,255,255,0.5)" font-size="8">描述栏最顶部，无需滑动即可见</text>
+  <text x="305" y="354" fill="rgba(255,255,255,0.5)" font-size="8">每增加一步滚动，点击率下降 ~40%</text>
+
+  <!-- Law 3 -->
+  <rect x="536" y="270" width="224" height="92" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="536" y="270" width="224" height="3" rx="1" fill="#ffc107"/>
+  <circle cx="560" cy="289" r="12" fill="url(#orangeGrad)"/>
+  <text x="560" y="294" text-anchor="middle" fill="white" font-size="11" font-weight="800">3</text>
+  <text x="580" y="293" fill="#ff8f00" font-size="12" font-weight="700">折扣码紧迫感</text>
+  <rect x="548" y="306" width="200" height="24" rx="12" fill="url(#orangeGrad)"/>
+  <text x="648" y="323" text-anchor="middle" fill="white" font-size="11" font-weight="800">独家 30% 优惠码</text>
+  <text x="553" y="350" fill="rgba(255,255,255,0.5)" font-size="8">稀缺性 + 专属感 → 立即行动</text>
+  <text x="553" y="361" fill="rgba(255,255,255,0.5)" font-size="8">限时叠加：转化率提升 2-3×</text>
+
+  <!-- Row 2 - Laws 4 & 5 -->
+  <!-- Law 4 -->
+  <rect x="40" y="372" width="344" height="82" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="40" y="372" width="344" height="3" rx="1" fill="#f57c00"/>
+  <circle cx="64" cy="391" r="12" fill="url(#orangeGrad)"/>
+  <text x="64" y="396" text-anchor="middle" fill="white" font-size="11" font-weight="800">4</text>
+  <text x="84" y="395" fill="#ff8f00" font-size="12" font-weight="700">真实信任</text>
+  <!-- Trust indicators -->
+  <rect x="52" y="406" width="80" height="26" rx="4" fill="rgba(76,175,80,0.2)" stroke="rgba(76,175,80,0.4)" stroke-width="1"/>
+  <text x="92" y="424" text-anchor="middle" fill="#81c784" font-size="9" font-weight="600">亲身使用</text>
+  <rect x="146" y="406" width="80" height="26" rx="4" fill="rgba(76,175,80,0.2)" stroke="rgba(76,175,80,0.4)" stroke-width="1"/>
+  <text x="186" y="424" text-anchor="middle" fill="#81c784" font-size="9" font-weight="600">真实测评</text>
+  <rect x="240" y="406" width="80" height="26" rx="4" fill="rgba(76,175,80,0.2)" stroke="rgba(76,175,80,0.4)" stroke-width="1"/>
+  <text x="280" y="424" text-anchor="middle" fill="#81c784" font-size="9" font-weight="600">长期背书</text>
+  <text x="52" y="447" fill="rgba(255,255,255,0.5)" font-size="8">只推广亲测产品 → 受众信任 → 持续复购 → 收入稳定</text>
+
+  <!-- Law 5 -->
+  <rect x="408" y="372" width="352" height="82" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="408" y="372" width="352" height="3" rx="1" fill="#ff8f00"/>
+  <circle cx="432" cy="391" r="12" fill="url(#orangeGrad)"/>
+  <text x="432" y="396" text-anchor="middle" fill="white" font-size="11" font-weight="800">5</text>
+  <text x="452" y="395" fill="#ff8f00" font-size="12" font-weight="700">后续公式 · 二次转化</text>
+  <!-- Flow -->
+  <rect x="420" y="406" width="60" height="26" rx="4" fill="rgba(245,124,0,0.25)"/>
+  <text x="450" y="424" text-anchor="middle" fill="#ffc107" font-size="8.5" font-weight="600">爆款视频</text>
+  <line x1="484" y1="419" x2="498" y2="419" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+  <rect x="502" y="406" width="60" height="26" rx="4" fill="rgba(245,124,0,0.25)"/>
+  <text x="532" y="424" text-anchor="middle" fill="#ffc107" font-size="8.5" font-weight="600">回复评论</text>
+  <line x1="566" y1="419" x2="580" y2="419" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+  <rect x="584" y="406" width="68" height="26" rx="4" fill="rgba(245,124,0,0.25)"/>
+  <text x="618" y="419" text-anchor="middle" fill="#ffc107" font-size="8.5" font-weight="600">Q&amp;A 视频</text>
+  <text x="618" y="430" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7">深度内容</text>
+  <line x1="656" y1="419" x2="670" y2="419" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+  <rect x="674" y="406" width="76" height="26" rx="4" fill="rgba(255,193,7,0.2)" stroke="#ffc107" stroke-width="1"/>
+  <text x="712" y="419" text-anchor="middle" fill="#ffc107" font-size="8.5" font-weight="700">二次转化</text>
+  <text x="712" y="430" text-anchor="middle" fill="#ffc107" font-size="7">复购+新客</text>
+
+  <!-- ===== SECTION 3: 转化漏斗 ===== -->
+  <rect x="40" y="470" width="160" height="26" rx="4" fill="url(#orangeGrad)"/>
+  <text x="120" y="487" text-anchor="middle" fill="white" font-size="12" font-weight="700">03  转化漏斗</text>
+
+  <rect x="40" y="504" width="720" height="182" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="40" y="504" width="720" height="2" rx="1" fill="url(#orangeGrad)"/>
+
+  <!-- Funnel trapezoids -->
+  <!-- Level 1: 流量/曝光 - widest -->
+  <polygon points="120,518 680,518 650,548 150,548" fill="url(#funnelGrad1)"/>
+  <text x="400" y="538" text-anchor="middle" fill="white" font-size="12" font-weight="700">流量 · 曝光</text>
+  <text x="92" y="537" text-anchor="end" fill="rgba(255,255,255,0.5)" font-size="9">100%</text>
+
+  <!-- Level 2 -->
+  <polygon points="150,552 650,552 618,582 182,582" fill="url(#funnelGrad2)"/>
+  <text x="400" y="572" text-anchor="middle" fill="white" font-size="12" font-weight="700">点击链接</text>
+  <text x="92" y="571" text-anchor="end" fill="rgba(255,255,255,0.5)" font-size="9">2–5%</text>
+
+  <!-- Level 3 -->
+  <polygon points="182,586 618,586 585,616 215,616" fill="url(#funnelGrad3)"/>
+  <text x="400" y="606" text-anchor="middle" fill="white" font-size="11" font-weight="700">到达产品页</text>
+  <text x="92" y="605" text-anchor="end" fill="rgba(255,255,255,0.5)" font-size="9">60–80%</text>
+  <text x="706" y="605" fill="rgba(255,255,255,0.5)" font-size="9">留存</text>
+
+  <!-- Level 4 -->
+  <polygon points="215,620 585,620 550,650 250,650" fill="url(#funnelGrad4)"/>
+  <text x="400" y="640" text-anchor="middle" fill="white" font-size="11" font-weight="700">加入购物车</text>
+  <text x="92" y="639" text-anchor="end" fill="rgba(255,255,255,0.5)" font-size="9">30–50%</text>
+
+  <!-- Level 5: narrowest -->
+  <polygon points="250,654 550,654 510,684 290,684" fill="url(#funnelGrad5)"/>
+  <text x="400" y="674" text-anchor="middle" fill="#ffc107" font-size="12" font-weight="800">完成购买</text>
+  <text x="92" y="673" text-anchor="end" fill="#ffc107" font-size="9">1–3%</text>
+
+  <!-- Key insight -->
+  <rect x="56" y="692" width="688" height="28" rx="6" fill="rgba(245,124,0,0.15)" stroke="#f57c00" stroke-width="1"/>
+  <text x="400" y="711" text-anchor="middle" fill="#ff8f00" font-size="10" font-weight="600">核心原则：每一步都有流失 · 减少摩擦 = 提升最终转化 · 每减少 1 步可提升 20–40% 转化</text>
+
+  <!-- ===== SECTION 4: 平台路径对比 ===== -->
+  <rect x="40" y="700" width="160" height="26" rx="4" fill="url(#orangeGrad)"/>
+  <text x="120" y="717" text-anchor="middle" fill="white" font-size="12" font-weight="700">04  平台转化路径对比</text>
+
+  <!-- Platform cards -->
+  <!-- TikTok Shop -->
+  <rect x="40" y="734" width="220" height="100" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="40" y="734" width="220" height="3" rx="1" fill="#f57c00"/>
+  <!-- Badge -->
+  <rect x="52" y="746" width="80" height="20" rx="10" fill="url(#orangeGrad)"/>
+  <text x="92" y="760" text-anchor="middle" fill="white" font-size="9" font-weight="800">TikTok Shop</text>
+  <rect x="144" y="748" width="44" height="16" rx="8" fill="rgba(76,175,80,0.3)" stroke="#81c784" stroke-width="1"/>
+  <text x="166" y="760" text-anchor="middle" fill="#81c784" font-size="8" font-weight="700">2 步</text>
+  <!-- Path -->
+  <rect x="52" y="774" width="62" height="22" rx="4" fill="rgba(245,124,0,0.2)"/>
+  <text x="83" y="789" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8.5">视频</text>
+  <line x1="118" y1="785" x2="130" y2="785" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+  <rect x="134" y="774" width="80" height="22" rx="4" fill="rgba(255,193,7,0.25)" stroke="#ffc107" stroke-width="1"/>
+  <text x="174" y="789" text-anchor="middle" fill="#ffc107" font-size="8.5" font-weight="700">直接购买</text>
+  <text x="52" y="826" fill="rgba(255,255,255,0.4)" font-size="8">最短路径，转化率最高</text>
+
+  <!-- YouTube -->
+  <rect x="276" y="734" width="248" height="100" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="276" y="734" width="248" height="3" rx="1" fill="#ff8f00"/>
+  <rect x="288" y="746" width="60" height="20" rx="10" fill="rgba(255,0,0,0.3)" stroke="rgba(255,80,80,0.5)" stroke-width="1"/>
+  <text x="318" y="760" text-anchor="middle" fill="#ff8080" font-size="9" font-weight="800">YouTube</text>
+  <rect x="360" y="748" width="44" height="16" rx="8" fill="rgba(255,193,7,0.2)" stroke="#ffc107" stroke-width="1"/>
+  <text x="382" y="760" text-anchor="middle" fill="#ffc107" font-size="8" font-weight="700">3 步</text>
+  <!-- Path -->
+  <rect x="288" y="774" width="42" height="22" rx="4" fill="rgba(245,124,0,0.2)"/>
+  <text x="309" y="789" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">视频</text>
+  <line x1="334" y1="785" x2="344" y2="785" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+  <rect x="348" y="774" width="60" height="22" rx="4" fill="rgba(245,124,0,0.2)"/>
+  <text x="378" y="789" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8">描述栏链接</text>
+  <line x1="412" y1="785" x2="422" y2="785" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+  <rect x="426" y="774" width="80" height="22" rx="4" fill="rgba(255,193,7,0.2)" stroke="#ffc107" stroke-width="1"/>
+  <text x="466" y="789" text-anchor="middle" fill="#ffc107" font-size="8.5" font-weight="700">产品页购买</text>
+  <text x="288" y="826" fill="rgba(255,255,255,0.4)" font-size="8">SEO 长尾流量，转化稳定</text>
+
+  <!-- Instagram -->
+  <rect x="540" y="734" width="220" height="100" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="540" y="734" width="220" height="3" rx="1" fill="#ffc107"/>
+  <rect x="552" y="746" width="72" height="20" rx="10" fill="rgba(180,0,180,0.3)" stroke="rgba(200,100,200,0.5)" stroke-width="1"/>
+  <text x="588" y="760" text-anchor="middle" fill="#e0a0e0" font-size="9" font-weight="800">Instagram</text>
+  <rect x="636" y="748" width="52" height="16" rx="8" fill="rgba(255,152,0,0.2)" stroke="#ffb74d" stroke-width="1"/>
+  <text x="662" y="760" text-anchor="middle" fill="#ffb74d" font-size="8" font-weight="700">4–5 步</text>
+  <!-- Path (vertical) -->
+  <text x="552" y="782" fill="rgba(255,255,255,0.7)" font-size="8">视频 → 主页 → Bio链接 → 产品页</text>
+  <rect x="552" y="791" width="192" height="16" rx="4" fill="rgba(255,152,0,0.15)"/>
+  <text x="648" y="803" text-anchor="middle" fill="#ffb74d" font-size="8">步骤最多 · 需强钩子维持注意力</text>
+  <text x="552" y="826" fill="rgba(255,255,255,0.4)" font-size="8">视觉内容强，靠品牌信任驱动</text>
+
+  <!-- ===== SECTION 5: 邮件自动化系统 ===== -->
+  <rect x="40" y="850" width="160" height="26" rx="4" fill="url(#orangeGrad)"/>
+  <text x="120" y="867" text-anchor="middle" fill="white" font-size="12" font-weight="700">05  邮件自动化系统</text>
+
+  <rect x="40" y="884" width="720" height="80" rx="8" fill="url(#cardGrad)" filter="url(#shadow)"/>
+  <rect x="40" y="884" width="720" height="2" rx="1" fill="url(#amberGrad)"/>
+
+  <!-- Email flow steps -->
+  <!-- Step 1 -->
+  <rect x="58" y="898" width="108" height="46" rx="6" fill="rgba(245,124,0,0.2)" stroke="#f57c00" stroke-width="1"/>
+  <text x="112" y="916" text-anchor="middle" fill="#ff8f00" font-size="9" font-weight="700">Lead Magnet</text>
+  <text x="112" y="929" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="8">免费资源诱饵</text>
+  <text x="112" y="940" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7.5">eBook/模板/教程</text>
+
+  <!-- Arrow -->
+  <line x1="170" y1="921" x2="184" y2="921" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 2 -->
+  <rect x="188" y="898" width="108" height="46" rx="6" fill="rgba(245,124,0,0.2)" stroke="#ff8f00" stroke-width="1"/>
+  <text x="242" y="916" text-anchor="middle" fill="#ff8f00" font-size="9" font-weight="700">订阅邮件列表</text>
+  <text x="242" y="929" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="8">用户留下邮箱</text>
+  <text x="242" y="940" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7.5">构建私域资产</text>
+
+  <!-- Arrow -->
+  <line x1="300" y1="921" x2="314" y2="921" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 3 -->
+  <rect x="318" y="898" width="108" height="46" rx="6" fill="rgba(245,124,0,0.2)" stroke="#ffc107" stroke-width="1"/>
+  <text x="372" y="916" text-anchor="middle" fill="#ffc107" font-size="9" font-weight="700">自动化序列</text>
+  <text x="372" y="929" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="8">预设邮件队列</text>
+  <text x="372" y="940" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7.5">Day1/3/7/14...</text>
+
+  <!-- Arrow -->
+  <line x1="430" y1="921" x2="444" y2="921" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 4 -->
+  <rect x="448" y="898" width="108" height="46" rx="6" fill="rgba(245,124,0,0.2)" stroke="#ff8f00" stroke-width="1"/>
+  <text x="502" y="916" text-anchor="middle" fill="#ff8f00" font-size="9" font-weight="700">持续产品推荐</text>
+  <text x="502" y="929" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="8">联属链接嵌入</text>
+  <text x="502" y="940" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7.5">内容 + 推荐融合</text>
+
+  <!-- Arrow -->
+  <line x1="560" y1="921" x2="574" y2="921" stroke="#ff8f00" stroke-width="1.5" marker-end="url(#arrowOrange)"/>
+
+  <!-- Step 5 -->
+  <rect x="578" y="898" width="140" height="46" rx="6" fill="rgba(255,193,7,0.2)" stroke="#ffc107" stroke-width="1.5"/>
+  <text x="648" y="914" text-anchor="middle" fill="#ffc107" font-size="10" font-weight="800">被动收入</text>
+  <text x="648" y="928" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="8">一次搭建 · 长期运行</text>
+  <text x="648" y="940" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="7.5">睡眠时也在赚钱</text>
+
+  <!-- ===== FOOTER ===== -->
+  <rect x="0" y="976" width="800" height="24" fill="rgba(0,0,0,0.3)"/>
+  <rect x="0" y="976" width="800" height="2" fill="url(#orangeGrad)"/>
+  <text x="400" y="992" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="9">联盟营销盈利闭环 · 转化率优化篇 · 减少摩擦 · 信任驱动 · 系统化增长</text>
+
+</svg>

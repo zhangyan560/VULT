@@ -1,0 +1,323 @@
+{
+  "id": "1l326v5",
+  "title": "I’ve Tried Almost Every Passive Income Idea—Here’s What Finally Stuck",
+  "subreddit": "passive_income",
+  "subreddit_prefixed": "r/passive_income",
+  "author": "OnlineJobsPHmod",
+  "score": 1177,
+  "upvote_ratio": 0.96,
+  "num_comments": 176,
+  "created_utc": 1749033237.0,
+  "url": "https://www.reddit.com/r/passive_income/comments/1l326v5/ive_tried_almost_every_passive_income_ideaheres/",
+  "permalink": "https://www.reddit.com/r/passive_income/comments/1l326v5/ive_tried_almost_every_passive_income_ideaheres/",
+  "selftext": "Over the past decade, I’ve spent way too much time chasing how to make passive dollars online. I’ve been freelancing, forex, tried dropshipping selling cheap products from Alibaba, ran ads that tanked, bought countless SEO courses, losed a lot of money on crypto (yes, including some stupid memecoins), and even dabbled in flipping domains. Most of it was a dead end. Courses didn’t teach me what they promised, ad funnels drained my budget, and my crypto experiments mostly ended in rug pulls.\n\nThen, I unexpectedly learned about a boring yet reliably profitable niche which is job board sites. I saw someone on X earning thousands of dollars per month from his ranching job board so I basically just copied him and I created websites where businesses pay a fee to post job listings. No log-ins, no registration, just company listing their job ad and paying me for a fee to post it on my site for exposure. Once you build and launch the site, it mostly runs itself. I also used some automations to post new job ads daily so I can focus my time on SEO and growing backlinks to my site.\n\nI think this worked for me because I build on niches on the blue collar sector which they badly need to hire qualified skilled trades people, so there's always demand from companies to advertise their job listings. Employers pay a flat fee per job ad, which means predictable monthly income without relying on fickle traffic arbitrage.\n\nIf you're curios what's the my job board, it's [PlumbingJobs.com](https://plumbingjobs.com/) (yes, that exact-match domain helped), and once it was rolling, I replicated the exact same setup for [BlueCollarJobs.com](https://bluecollarjobs.com/). Even though I'm operating for only about six to eight months with very minimal effort since I'm lazy, PlumbingJobs brought in $325 last month, and BlueCollarJobs $235—and both sites still require maybe 1 hour of work per day.  \n  \nMy years of hunting for good domains paid off. Owning a memorable, industry-specific URL does half the branding work for you and instantly builds trust with both employers and job seekers.\n\nBecause of this model, I’m waking up to new notifications every morning—employers posting listings—without having to constantly tweak fancy ad campaigns or chase trending products. FYI about 90% of the traffic from both job board comes via direct typed-in traffic! It’s not a get-rich-overnight scheme, but it’s sustainably growing. I keep funneling extra time into SEO, content marketing, and expanding into adjacent niches (maybe [CleanerJobs.com](http://CleanerJobs.com) next? which I also own btw), so I expect those monthly numbers to climb.\n\nI’m not here to sell you anything—no courses, ebooks, or secret masterminds. I just couldn’t sleep and figured others in this community might appreciate a straightforward, no-fluff strategy that actually generates passive income.\n\nAnd if you’ve already found a passive income stream that’s working, it's time for you to give back! Drop your story in the comments—always eager to learn what’s clicking for others.",
+  "is_self": true,
+  "link_flair_text": "My Experience",
+  "_rel": 0.3,
+  "_weighted": 353.09999999999997,
+  "comments": [
+    {
+      "author": "AutoModerator",
+      "score": 1,
+      "body": "Check out the [Community Highlights](https://www.reddit.com/r/passive_income) for current and future Mod Vetted opportunities and Newsletter Episodes.\n\n**Please do due diligence on any crypto opportunity. A simple google search could save you a fortune.**    \n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/passive_income) if you have any questions or concerns.*",
+      "created_utc": 1749033237.0,
+      "replies": []
+    },
+    {
+      "author": "Zinakoleg",
+      "score": 136,
+      "body": "So, we have went full circle on the internet. This was a thing back in the 90's.",
+      "created_utc": 1749034996.0,
+      "replies": [
+        {
+          "author": "steve715",
+          "score": 36,
+          "body": "Ranks #1 on alta vista."
+        },
+        {
+          "author": "mangolightz",
+          "score": 9,
+          "body": "That’s life dude, a circle, people care more about Finding jobs than buying some shitty product"
+        },
+        {
+          "author": "rangoon03",
+          "score": 3,
+          "body": "HotJobs baby"
+        }
+      ]
+    },
+    {
+      "author": "ScaleneZA",
+      "score": 101,
+      "body": "This is quite interesting. I have a few questions:\n\n1. What is your tech stack? Is it just Wordpress? What do you use for billing?  \n2. How do you get started when there are no job listings? Do you post \"placeholder\" ones?",
+      "created_utc": 1749035620.0,
+      "replies": [
+        {
+          "author": "OnlineJobsPHmod",
+          "score": 42,
+          "body": "Thanks for the questions!\n\nI'm using **WordPress** with the **GeneratePress** theme and **Gravity Forms** for handling submissions. For billing, I use **PayPal**—simple and reliable for now.\n\nIn the beginning, when there were no job listings, I kickstarted things by curating relevant jobs from other sites and posting them on my own. It helped build initial traction and gave the site some life while I worked on growing original listings."
+        },
+        {
+          "author": "CypexHunter",
+          "score": 31,
+          "body": "From what I can see they use WordPress and a child theme based on the theme \"GeneratePress\". It uses a gravity forms form for submitting a job posting with PayPal payment button in order to pay for the posting."
+        },
+        {
+          "author": "iwi4a",
+          "score": 17,
+          "body": "Good questions, Im keen to hear the answers too"
+        },
+        {
+          "author": "Low-Tennis3927",
+          "score": 7,
+          "body": "I'm not sure if this is what OP does but years ago I had a job board and I was using the indeed API to pull in certain types of listings to match my site."
+        }
+      ]
+    },
+    {
+      "author": "Independent_Foot_830",
+      "score": 42,
+      "body": "Software developer here, I can build sites all day but I never seem to be able to market them.",
+      "created_utc": 1749039257.0,
+      "replies": [
+        {
+          "author": "dammtaxes",
+          "score": 12,
+          "body": "Designer here, can make them look pretty but I’m always searching for a strong angle or a unique problem to solve. \n\nThis job postings idea is great, it’s getting some ideas rolling for me. Have you come across any similar website models like this at all?"
+        },
+        {
+          "author": "letsGoChazz",
+          "score": 6,
+          "body": "In the same boat"
+        },
+        {
+          "author": "bananatoastie",
+          "score": 6,
+          "body": "Picking the right name or URL does a lot of the heavy lifting. Make sure the site is good and overtime, word-of-mouth will also give you a good boost"
+        },
+        {
+          "author": "Senior-Pepito",
+          "score": 5,
+          "body": "SD + Designer - you folks down to collaborate on an idea and monetize?"
+        },
+        {
+          "author": "Tweetgirl",
+          "score": 5,
+          "body": "If you're not that great with marketing, you should try website flipping. That's what I do. I've made over 200k from it."
+        }
+      ]
+    },
+    {
+      "author": "rexaruin",
+      "score": 34,
+      "body": "I appreciate you sharing your experience. It’s always good to get real world examples of what works and doesn’t work. \n\nI don’t mean to belittle your accomplishment with the job boards, but if I run the math: 2 hours a day for 22 days a month to make $560 = $12.73 an hour. \n\nNow, I get that these could blow up or you could tweak the cost structure or whatever, so there is large potential upside. Plus, you don’t mind the work and it’s super flexible. I just like seeing the math for side hustles.",
+      "created_utc": 1749036490.0,
+      "replies": [
+        {
+          "author": "Tweetgirl",
+          "score": 14,
+          "body": "I applaud OP's effort. You have to start somewhere. Everyone starts at zero and grows from there. Not to mention, if he wanted to exit, he could probably get 5 figures for each site. That's what I do, website flipping."
+        },
+        {
+          "author": "Hattori69",
+          "score": 6,
+          "body": "What is your argument here? It's a side hustle. It's not like OP is breaking his back for each penny."
+        },
+        {
+          "author": "baummer",
+          "score": 5,
+          "body": "Had the same thought"
+        },
+        {
+          "author": "ScaleneZA",
+          "score": 5,
+          "body": "$12 an hour is a lot in my country"
+        }
+      ]
+    },
+    {
+      "author": "Junior-World-8875",
+      "score": 26,
+      "body": "How did you market this? Like, how did you get people to post? ",
+      "created_utc": 1749036368.0,
+      "replies": [
+        {
+          "author": "OnlineJobsPHmod",
+          "score": 19,
+          "body": "At the beginning, I didn’t do much marketing—just shared some job posts on social media and wrote a few blog posts. Surprisingly, around 90% of the traffic comes from direct, typed-in visits. So in a way, the domain name is doing most of the marketing for the job board itself."
+        }
+      ]
+    },
+    {
+      "author": "Infectedtoe32",
+      "score": 25,
+      "body": "If this is even real, you missed an even more massive opportunity. Why charge a 1 time fee of $40 when you can easily do a subscription of like $10 a month. It becomes absolutely beyond dirt cheap for a business, and after 4 months you are already making more than the 1 time fee.",
+      "created_utc": 1749046367.0,
+      "replies": [
+        {
+          "author": "baummer",
+          "score": 5,
+          "body": "Yeah this is ripe for a recurring revenue model for sure"
+        }
+      ]
+    },
+    {
+      "author": "TheItalianWanderer",
+      "score": 17,
+      "body": "I've seen this post at least three times on this sub. Maybe this man just wants to promote his site lol",
+      "created_utc": 1749047192.0,
+      "replies": []
+    },
+    {
+      "author": "Katamaraan",
+      "score": 13,
+      "body": "How is this passive? \n\nBoth sites require 1h work per day.. 30h per mo, so with one site you earned last month \n\n325/30= $10.83 per hour \n\nAnd with the other 235/30 = $7.83 per hour",
+      "created_utc": 1749038057.0,
+      "replies": [
+        {
+          "author": "subsetsum",
+          "score": 8,
+          "body": "Sounds fake. Sick of these posts that end exactly like this. "
+        },
+        {
+          "author": "OnlineJobsPHmod",
+          "score": 7,
+          "body": "I guess with that mindset, you'll never build true passive income. Almost all passive income starts off active—you need to put in the time and effort upfront to build something solid. Once the revenue scales to a few thousand dollars a month, I can easily hire a virtual assistant from the Philippines or India to handle the daily tasks. That’s when it starts to become truly passive. It's a long game, but totally worth it."
+        },
+        {
+          "author": "Golferguy49",
+          "score": 5,
+          "body": "You have to start somewhere....there is nothing free in life....it sounds like once ramped up, the ROI will continue to grow.......the monthly effort could be less the more site's organic traffic grows...."
+        },
+        {
+          "author": "LikesElDelicioso",
+          "score": 4,
+          "body": "What about hosting the site, wouldn’t op have to pay a monthly fee to keep them online?"
+        }
+      ]
+    },
+    {
+      "author": "tidiss",
+      "score": 11,
+      "body": "Good ad",
+      "created_utc": 1749045919.0,
+      "replies": []
+    },
+    {
+      "author": "CmdWaterford",
+      "score": 6,
+      "body": "Something does not add up here... the ad costs $95 for 30 days... and you make only $325?! So barely 3 ads ?!",
+      "created_utc": 1749063399.0,
+      "replies": []
+    },
+    {
+      "author": "BjorndoRio",
+      "score": 6,
+      "body": "Nice idea. 👍🏾",
+      "created_utc": 1749034617.0,
+      "replies": []
+    },
+    {
+      "author": "AI_Girlfriend4U",
+      "score": 5,
+      "body": "Its like a Craigslist for the trades, but how are you competing against the big sites, like Indeed, Workopolis, etc? Why wouldn't businesses just list on those?",
+      "created_utc": 1749046216.0,
+      "replies": [
+        {
+          "author": "LikesElDelicioso",
+          "score": 4,
+          "body": "I hate indeed or monster because sometimes after completing multiple forms and submitting resumes, all you get are 3rd party links that take you to the actual employer’s application website. Its so annoying lol. \n\nIf a website came up to cut all that crap out, It would be very helpful"
+        }
+      ]
+    },
+    {
+      "author": "thegnome54",
+      "score": 4,
+      "body": "Not to be a wet blanket but $300/mo with an hour a day of labor is not passive income - you’re working for $10/hour.",
+      "created_utc": 1749114091.0,
+      "replies": []
+    },
+    {
+      "author": "kippy_mcgee",
+      "score": 4,
+      "body": "Love to hear OP, I've never heard of someone doing this before either I think it's brilliant and very helpful for people. Good on you!",
+      "created_utc": 1749034837.0,
+      "replies": []
+    },
+    {
+      "author": "Fit-Hold-4403",
+      "score": 4,
+      "body": "its a wordpress site but job board is complicated stuff - \n\nwhich plugin creates the job board part - generate press or gravity forms ?",
+      "created_utc": 1749035865.0,
+      "replies": [
+        {
+          "author": "OnlineJobsPHmod",
+          "score": 4,
+          "body": "The job board functionality isn’t handled by GeneratePress or Gravity Forms directly. You can use **WP Grid Builder** to create the job board layout and filtering system.\n\nIf that still feels too complex, I suggest you use plug-and-play job board platforms like **Niceboard** or **JobBoardly** that take care of the technical side, so you can focus entirely on content and marketing."
+        }
+      ]
+    },
+    {
+      "author": "blackcat562",
+      "score": 5,
+      "body": "So given that you said how much you make and how much you have to work, you make less than $10 an hour.",
+      "created_utc": 1749048047.0,
+      "replies": []
+    },
+    {
+      "author": "officialdoba",
+      "score": 3,
+      "body": "It's really refreshing to hear a no-BS success story! Your job board model is super smart. Have you ever thought about pairing your sites with physical products through an online store?",
+      "created_utc": 1749054638.0,
+      "replies": []
+    },
+    {
+      "author": "[deleted]",
+      "score": 5,
+      "body": "Interesting idea.\n\nIMO, the blue-collar focus of these websites is the crux of its success. Nice job finding that niche.\n\nA buddy of mine spent nearly a year during the pandemic working on a job board for remote jobs. The site looked great, had an admin UI for subscription/post management, analytics, lead message management, everything.\n\nPretty sure he spent more on cloud hosting than he did in revenue. I think I saw 1-2 jobs posted there in its short life.",
+      "created_utc": 1749054828.0,
+      "replies": []
+    },
+    {
+      "author": "LuMzGuNz",
+      "score": 2,
+      "body": "OP seems not interested in answering any questions...",
+      "created_utc": 1749057181.0,
+      "replies": []
+    },
+    {
+      "author": "Rekeke101",
+      "score": 3,
+      "body": "Okay chatgpt",
+      "created_utc": 1749067411.0,
+      "replies": []
+    },
+    {
+      "author": "Sullivanthehedgehog",
+      "score": 3,
+      "body": "This is something I've been actively trying to figure out. I started a newsletter of job opportunities in a very specific region for a very specific field, but I've wanted to learn how to monetize it. Thank you for sharing! How much do you charge per listing?",
+      "created_utc": 1749224865.0,
+      "replies": []
+    },
+    {
+      "author": "Zealousideal_View781",
+      "score": 3,
+      "body": "Thank you very much for sharing that! ...... I should actually do a post like that as well.😅....,  great job and it is good to see some honesty and thank you 🙏🙏 to anyone else that is reading this as well, stay safe and healthy 👍 🫡",
+      "created_utc": 1749261585.0,
+      "replies": []
+    },
+    {
+      "author": "vmco",
+      "score": 3,
+      "body": "Absolutely resonate with your story! \n\nMy first business was a Job Board while attending college. Hired a designer to build the website (Mostly UX), had a team of developer/friends who created the database (Back-end), had the marketing setup with a few joint venture ops, ran paid ads, and even had booths at city/local Job Fair events (All of this activity before making a single dollar - FYI...Definitely a HUGE mistake). \n\nI spent zero time ranking the site - the traffic was generated through Job Fair events and various other local publicity.\n\nUnfortunately, though, it didn't work out and I ended up closing the website/business and for a couple of years I wondered why it didn't work.   \n  \nReading about your process has not only totally shed light on a few insights of what may have happened with my board, but also possibly a few new ideas should I ever choose to revisit the idea again someday. \n\nLooking forward to hearing more about your success!",
+      "created_utc": 1749671701.0,
+      "replies": [
+        {
+          "author": "OnlineJobsPHmod",
+          "score": 3,
+          "body": "Thanks for sharing your experience—I can totally see how all that upfront hustle at job fairs and ad spend without a solid SEO foundation could’ve made it tough to sustain. If you ever decide to give it another shot, I’d say go for it! This time, lean into organic traffic early on (even simple niche SEO and quality content can go a long way) and you’ll pair that local buzz with steady online growth. Good luck, and I’d love to hear how it goes!"
+        }
+      ]
+    }
+  ]
+}

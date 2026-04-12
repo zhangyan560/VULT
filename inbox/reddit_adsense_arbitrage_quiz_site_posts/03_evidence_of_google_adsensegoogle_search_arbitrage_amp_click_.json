@@ -1,0 +1,40 @@
+{
+  "id": "1lxc45d",
+  "title": "Evidence of Google AdSense/Google Search Arbitrage &amp; Click Fraud",
+  "subreddit": "adops",
+  "subreddit_prefixed": "r/adops",
+  "author": "ExpressBrick6948",
+  "score": 19,
+  "upvote_ratio": 1.0,
+  "num_comments": 4,
+  "created_utc": 1752252966.0,
+  "url": "https://www.reddit.com/r/adops/comments/1lxc45d/evidence_of_google_adsensegoogle_search_arbitrage/",
+  "permalink": "https://www.reddit.com/r/adops/comments/1lxc45d/evidence_of_google_adsensegoogle_search_arbitrage/",
+  "selftext": "Important if using search partner network or performance max which doesnt give the option to opt out of SPN\n\n  \nWe’ve uncovered substantial evidence that Huntley Media — operating sites like [insighthivepro.com](http://insighthivepro.com/) and [search.insighthivepro.com](http://search.insighthivepro.com/) — is running a sophisticated AdSense for Search arbitrage and click fraud operation. We have also uncovered similar operations running out of Ask Media, and Visymo Universal Search Group.\n\n**Key Fraud Pattern Highlights:**\n\n**Forced Search Terms:**  \n\n\n* Their code forcibly injects expensive  keywords into every “search,” regardless of the visitor’s intent.\n\n**Dual Monetization Click Loops:**\n\n* They combine Google’s `adsense/search/ads.js` with custom clicktracking scripts (`s1Click`, `csInit`) to reroute clicks through intermediary redirects (like [farsearches.com](http://farsearches.com/)). This creates multiple monetization points for the same click — classic arbitrage and click inflation.\n\n**AdSense for Search**\n\n* They run Google’s official `adsense/search/ads.js` to serve real search ads with forced high-CPC keywords.\n* They get paid per click for every “search” — even though it’s fabricated.\n\n**Click-Tracking Redirects**\n\n* Every user click goes through custom redirect layers (`csInit` → `/click?...` → [`farsearches.com`](http://farsearches.com/)), so they can:\n* Broker the click again to a CPA network.\n* Or double-count it (AdSense click + broker payout)\n* They stack callbacks and fallback reloads to ensure maximum dummy traffic flow.\n\n**Fake Engagement Loops**\n\n* Scripts like `pollForPurchase` watch for iframe focus and auto-fire click beacons — fabricating engagement signals to boost revenue streams.\n\n**Proven Ownership Link:**\n\nThe page footers clearly show © Huntley Media, directly matching the registered officers:\n\n* Scott Birnbaum, CEO\n* Dan Gould, CFO\n* Ryan Simkin, Secretary All tied to 720 Huntley Dr. Apt 204, West Hollywood, CA 90069 — matching multiple related shell entities.\n\n**Network of Related Shells:**  \nWe’ve also linked this tactic to other business names operating from the same address: *Insight Media Group LLC, Kings Road Media LLC, Melrose Media Group LLC, Wonderland Media Group LLC, 9th Street Media, Bash Brothers LLC* — all under the same people, same click farm playbook.",
+  "is_self": true,
+  "link_flair_text": "Agency",
+  "_rel": 1.0,
+  "_weighted": 19.0,
+  "comments": [
+    {
+      "author": "Bastian00100",
+      "score": 2,
+      "body": "Please go deeper in the description.\n\nI don't understand how most of these cannot be easily spotted by the ad networks: a click URL is \"unique\" and most of the clicks have some conversion tracking on the landing page. If most of the clicks don't reach their real landing page or have a natural behaviour on that page, it's clearly some sort of click jacking.\n\nHow can a redirect fool several networks? How they control the click loop? How do they intercept URL in advertising considering the existence of safe frames?",
+      "created_utc": 1752303238.0,
+      "replies": [
+        {
+          "author": "polygraph-net",
+          "score": 1,
+          "body": "The ad networks aren't being tricked - rather they love this sort of garbage arbitrage as it generates so much revenue."
+        }
+      ]
+    },
+    {
+      "author": "AutoModerator",
+      "score": 1,
+      "body": "This submission is under review and will require moderator approval.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/adops) if you have any questions or concerns.*",
+      "created_utc": 1752252967.0,
+      "replies": []
+    }
+  ]
+}

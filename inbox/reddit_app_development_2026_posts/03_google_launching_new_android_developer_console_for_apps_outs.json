@@ -1,0 +1,349 @@
+{
+  "id": "1n0gj1l",
+  "title": "Google Launching New \"Android Developer Console\" for apps outside Playstore",
+  "subreddit": "androiddev",
+  "subreddit_prefixed": "r/androiddev",
+  "author": "OverallAd9984",
+  "score": 265,
+  "upvote_ratio": 0.97,
+  "num_comments": 124,
+  "created_utc": 1756197968.0,
+  "url": "https://i.redd.it/p9kk6yq7ublf1.jpeg",
+  "permalink": "https://www.reddit.com/r/androiddev/comments/1n0gj1l/google_launching_new_android_developer_console/",
+  "selftext": "One of my subscribers sent me this on WhatsApp, and I was honestly surprised.  \n\nGoogle is launching a **new Android Developer Console** for developers who distribute apps **outside the Play Store**.  \n\nStarting **September 2026**, any app that runs on certified Android devices (even sideloaded) will need to be tied to a **verified developer account**. On the surface, this looks like a “security” move — but if you think deeper, it’s basically Google extending Play Console–style control to the entire Android ecosystem.  \n\n👉 Verification steps:  \n- Provide full legal identity (name, address, phone, ID).  \n- Organizations must provide a D-U-N-S number + website verification.  \n- Prove ownership of every app (package name + signing keys).  \n\n**Timeline highlights:**  \n- Oct 2025 → Early access opens.  \n- Mar 2026 → Verification opens to all developers.  \n- Sep 2026 → Requirement enforced in Brazil, Indonesia, Singapore, Thailand.  \n- 2027+ → Global rollout.  \n\nYes, Google frames it as “security,” but it’s also a way to put a leash on sideloading — one of Android’s last big freedoms. If every developer has to verify through Google, then in practice, Google becomes the **gatekeeper of the entire Android app ecosystem**, not just Play Store.  \n\n\nSource: [Android Developer Verification](https://developer.android.com/developer-verification)  \n\n---\n\nWhat do you think?  \n- Genuine step to reduce malware?  \n- Or just Google tightening control over Android’s open ecosystem under the label of “safety”?",
+  "is_self": false,
+  "link_flair_text": "Discussion",
+  "_rel": 1.5,
+  "_weighted": 397.5,
+  "comments": [
+    {
+      "author": "time-lord",
+      "score": 184,
+      "body": "This is bad. ",
+      "created_utc": 1756198907.0,
+      "replies": [
+        {
+          "author": "botle",
+          "score": 49,
+          "body": "This can't be legal."
+        }
+      ]
+    },
+    {
+      "author": "SilentMobius",
+      "score": 107,
+      "body": "The day I can't write my own software and run it on my own device without external authorization is the day I stop using that platform.\n\nThis is the one red line that had kept me off iOS from day one.",
+      "created_utc": 1756202036.0,
+      "replies": [
+        {
+          "author": "Adventurous_Thanks99",
+          "score": 5,
+          "body": "I tried an iPhone 3 back in the day... Never used apple again after that because I couldnt load my own apps with out jail breaking"
+        }
+      ]
+    },
+    {
+      "author": "devvv4ever",
+      "score": 98,
+      "body": "Another step in destroying a free and open internet and making it their own by rejecting anyone not obeying.",
+      "created_utc": 1756202601.0,
+      "replies": []
+    },
+    {
+      "author": "soulaDev",
+      "score": 59,
+      "body": "Google is turning to Apple, but only with the shitty stuff",
+      "created_utc": 1756200295.0,
+      "replies": []
+    },
+    {
+      "author": "Mavamaarten",
+      "score": 56,
+      "body": "Creepy as fuck. Let's hope at least the EU takes an active stance in this, to prevent this from happening.",
+      "created_utc": 1756201568.0,
+      "replies": [
+        {
+          "author": "eirexe",
+          "score": 19,
+          "body": "EU is probably happy about this, specially since soccer rightsholders rule a lot of the technology lawmaking, they would love to be able to track down soccer piracy app developers."
+        },
+        {
+          "author": "DrSheldonLCooperPhD",
+          "score": 10,
+          "body": "Don't know where this hope about EU doing anything is coming from.\n\nEU is comfortable letting Google control Android, they chose Google Play Integrity for their age verification effectively blocking unverified devices from being used for age verification.\n\nThey also did not go against notarization with Apple. They will not go against this because this is government friendly.\n\nWith this new system they can who is building E2E apps and immediately revoke the keys. Google effectively has the kill switch now, they will celebrate."
+        }
+      ]
+    },
+    {
+      "author": "mpanase",
+      "score": 47,
+      "body": "Fuck you, Google. \n\nI don't want to register in your website so I can put an app in my device.",
+      "created_utc": 1756204916.0,
+      "replies": []
+    },
+    {
+      "author": "LEGENDX08377",
+      "score": 35,
+      "body": "Without a doubt, the second one.",
+      "created_utc": 1756198605.0,
+      "replies": []
+    },
+    {
+      "author": "d41_fpflabs",
+      "score": 34,
+      "body": "Its definitely part of a bigger agenda to push Android to a more closed ecosystem. \n\nThe framing of \"security enhancement to protect against malware\" is deceptive because for starters isn't that what Google Play Protect is meant for? Secondly, developer verification just masks the underlying issue, which is that some android users lack sufficient security knowledge, so maybe focus on educating users and or providing relevant security alerts to handle sideload apps. \n\nWhat i love about linux is that it allows for personal responsibility / accountability when it comes to device security, whereas android  seems to be completing abstracting that away. I understand the risks of complete user responsibility when it comes to security, so the balanced approach android was using up until the last few years was suitable, but this is a step to far now.",
+      "created_utc": 1756204083.0,
+      "replies": []
+    },
+    {
+      "author": "grishkaa",
+      "score": 35,
+      "body": "I'll say it again: Android desperately needs to be separated from Google, yesterday.",
+      "created_utc": 1756216183.0,
+      "replies": []
+    },
+    {
+      "author": "rostislav_c",
+      "score": 28,
+      "body": "And then they will be able to revoke your certificate? So that you will get banned for life to develop android apps?",
+      "created_utc": 1756206197.0,
+      "replies": []
+    },
+    {
+      "author": "AccidentSalt5005",
+      "score": 22,
+      "body": "Address ? wtf",
+      "created_utc": 1756201841.0,
+      "replies": [
+        {
+          "author": "NatoBoram",
+          "score": 24,
+          "body": "Google already publicly doxes all its independent developers, it's no surprise"
+        }
+      ]
+    },
+    {
+      "author": "ArnyminerZ",
+      "score": 19,
+      "body": "Absolutely a bad thing. They are copying Apple more and more, and closing the environment as much as possible, whilst trying to ditch custom ROMs. Basically breaking everything that Android is, and has ever been.",
+      "created_utc": 1756202222.0,
+      "replies": []
+    },
+    {
+      "author": "arunkumar9t2",
+      "score": 16,
+      "body": "[https://i.imgur.com/OyO7Lc5.jpeg](https://i.imgur.com/OyO7Lc5.jpeg)",
+      "created_utc": 1756205631.0,
+      "replies": []
+    },
+    {
+      "author": "Thin-Engineer-9191",
+      "score": 16,
+      "body": "google is trying to be more like apple. this enforces that even more. their review process still is very shitty though. all automated crap",
+      "created_utc": 1756205942.0,
+      "replies": []
+    },
+    {
+      "author": "SaidRH",
+      "score": 16,
+      "body": "this mfs banned my dev console for no reason for life and now i can't register because of what? so unfair",
+      "created_utc": 1756214951.0,
+      "replies": []
+    },
+    {
+      "author": "[deleted]",
+      "score": 14,
+      "body": "[removed]",
+      "created_utc": 1756208216.0,
+      "replies": []
+    },
+    {
+      "author": "V2UgYXJlIG5vdCBJ",
+      "score": 13,
+      "body": "I allowed my dev account to get suspended for refusing to go along with their doxxing policy. Had thousands of users for my apps. Blame Google.",
+      "created_utc": 1756211883.0,
+      "replies": []
+    },
+    {
+      "author": "Vysair",
+      "score": 14,
+      "body": "Well, hello iOS. Suddenly you are looking great today",
+      "created_utc": 1756226260.0,
+      "replies": []
+    },
+    {
+      "author": "jNayden",
+      "score": 12,
+      "body": "I am switching to Huawei .. I am sick of this google and appel bullshit.",
+      "created_utc": 1756206130.0,
+      "replies": [
+        {
+          "author": "3dom",
+          "score": 10,
+          "body": "Huawei requires Chinese company registration docs to publish apps in China. Without it their auditory is like 0.5% of Play Store (I have a big project published in both stores)."
+        }
+      ]
+    },
+    {
+      "author": "davebren",
+      "score": 11,
+      "body": "You can submit feedback on their announcement page. It won't do anything since anyone with a moral compass left Google a long time ago.",
+      "created_utc": 1756215414.0,
+      "replies": []
+    },
+    {
+      "author": "MentalEnergy",
+      "score": 9,
+      "body": "Just Google tightening control over Android’s open ecosystem under the label of “safety”.",
+      "created_utc": 1756206640.0,
+      "replies": []
+    },
+    {
+      "author": "DoubleOwl7777",
+      "score": 9,
+      "body": "the second one. NOTHING like this is good.",
+      "created_utc": 1756202033.0,
+      "replies": []
+    },
+    {
+      "author": "kwinz",
+      "score": 8,
+      "body": "Every day we stray further from god.",
+      "created_utc": 1756205471.0,
+      "replies": []
+    },
+    {
+      "author": "st4rdr0id",
+      "score": 9,
+      "body": "This will only make Huawei and Xiaomi alternatives even more popular.",
+      "created_utc": 1756212844.0,
+      "replies": []
+    },
+    {
+      "author": "Pablete01",
+      "score": 8,
+      "body": "Maybe soon appear a new mobile O.S, like android. ",
+      "created_utc": 1756207220.0,
+      "replies": [
+        {
+          "author": "lonew0lfy",
+          "score": 8,
+          "body": "Many tried and failed."
+        }
+      ]
+    },
+    {
+      "author": "lonew0lfy",
+      "score": 8,
+      "body": "What's the fucking point of using Android then switch to IOS. ",
+      "created_utc": 1756222620.0,
+      "replies": []
+    },
+    {
+      "author": "AmfSzenos_132",
+      "score": 7,
+      "body": "I'm making a game for years now. Originally my plan was just google play. Then they wanted everyone's HOME address to be public so I turned down. This in itself is ridiculus because every other store accepts any postal adress, but no Google want ddox every developer.  So I choose my android platform to be the Galaxy store from samsung (and of course the app store for apple). This is disgusting taking everyone's data even if's only for their private database but I think you can't trust google for developer's safety. One day they will force even this data to be publicly accesable. F u Google",
+      "created_utc": 1756231427.0,
+      "replies": []
+    },
+    {
+      "author": "dluccz",
+      "score": 8,
+      "body": "I foresee more lawsuits and fines for Google soon 🥴",
+      "created_utc": 1756212625.0,
+      "replies": []
+    },
+    {
+      "author": "IamAlchemy",
+      "score": 7,
+      "body": "Well, I guess I'm done helping Android devs with their problems, 'cause I'll be damned if I'm going to pay Google in order to provide free support for their shitty, half-broken APIs.",
+      "created_utc": 1756221905.0,
+      "replies": []
+    },
+    {
+      "author": "cantinflas_34",
+      "score": 7,
+      "body": "PWAs are about to become huge",
+      "created_utc": 1756224581.0,
+      "replies": []
+    },
+    {
+      "author": "VariousPizza9624",
+      "score": 7,
+      "body": "I don't get it. We already verified our developer account last year, so what do they want from us again?",
+      "created_utc": 1756202362.0,
+      "replies": [
+        {
+          "author": "equeim",
+          "score": 19,
+          "body": "If you only publish on play store that nothing changes for you (as a developer). This is about Google taking control of what apps can users install outside of the play store, by making *every single apk* (regardless of origin) go through Google's verification."
+        },
+        {
+          "author": "DoubleOwl7777",
+          "score": 12,
+          "body": "if you dont have a developer Account, became you are building an open source project that is always sideloaded, that is anoying as hell. the users downloading that apk and installing that app now all need developer Accounts too and verify crap. its just about removing the users control."
+        },
+        {
+          "author": "IntelligentInsect247",
+          "score": 8,
+          "body": "Basically, for each new project you want to create, or as a new developer, you must manage the account and the APK in order to run it."
+        }
+      ]
+    },
+    {
+      "author": "BrightLuchr",
+      "score": 7,
+      "body": "My first thought was to register it under my corporate business (which has a formal government-issued business registration/tax number), just to preserve some measure of privacy while still being legally traceable. However, WTF is a DUNS number? I'm not in U.S. A quick search suggests this is also problematic.",
+      "created_utc": 1756210104.0,
+      "replies": [
+        {
+          "author": "gonemad16",
+          "score": 7,
+          "body": "its some number from this awful company called duns &amp; bradstreet.  Their website is horrendous and it takes like 30-40 days to get a DUNS number.  They basically verify your business location / info.  I am in the US but there should be ways to get a number outside the US"
+        }
+      ]
+    },
+    {
+      "author": "Hulk5a",
+      "score": 5,
+      "body": "This is bullshit",
+      "created_utc": 1756233037.0,
+      "replies": []
+    },
+    {
+      "author": "UnbarredStream",
+      "score": 6,
+      "body": "In their early access form they say that you will need to pay a registration fee.... So it will be obligatory to pay them to register apps.....",
+      "created_utc": 1756237120.0,
+      "replies": []
+    },
+    {
+      "author": "mdwh",
+      "score": 4,
+      "body": "I wonder how F Droid will handle this, since I believe they do the signing -  maybe they might be able to register all the apps under their key, but it risks being a lot of work. It's also unclear if Google will acknowledge apps with the same package but different keys?\n\n\nOther concerns: \n- At the moment if your app or Google play account is banned for some stupid reason, you can still then distribute outside of Google Play. Would this prevent that, e.g., they apply that ban if you then try to sign up to Android developer console? \n- Having multiple apps on Google Play has the risk that an issue with one gets your account banned. So some developers handle this by one having their most important ones on Google Play, and distribute other ones elsewhere. In theory Google Play policies still shouldn't apply to the latter, but I worry that if you register your non Google Play apps, then their automatic system decides one of them is problematic, it gets counted as a \"strike\" or you lose your Google Play developer account. \n- More generally, I worry that Google will use this to start saying that certain policies apply to registered apps, even if not on Google Play? \n- It seems worrying if someone has to register applications they write for their own devices, even with no intention to distribute to anyone else!\n\n\nI think it's also a concern that Google are setting themselves as the only authority capable of verifying developers. (Compare to PCs where various companies offer signing.) It means two companies in one country have near compete control over the world's mobile software distribution.",
+      "created_utc": 1756240588.0,
+      "replies": []
+    },
+    {
+      "author": "jonmon4",
+      "score": 6,
+      "body": "This is such a huge jump from where we are now. We're already incredibly secure. If they cared about stopping low information users from getting scammed they could just add a flashing red warning when you enable unknown apps saying \"IF SOMEBODY ASKS YOU TO DO THIS IT MIGHT BE A SCAM!!\" They could also do a better job of not allowing apps that are literally malware onto the official Play store. I'm still delusionally hoping that they might add a developer option to allow unknown developers or something, at least that way it would be still be even less accessible but not completely impossible. I'm most sad about my unavailable software that I've extracted and preserved from older devices. This is the first time I've thought about having to root my phone since I was in Middle School, I really don't want to have to go through that hassle just for a few of nostalgic games and my favorite icon pack. I've dreamed of phones being more like PCs for so long, and I can't stand to believe that we've already come the closest we ever will to that.",
+      "created_utc": 1756245482.0,
+      "replies": []
+    },
+    {
+      "author": "boa_tarde_neymar",
+      "score": 6,
+      "body": "Google believes the US and Europe won't do anything because the US president is an idiot who will defend it. This is criminal; Google could very well eliminate alternative stores and all the freedom that Android provides.",
+      "created_utc": 1756268726.0,
+      "replies": []
+    },
+    {
+      "author": "mopeyjoe",
+      "score": 4,
+      "body": "Ewww, let's not!",
+      "created_utc": 1756241769.0,
+      "replies": []
+    }
+  ]
+}

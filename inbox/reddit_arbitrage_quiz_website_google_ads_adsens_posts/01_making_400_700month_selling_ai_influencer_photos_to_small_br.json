@@ -1,0 +1,348 @@
+{
+  "id": "1rqpuhm",
+  "title": "Making $400-700/month selling AI influencer photos to small brands on Fiverr and I still feel weird about it",
+  "subreddit": "passive_income",
+  "subreddit_prefixed": "r/passive_income",
+  "author": "Soggy_Limit8864",
+  "score": 3059,
+  "upvote_ratio": 0.95,
+  "num_comments": 267,
+  "created_utc": 1773224117.0,
+  "url": "https://www.reddit.com/r/passive_income/comments/1rqpuhm/making_400700month_selling_ai_influencer_photos/",
+  "permalink": "https://www.reddit.com/r/passive_income/comments/1rqpuhm/making_400700month_selling_ai_influencer_photos/",
+  "selftext": "I need to talk about this because none of my friends understand what I actually do when I try to explain it and my girlfriend thinks I'm running some kind of scam.\n\nSo background. I'm 28, work full time as a marketing coordinator at a mid size agency. Not a creative role really, mostly spreadsheets and campaign tracking. Last year around September I was helping one of our clients source photos for their Instagram. They sell swimwear and wanted diverse model shots across different locations, skin tones, backgrounds, the whole thing. The quote from the photography studio came back at $4,200 for a two day shoot. Client said no. We ended up using the same three stock photos everyone else uses and the campaign looked generic as hell.\n\nThat stuck with me because I knew AI image generation was getting crazy good. I'd been messing around with Midjourney for fun, making weird fantasy landscapes and stuff. But the problem with basic AI image generators for anything commercial involving people is that you can't get the same face twice. You generate a photo of a woman in a sundress on a beach, great. Now you need that same woman in a cafe, different outfit. Completely different person shows up. Doesn't work if you're trying to build any kind of consistent brand presence.\n\nI started googling around for tools that could keep a face consistent across multiple images and went down a rabbit hole for like two weeks. Tried a bunch of stuff. Played with some LoRA training on Stable Diffusion but I'm not technical enough and the results were hit or miss. Tested out several platforms, APOB, Synthesia, HeyGen, Artbreeder, a couple others I can't even remember. Each does slightly different things and honestly they all have tradeoffs. Eventually I cobbled together a workflow using a couple of these that actually produced usable stuff, the kind of output where you'd have to really zoom in and squint to tell it wasn't a real photo.\n\nThe basic idea is simple. You set up a character's look once, save it as a model, and then reuse that same face across as many different scenes and outfits as you want. That's the thing that makes this viable as a service and not just a cool party trick. Because brands don't want one cool AI photo. They want 30 photos of the same \"person\" that they can drip out over a month on Instagram.\n\nI didn't plan to sell this as a service. What happened was I made a fake portfolio to test the concept. I created three AI characters, gave them names, generated about 15 photos each in different settings. Lifestyle stuff, coffee shops, hiking, urban backgrounds, gym, that kind of thing. I showed it to a friend who runs a small clothing brand and asked if he could tell they were AI. He said two of the three looked real and the third looked \"maybe AI but honestly better than most influencer photos I get.\"\n\nHe then asked if I could make some for his brand. I did 20 photos for him over a weekend, he used them on his Instagram, and his engagement actually went up because the content looked more polished than the iPhone shots his intern was taking. He paid me $150 which felt like a lot for maybe 3 hours of actual work.\n\nThat's when I thought okay maybe there's a Fiverr gig here.\n\nI listed a gig in October called something like \"I will create AI model photos for your brand\" and priced it at $30 for 5 photos, $50 for 10, $100 for 25. Figured I'd get zero orders and move on.\n\nFirst two weeks, nothing. Adjusted my gig thumbnail three times. Then I got my first order from a guy running a skincare brand out of his apartment. He wanted photos of a woman in her 30s using his products in a bathroom setting. I set up the character, generated the scenes, did some light editing in Canva to add his product packaging into the shots, delivered in about 2 hours. He left a 5 star review and ordered again the next week.\n\nThen I hit my first real problem. My third client wanted a fitness model character and I spent a whole evening trying to get consistent results. The face kept shifting slightly between generations. Like the bone structure would change or the nose would look different in profile vs straight on. I ended up regenerating so many times that I burned through way more credits than I expected and had to upgrade to a paid plan earlier than I wanted. That order probably cost me more in time and tool credits than I actually charged. I almost refunded the client but eventually got a set of 10 that looked cohesive enough.\n\nThat experience taught me that not every character concept works equally well. Some faces just generate more consistently than others and I still don't fully understand why. I've learned to do a test batch of 5 or 6 images in different angles before I commit to a character for a client. If the face isn't holding steady, I tweak the setup until it does or I start over with a different base.\n\nBy December I had 14 completed orders. The thing that surprised me is who was buying. I expected like dropshippers and sketchy supplement brands. Instead I got:\n\nA yoga studio in Austin that wanted a consistent \"brand ambassador\" for their social media but couldn't afford a real one. They order monthly now.\n\nA guy selling handmade candles who wanted lifestyle photos but didn't want to hire models or use his own face.\n\nA pet food company that wanted a \"pet parent\" character holding their products in different home settings.\n\nA language learning app that needed a virtual tutor character for their TikTok content. This one was interesting because they also wanted short video clips where the character appeared to be speaking in different languages. Took me longer to figure out than the photo work and honestly the first batch looked rough. The mouth movement was slightly off sync and the client asked for revisions. Second attempt was better and they've reordered three times now, but video is definitely harder to get right than stills.\n\nHere's the actual workflow now that I've got it somewhat dialed in:\n\n1. Client sends me a brief. Usually something like \"25 year old woman, athletic build, for a fitness brand. Need 10 photos in gym settings, outdoor running, and post workout lifestyle.\"\n2. I set up the character's appearance and save it. This used to take me over an hour when I was learning but now it's more like 20 to 30 minutes including the test batch to make sure the face holds.\n3. I generate the photos by describing each scene. I've built up a doc with scene templates that I know tend to produce good results so I'm not starting from scratch every time. I just swap out details per client.\n4. I generate more images than I need because not every output is usable. Weird hands, lighting that doesn't match, uncanny expressions. I've gotten better at writing descriptions that minimize these issues but it still happens. Early on I was throwing away more than half my generations. Now it's maybe a third, sometimes less.\n5. Quick edit pass in Canva or Photoshop if needed. Sometimes I composite a product into the shot or adjust colors to match the client's brand palette.\n6. Deliver on Fiverr. Total active time per order is usually 45 minutes to maybe an hour and a half for a 10 photo batch depending on how cooperative the AI is being that day. The renders themselves take time but I'm not sitting there watching them.\n\nCost wise I want to be transparent because I see a lot of side hustle posts that conveniently forget to mention expenses. I'm paying about $30/month for the AI tools on paid plans because the free tiers don't give you enough credits to fulfill multiple client orders per week. Fiverr takes 20% of every order. And I spend maybe $12/month on Canva Pro which I'd probably have anyway. So my actual margins are lower than the gross numbers suggest. On a $50 order I'm really netting about $35 after Fiverr's cut, and then subtract a proportional share of the tool costs. It's still very good for the time invested but it's not pure profit like some people might assume.\n\nThe part that makes this increasingly passive is the repeat clients. I now have 6 clients who order at least once a month. Their character models are already saved. I know their brand style. A reorder takes me maybe 30 minutes of actual work because I'm not figuring anything out, just generating new scenes with an existing saved character.\n\nSome honest stuff about what sucks:\n\nFiverr fees are brutal. I've started moving repeat clients to direct payment but new clients still come through the platform and that 20% hurts on smaller orders.\n\nRevision requests can be painful. One client wanted me to make the character look \"more confident but also approachable but also mysterious.\" I've learned to offer one round of revisions and be very specific upfront about what I can and can't change after delivery.\n\nI had one order in January where I completely botched it. The client wanted photos in a specific art deco interior style and no matter what I described, the backgrounds kept coming out looking like a generic hotel lobby. I spent three hours trying different approaches, eventually delivered something the client said was \"fine I guess\" and got a 3 star review. That one stung and it dragged my average rating down for weeks.\n\nThe ethical thing comes up sometimes. I had one potential client who wanted me to create a fake influencer to promote a weight loss supplement and pretend it was a real person endorsing it. I said no. My gig description now explicitly says the content is AI generated and I recommend clients disclose that. Most of them do because honestly it's becoming a selling point, \"look at our cool AI brand ambassador\" is a marketing angle in itself now. But I know not everyone in this space is upfront about it and that's a real concern.\n\nAlso the quality gap between what AI can do and what a real photographer can do is still real. For high end fashion brands or anything that needs to be truly photorealistic at full resolution, this isn't there yet. But for Instagram posts, TikTok content, small brand social media, email marketing images? It's more than good enough and it's a fraction of the cost of a real shoot.\n\nMonthly breakdown for the boring numbers people:\n\nOctober: $120 (4 orders, mostly figuring things out) November: $230 (6 orders, lost one client who wasn't happy with quality) December: $435 (11 orders, holiday marketing rush helped a lot) January: $410 (9 orders, slight dip after the holidays which I expected) February: $710 (15 orders including three video batches which pay more) March so far: $200 (5 orders, month is still early)\n\nTotal since starting: roughly $2,105 over 5 months. Minus maybe $150 in tool subscriptions over that period and Fiverr's cut which is already reflected in the numbers above. Average time commitment is maybe 5 hours a week, trending down as I get faster and have more repeat clients.\n\nI'm not quitting my day job over this. I tried dropshipping in 2023 and lost $800. I tried starting a blog and made $12 in AdSense over 6 months. This actually works because there's a clear value proposition: brands need visual content, real content with real models is expensive, and AI has gotten good enough that small brands genuinely can't tell the difference at Instagram resolution.\n\nStill feels weird telling people I make fake people for a living on the side. But the pizza money is real and my emergency fund is actually growing for the first time in years.",
+  "is_self": true,
+  "link_flair_text": "My Experience",
+  "_rel": 0.3,
+  "_weighted": 917.6999999999999,
+  "comments": [
+    {
+      "author": "AutoModerator",
+      "score": 1,
+      "body": "Check out the [Community Highlights](https://www.reddit.com/r/passive_income) for current and future Mod Vetted opportunities and Newsletter Episodes.\n\n**Please do due diligence on any crypto opportunity. A simple google search could save you a fortune.**    \n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/passive_income) if you have any questions or concerns.*",
+      "created_utc": 1773224118.0,
+      "replies": []
+    },
+    {
+      "author": "Affectionate-Win476",
+      "score": 584,
+      "body": "If every post was like this one, we would have stopped at 1st.\n\nThank you for the content and for being honest",
+      "created_utc": 1773227594.0,
+      "replies": [
+        {
+          "author": "Affectionate-One2789",
+          "score": 14,
+          "body": "Posts like this are why I’m still in this sub. Real numbers, real problems, and actual transparency. Thanks for sharing."
+        }
+      ]
+    },
+    {
+      "author": "womanwagingwar",
+      "score": 206,
+      "body": "Such an excellent post. Clear, relevant, detailed and honest. Thank you. ",
+      "created_utc": 1773229261.0,
+      "replies": [
+        {
+          "author": "haikusbot",
+          "score": 57,
+          "body": "*Such an excellent*\n\n*Post. Clear, relevant, detailed*\n\n*And honest. Thank you.*\n\n\\- womanwagingwar\n\n---\n\n^(I detect haikus. And sometimes, successfully.) ^[Learn&amp;#32;more&amp;#32;about&amp;#32;me.](https://www.reddit.com/r/haikusbot/)\n\n^(Opt out of replies: \"haikusbot opt out\" | Delete my comment: \"haikusbot delete\")"
+        }
+      ]
+    },
+    {
+      "author": "SirKrohan",
+      "score": 195,
+      "body": "Actually amazing post, thanks for taking the time ",
+      "created_utc": 1773229725.0,
+      "replies": []
+    },
+    {
+      "author": "ContentFarmer4445",
+      "score": 142,
+      "body": "I fucking hate this timeline ",
+      "created_utc": 1773234048.0,
+      "replies": [
+        {
+          "author": "SizeZeroSuperHero",
+          "score": 27,
+          "body": "And it’s just the tip of the iceberg 💀"
+        },
+        {
+          "author": "icecreamsocially",
+          "score": 27,
+          "body": "I was gonna say something similar. I hate it here but I can’t leave because I have a perfect daughter who needs me. "
+        },
+        {
+          "author": "Fffiction",
+          "score": 3,
+          "body": "None of the content they’re making can hold a copyright. Everyone involved is making silly decisions. "
+        },
+        {
+          "author": "el3v3n_el3v3n",
+          "score": 2,
+          "body": "No because what the f did I just read 😩"
+        }
+      ]
+    },
+    {
+      "author": "MexicanOtter84",
+      "score": 116,
+      "body": "AI art can’t be licensed right? So someone can find your work and brands you work with and steal the images to make their own for their company? \n\nSounds like companies aren’t really thinking lol. Be funny to see 5 local companies with the same mascot and commercials lol",
+      "created_utc": 1773241620.0,
+      "replies": [
+        {
+          "author": "Puzzleheaded_Ad_4478",
+          "score": 25,
+          "body": "Not ready for what's coming"
+        },
+        {
+          "author": "74novahatch",
+          "score": 3,
+          "body": "SPIRIT FINGERS!"
+        },
+        {
+          "author": "Junius_Bobbledoonary",
+          "score": 3,
+          "body": "Correct, all of these images OP is generating are in the public domain "
+        }
+      ]
+    },
+    {
+      "author": "robotsta37",
+      "score": 67,
+      "body": "To be honest, the work and value you brought to come up with a workflow and specific tools is worth more than you are charging.  You should probably raise your rates.  As a one person shop, it’s a common mistake to undervalue your work.  ",
+      "created_utc": 1773240579.0,
+      "replies": [
+        {
+          "author": "sendyrella",
+          "score": 6,
+          "body": "Came here to say this. Your concept is rock solid OP, now time to revalue your efforts "
+        }
+      ]
+    },
+    {
+      "author": "UnderstandingOld9906",
+      "score": 58,
+      "body": "So dystopian watching all of our morals fly out the window just for some money while the world suffers the consequences for AI🥲at least you’re getting that bag💰🤣",
+      "created_utc": 1773235366.0,
+      "replies": [
+        {
+          "author": "DanglingKeyChain",
+          "score": 34,
+          "body": "Unfortunately it's because of people like this that keep using it that encourages techbros so of course the techbros are going to keep shoving it down people's throats. \n\n"
+        }
+      ]
+    },
+    {
+      "author": "Janube",
+      "score": 46,
+      "body": "Feels like the first real post here I've ever seen.",
+      "created_utc": 1773236755.0,
+      "replies": []
+    },
+    {
+      "author": "Hairy-Share8065",
+      "score": 35,
+      "body": "not gonna lie “i make fake people for brands” is one of the funniest modern side hustles ive heard haha.....but honestly if the clients know it’s ai and they’re happy with the content… kinda hard to call it a scam. sounds more like you found a weird little gap where small brands want photos but cant drop 4k on a shoot.......also the fact that repeat clients are ordering monthly is probably the real signal that it’s legit.",
+      "created_utc": 1773237174.0,
+      "replies": []
+    },
+    {
+      "author": "HourOfUprising",
+      "score": 35,
+      "body": "How do you switch them to direct billing and get them off of Fiver?",
+      "created_utc": 1773231720.0,
+      "replies": [
+        {
+          "author": "ranged_",
+          "score": 34,
+          "body": "Offer them a discount to switch to a payment servicer that doesn't kill you with fees. Sign a contract for the work."
+        }
+      ]
+    },
+    {
+      "author": "java1450",
+      "score": 38,
+      "body": "That 20% margin is really gonna hurt in the long run. \n\nMaybe you can make your own website, offer it to clients and give them like 15-20% off their next 5 orders. \n\nThe discount is what fiverr is charging anyway so you wont lose money but will get to keep the clients in the long run. \n\n",
+      "created_utc": 1773235388.0,
+      "replies": [
+        {
+          "author": "TrickyAnt5577",
+          "score": 7,
+          "body": "This makes sense even if you don’t move away from Fiverr. Looks like there’s demand for the service so having your own website and promoting it might at least help get some future customers directly instead of through Fiverr"
+        }
+      ]
+    },
+    {
+      "author": "feverish",
+      "score": 32,
+      "body": "You aren’t charging enough for character development. That’s where the skill is. That should be a larger one time fee, then they pay your normal fee per output. ",
+      "created_utc": 1773241287.0,
+      "replies": [
+        {
+          "author": "Kath-r-in",
+          "score": 8,
+          "body": "Yeah, make a cast of regulars available with slight change like hair color, but charge more for custom characters or one offs."
+        }
+      ]
+    },
+    {
+      "author": "yetanotherburnerstan",
+      "score": 30,
+      "body": "I cant wait until this bubble pops. ",
+      "created_utc": 1773235521.0,
+      "replies": []
+    },
+    {
+      "author": "pokes-4-blokes",
+      "score": 26,
+      "body": "Man this made me depressed to read",
+      "created_utc": 1773264472.0,
+      "replies": []
+    },
+    {
+      "author": "DanglingKeyChain",
+      "score": 19,
+      "body": "If you don't understand why you can't generate the same face it's because everything that went into the generative AIs datasets were stolen from real living breathing people. \n\nHow people don't know at this point just boggles my mind. \n\nYou are scamming, and those businesses paying you are scamming their customers too. \n\nThe race to the bottom and not being able to afford anything is right here and now. \n",
+      "created_utc": 1773237620.0,
+      "replies": [
+        {
+          "author": "DanglingKeyChain",
+          "score": 16,
+          "body": "You aren't doing video but I'm going to add that I've seen multiple videos that only have very small discrepancies using sob stories and \"small business owner who makes their own products\" to flog cheap generic garbage like what come from wish and temu. \n\nSometimes they'll be saucy and throw in \"black woman owned small business\" to try and hook people into thinking they're supporting actual people. And because these generative AIs have managed to wrangle people in like you who are just trying to make things work pay to use stolen data they don't even have costs to get it spitting out better results. \n\nThis isn't even going into the amount of resources consumed by generative AIs in terms of electricity and water. \n\nIt harms genuine creators and makers. \n\nEdit: phrasing"
+        }
+      ]
+    },
+    {
+      "author": "Tagga25",
+      "score": 15,
+      "body": "A fake skincare model is definitely unethical ",
+      "created_utc": 1773308920.0,
+      "replies": [
+        {
+          "author": "The_Enchanted_Cup",
+          "score": 3,
+          "body": "Totally agree. F**k that sh*t, for real. As if beauty standards for women aren’t already impossible - a man selling skincare wants fake ai models to advertise their perfect skin to sell his products. Not cool. Not right. Where is this world heading?!? Everything is gonna be fake. Is this what we actually want???"
+        }
+      ]
+    },
+    {
+      "author": "OverDifference4325",
+      "score": 14,
+      "body": "I truly hope any brand selling clothing and using AI models to “model” them fails so miserably that the founder and anyone involved in that shit show loses every cent made from it. 🙏🏼",
+      "created_utc": 1773300947.0,
+      "replies": []
+    },
+    {
+      "author": "martinlubpl",
+      "score": 13,
+      "body": "What tools can you recommend? Do you use local ones (ComfyUI, which models)? Or online tools? Which ones are suitable for maintaining consistency of photo models?",
+      "created_utc": 1773232072.0,
+      "replies": [
+        {
+          "author": "MunichCyclist",
+          "score": 9,
+          "body": "Why would OP reveal secrets that create competition for themselves? \n\nThey are not going to tell you any of that (most likely) "
+        }
+      ]
+    },
+    {
+      "author": "IllustratorUsual5080",
+      "score": 9,
+      "body": "AI;DR",
+      "created_utc": 1773277630.0,
+      "replies": []
+    },
+    {
+      "author": "hoenndex",
+      "score": 8,
+      "body": "Although this is most definitely not passive income, since you had to do a lot of prep work and then the first two-three months several hours of work and analysis to determine what works and what doesn't, this still sounds pretty cool. Probably one of the few uses of AI that I would accept since you are making it clear these are not real people and are explicit about them being AI. good job OP!",
+      "created_utc": 1773242465.0,
+      "replies": []
+    },
+    {
+      "author": "reallyfreecoffee",
+      "score": 6,
+      "body": "Hope your AI slop fails miserably ",
+      "created_utc": 1773255009.0,
+      "replies": []
+    },
+    {
+      "author": "Amareisdk",
+      "score": 5,
+      "body": "I just read the whole thing...weird.\n\nGreat post and very interesting. Go get that pizza money!",
+      "created_utc": 1773310583.0,
+      "replies": []
+    },
+    {
+      "author": "lw161420",
+      "score": 5,
+      "body": " I wish you nothing but the worst genuinely, it would be extra hilarious if you directly suffered from the consequences of Ai but karma is rarely that thorough unfortunately, tick tock tick tock on your job though thanks to Ai 😂",
+      "created_utc": 1773270986.0,
+      "replies": []
+    },
+    {
+      "author": "movieadvs",
+      "score": 5,
+      "body": "this is a legit job now, I honestly don't think it's bad. some people lose jobs over AI, some people get jobs over AI. I think the more people understand how to use AI, the more jobs can also be generated.",
+      "created_utc": 1773325217.0,
+      "replies": []
+    },
+    {
+      "author": "RomanticPanic",
+      "score": 3,
+      "body": "Good write up, I know people get uppity about AI anything really.\n\nnot sure if I can post links on this sub but this person below made a comment about their generation models and getting a consistent model each time\n\n[I run AI influencer accounts - here’s what they ACTUALLY make : r/passive\\_income](https://www.reddit.com/r/passive_income/comments/1rqp7lk/i_run_ai_influencer_accounts_heres_what_they/)",
+      "created_utc": 1773229775.0,
+      "replies": []
+    },
+    {
+      "author": "MonthOk9907",
+      "score": 3,
+      "body": "I take it you haven't heard of the people making millions creating AI OF models.  It can't be that hard.  \n\nWas actually considering doing it myself.  I'd love to get rich off degenerates. ",
+      "created_utc": 1773328486.0,
+      "replies": []
+    },
+    {
+      "author": "Less-Confusion-8702",
+      "score": 3,
+      "body": "So in 10 months you are making less money and spending much more time than a real photographer gets in two days. Plus you are concerned about it being legit. ",
+      "created_utc": 1773231898.0,
+      "replies": []
+    },
+    {
+      "author": "Calm-Refrigerator463",
+      "score": 1,
+      "body": "Faces can be difficult for regular artist. ",
+      "created_utc": 1773244629.0,
+      "replies": []
+    },
+    {
+      "author": "ajetation",
+      "score": 2,
+      "body": "that's crazy. brands that use AI photos lose credibility to me because you can't trust fake advertisement images. sad timeline",
+      "created_utc": 1773299953.0,
+      "replies": []
+    },
+    {
+      "author": "mframe52",
+      "score": 2,
+      "body": "It really seems like you hit on a lucrative business opportunity. Thanks for sharing, but perhaps you shared a little too much information. Because now somebody else is going to pick up on the same thing and here you’ve done all the work, making it easy for your competitors to replicate. ",
+      "created_utc": 1773321138.0,
+      "replies": []
+    },
+    {
+      "author": "el3v3n_el3v3n",
+      "score": 2,
+      "body": "So I actually hate everything about this post",
+      "created_utc": 1773336926.0,
+      "replies": []
+    },
+    {
+      "author": "peacelovepositivity8",
+      "score": 2,
+      "body": "F",
+      "created_utc": 1773348661.0,
+      "replies": []
+    }
+  ]
+}

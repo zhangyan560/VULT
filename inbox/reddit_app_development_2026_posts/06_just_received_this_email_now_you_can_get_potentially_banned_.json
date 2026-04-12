@@ -1,0 +1,334 @@
+{
+  "id": "1n0uy6g",
+  "title": "Just received this email. Now you can get potentially banned for developing on Android as a whole! Yay!",
+  "subreddit": "androiddev",
+  "subreddit_prefixed": "r/androiddev",
+  "author": "AwkwardShake",
+  "score": 633,
+  "upvote_ratio": 0.96,
+  "num_comments": 322,
+  "created_utc": 1756235592.0,
+  "url": "https://i.redd.it/a38avhkqxelf1.png",
+  "permalink": "https://www.reddit.com/r/androiddev/comments/1n0uy6g/just_received_this_email_now_you_can_get/",
+  "selftext": "Absolutely horrendous how google is turning Android into another iOS.",
+  "is_self": false,
+  "link_flair_text": "News",
+  "_rel": 0.3,
+  "_weighted": 189.9,
+  "comments": [
+    {
+      "author": "digidude23",
+      "score": 208,
+      "body": "This is the same company that can’t even write proper changelogs for their apps on either Play Store or App Store",
+      "created_utc": 1756238104.0,
+      "replies": [
+        {
+          "author": "[deleted]",
+          "score": 66,
+          "body": "or check if a ad is for malware"
+        },
+        {
+          "author": "ProfessorQuantum314",
+          "score": 15,
+          "body": "Yes!!!!!!!"
+        },
+        {
+          "author": "[deleted]",
+          "score": 5,
+          "body": "or update their own internal apps to follow their own design policies lol."
+        }
+      ]
+    },
+    {
+      "author": "Routine-Arm-8803",
+      "score": 203,
+      "body": "Everyone should be able to install whatever they want on their device.",
+      "created_utc": 1756237024.0,
+      "replies": []
+    },
+    {
+      "author": "Nervous_Sun4915",
+      "score": 140,
+      "body": "Who would have thought that jailbreaking would become a thing on Android devices in the future... The last time I had to jailbreak something was an iPod touch 12 years ago.",
+      "created_utc": 1756235879.0,
+      "replies": [
+        {
+          "author": "nataniel_rg",
+          "score": 68,
+          "body": "well, rooting has been a thing for as long as Android was around. And it has become harder and more necessary as the time passes"
+        }
+      ]
+    },
+    {
+      "author": "EmbarrassedLobster37",
+      "score": 96,
+      "body": "It's just not worth becoming an Android developer anymore.",
+      "created_utc": 1756236202.0,
+      "replies": [
+        {
+          "author": "bernaferrari",
+          "score": 31,
+          "body": "Has not been worth it for the past 6 years lol"
+        },
+        {
+          "author": "otr91000010",
+          "score": 21,
+          "body": "Yep 90% of new Android developer get suspended for no reason that's what I know and they wasted many time"
+        }
+      ]
+    },
+    {
+      "author": "loudshirtgames",
+      "score": 93,
+      "body": "I got banned from the Play Store years ago because they said the game I uploaded was a IP violation of another app. The other app they claimed I was infringing on was my other game. I made a sequel to my most popular game and they banned me for life. \n\nI'd love develop for AndroidXR but I guess that's not going to happen... for the rest of my life.",
+      "created_utc": 1756236721.0,
+      "replies": [
+        {
+          "author": "IlIllIIIlIIlIIlIIIll",
+          "score": 21,
+          "body": "that is really fked up"
+        },
+        {
+          "author": "HeWhoShantNotBeNamed",
+          "score": 19,
+          "body": "Did you appeal?"
+        }
+      ]
+    },
+    {
+      "author": "wasowski02",
+      "score": 82,
+      "body": "I guess it's time to seriously go into backend development while I still can...",
+      "created_utc": 1756236165.0,
+      "replies": [
+        {
+          "author": "AwkwardShake",
+          "score": 76,
+          "body": "I see a distant future where Google would have web dev registry, so you can only release your sites for Chrome if you're a registered google dev, lol."
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 65,
+      "body": "fuck the warranty im unlocking my bootloader",
+      "created_utc": 1756238748.0,
+      "replies": [
+        {
+          "author": "wolfborn96",
+          "score": 29,
+          "body": "With you there, perhaps it's time to revisit graphene as well."
+        },
+        {
+          "author": "kernald31",
+          "score": 9,
+          "body": "In most countries, if you get a hardware problem covered by warranty, unlocking the bootloader is legally not a valid reason for the manufacturer to not honor the warranty anyway."
+        }
+      ]
+    },
+    {
+      "author": "RicoLycan",
+      "score": 61,
+      "body": "This is not about protecting the user. This is about protecting their money. It will be easy for them to destroy ReVanced. It will be easy for them to destroy third party YouTube players, Reddit clients etc.\n\nThey will only allow what they want. Mass censorship will be easy this way.",
+      "created_utc": 1756241572.0,
+      "replies": []
+    },
+    {
+      "author": "AwkwardShake",
+      "score": 54,
+      "body": "What makes me more concerned is the fact that \n\n1. Google is known to make massive changes to their policies overnight. I've personally had a few apps removed because their policies retroactively ended up changing which apps were valid. I had a file manager with RAM cleaner functionality, which was removed AFTER they made those apps illegal - WITHOUT giving me the chance to remove the functionality (because File Manager was the core functionality). It was suspended, and I was never given the chance to remove it. I am also unable to appeal their decision regarding the same.\n\n2. Android is filled with users &amp; bots, where bad actors can false flag YOUR apps by mass reporting or doing something fishy. Who's to say that won't happen in future? Who's going to look at appeals and other things in case you get banned? Google already cannot handle managing the appeals of existing developers properly. Who'd be looking over the matters of all the developers outside of Google Play?\n\nThere's a lot of issues with these changes, and I'm not even scratching the surface of issues. It's sad to see Google going the iOS route, although iOS is still better, because they didn't start under the false premise of \"free &amp; open source\".",
+      "created_utc": 1756236117.0,
+      "replies": [
+        {
+          "author": "mdwh",
+          "score": 9,
+          "body": "I agree, except alternatively, Ios is worse for introducing all of this in the first place, along with the media and apple zealots who claimed it was better, leading Google to copy it.\n\n\nSupport the platforms that aren't doing this. Every claim of Ios being better just leads to even more of this."
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 44,
+      "body": "[deleted]",
+      "created_utc": 1756241177.0,
+      "replies": [
+        {
+          "author": "ThaBalla79",
+          "score": 9,
+          "body": "Same happened to me... It's very difficult to upload to the Play Store now"
+        },
+        {
+          "author": "Gold-Bath3439",
+          "score": 5,
+          "body": "I’m really curious what makes them to be so brave and confident? Is android market share growing fast these years?"
+        }
+      ]
+    },
+    {
+      "author": "JiveTrain",
+      "score": 22,
+      "body": "Hilariously enough, it makes non-certified android devices more valuable than android-certified ones. For example, i have sideloaded an app on my chromecast that lets me install apps not allowed on play store, like ad blocking youtube players. I guess that out the window now, since Google would just ban the developer if they tried.",
+      "created_utc": 1756236445.0,
+      "replies": [
+        {
+          "author": "[deleted]",
+          "score": 12,
+          "body": "Sadly many apps (banking, streaming, etc) require play services"
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 23,
+      "body": "[removed]",
+      "created_utc": 1756237814.0,
+      "replies": []
+    },
+    {
+      "author": "ryanbarillosofficial",
+      "score": 16,
+      "body": "Man, just finished going through Android Basics with Compose, and now hit with this? Is there ever still a point for native Android app development? \n\nMay as well pivot to other tech fields &amp; pray that Linux phones will become the next big thing sooner than later.",
+      "created_utc": 1756239602.0,
+      "replies": [
+        {
+          "author": "digidude23",
+          "score": 9,
+          "body": "&gt; Linux phones will become the next big thing\n\nGoogle will make sure that will never happen. They managed to destroy Windows Phone."
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 18,
+      "body": "[deleted]",
+      "created_utc": 1756236973.0,
+      "replies": [
+        {
+          "author": "[deleted]",
+          "score": 44,
+          "body": "[deleted]"
+        },
+        {
+          "author": "wasowski02",
+          "score": 37,
+          "body": "Right now, when you build an app, you sign it - imagine it's like signing the envelope of a letter as proof of it being written by you. You send the letter (distribute/install an app) and someone can enjoy the letter. Later, when you send another one (an app update), the recipient can check if the signature on the envelope looks the same as the previous one (this is what Android currently does - it checks whether the update comes from the same source as the original package).\n\nWhat Google proposes is that you first send your signature to the post office and whenever you send a letter, they will verify the signature. Oh you haven't provided it earlier, they won't deliver your letter. If they don't like what you're doing, they won't deliver your letter.\n\nGoogle is known for banning developers for silly mistakes. Sure, some do distribute malware or do things clearly against the TOS, but there are also honest mistakes. The changes give Google full control over who can publish and distribute apps and they can ban anyone for whatever reason, they'll likely not disclose."
+        }
+      ]
+    },
+    {
+      "author": "[deleted]",
+      "score": 15,
+      "body": "I assume this will affect apps installed from a 3rd party app store too like fdroid?",
+      "created_utc": 1756241621.0,
+      "replies": []
+    },
+    {
+      "author": "SilentMobius",
+      "score": 15,
+      "body": "The day I can't write my own software and run it on my own device without external authorization is the day I stop using that platform.\n\nThis is the one red line that had kept me off iOS from day one",
+      "created_utc": 1756288634.0,
+      "replies": [
+        {
+          "author": "AwkwardShake",
+          "score": 4,
+          "body": "Agree with this. There's lots of apps that I've written for personal use that i don't want to give info about to google. It defeats the whole purpose of \"OS\"."
+        }
+      ]
+    },
+    {
+      "author": "MattHeffNT",
+      "score": 12,
+      "body": "I shouldn't feel anxiety everytime i get a \"Google Play Developer\" email. Sick of these massive emails usually annoucing required updates or changes with ridiculous punishments for not complying.",
+      "created_utc": 1756251442.0,
+      "replies": []
+    },
+    {
+      "author": "Unreal_NeoX",
+      "score": 9,
+      "body": "Brazil, Singapure, Thailand and Indonesia. So everywhere else is not such a rule? I Wonder if the EU does even allow that, since the right to repair does also effect software, so you have the right to install different versions to your device outside the \"companys offer\".",
+      "created_utc": 1756236968.0,
+      "replies": [
+        {
+          "author": "Elegant_Room_1904",
+          "score": 16,
+          "body": "\"2027 and beyond: We will continue to roll out these requirements globally.\""
+        }
+      ]
+    },
+    {
+      "author": "Ordinary_Count_203",
+      "score": 9,
+      "body": "The android playstore and opportunities for developers was the main reason android was thriving in the first place imo. Thats how it crushed blackberry and everyone else in my humble opinion",
+      "created_utc": 1756241266.0,
+      "replies": []
+    },
+    {
+      "author": "Unreal_NeoX",
+      "score": 9,
+      "body": "I can understand when they say \"security apps\" like banking stuff has to do that or anything with money and personal data, but not this global restriction.\n\nAlso it seems they start with the countrys with the \"special\" personal rights?\n\n\"**September 2026:** These requirements go into effect in Brazil, Indonesia, Singapore, and Thailand. At this point, any app installed on a certified Android device in these regions must be registered by a verified developer.  \n**2027 and beyond:** We will continue to roll out these requirements globally\"\n\nSource:  \n[https://android-developers.googleblog.com/2025/08/elevating-android-security.html](https://android-developers.googleblog.com/2025/08/elevating-android-security.html)",
+      "created_utc": 1756238133.0,
+      "replies": [
+        {
+          "author": "VMX",
+          "score": 6,
+          "body": "The fact they've removed that part from the email is... amazing."
+        }
+      ]
+    },
+    {
+      "author": "Nihil227",
+      "score": 6,
+      "body": "This is bold by Google.  I think either US anti-trust or Europe's DMA will act up.  EU just ruled against Apple for sideloading so the timing is weird.",
+      "created_utc": 1756246255.0,
+      "replies": []
+    },
+    {
+      "author": "Fit-Establishment-59",
+      "score": 7,
+      "body": "Would be cool if someone could file a lawsuit against Google/Android.",
+      "created_utc": 1756287167.0,
+      "replies": []
+    },
+    {
+      "author": "DarkLordCZ",
+      "score": 5,
+      "body": "What happens if I get banned and then I'll want to create and publish an app store app? Don't they have to let me publish it (even just as a side loaded app) because of the EU? Because if not, then it goes against the EU law?",
+      "created_utc": 1756238137.0,
+      "replies": []
+    },
+    {
+      "author": "alancusader123",
+      "score": 5,
+      "body": "https://preview.redd.it/9unw0p1vdhlf1.png?width=1370&amp;format=png&amp;auto=webp&amp;s=4903acd68da87e61fef47da3f21c42ace2fa60de\n\nDid the survey from Android, what else I'm I supposed to say.",
+      "created_utc": 1756265132.0,
+      "replies": []
+    },
+    {
+      "author": "ProfessorQuantum314",
+      "score": 7,
+      "body": "Sideloading APKs is the main reason I like Android so much! That's horrible! So, NO Google, NO!",
+      "created_utc": 1756271140.0,
+      "replies": []
+    },
+    {
+      "author": "Chemical_Jellyfish32",
+      "score": 5,
+      "body": "I just don't get it. Does Google want to kill all indie devs?",
+      "created_utc": 1756263111.0,
+      "replies": [
+        {
+          "author": "Kreiri",
+          "score": 14,
+          "body": "Was \"get 20 different testers to use your app daily for two weeks\" requirement to unlock \"production\" release track not clue enough?"
+        }
+      ]
+    },
+    {
+      "author": "SynthRogue",
+      "score": 4,
+      "body": "Got the same too. \n\nThis is about controlling people and tracking what you, as a real person as opposed to anonymous, do online",
+      "created_utc": 1756238554.0,
+      "replies": []
+    }
+  ]
+}
