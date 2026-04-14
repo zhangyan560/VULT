@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DataPilot 迁移报告 — 埋点 T+1 特征定时任务</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 24px; background: #f5f5f5; color: #222; }
+  .container { max-width: 1100px; margin: 0 auto; background: #fff; border-radius: 8px; padding: 32px; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+  h1 { font-size: 1.7em; border-bottom: 3px solid #1a73e8; padding-bottom: 10px; }
+  h2 { font-size: 1.2em; color: #1a73e8; margin-top: 32px; border-left: 4px solid #1a73e8; padding-left: 10px; }
+  h3 { font-size: 1.05em; color: #444; margin-top: 20px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: .9em; }
+  th { background: #1a73e8; color: #fff; padding: 8px 12px; text-align: left; }
+  td { padding: 7px 12px; border-bottom: 1px solid #e8e8e8; vertical-align: top; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: .8em; font-weight: 600; }
+  .badge-ok   { background: #e6f4ea; color: #1e7e34; }
+  .badge-warn { background: #fff3cd; color: #856404; }
+  .badge-info { background: #e8f0fe; color: #1a73e8; }
+  code { background: #f0f0f0; padding: 1px 5px; border-radius: 3px; font-family: monospace; font-size: .88em; }
+  pre  { background: #282c34; color: #abb2bf; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: .85em; line-height: 1.5; }
+  .flow { background: #e8f0fe; border: 1px solid #c5d8f8; border-radius: 6px; padding: 16px 20px; font-family: monospace; font-size: .88em; line-height: 1.8; }
+  .section-meta { color: #888; font-size: .88em; margin-bottom: 16px; }
+  ul { padding-left: 1.4em; }
+  li { margin: 4px 0; }
+  .highlight { background: #fff8e1; border-left: 4px solid #ffc107; padding: 10px 14px; margin: 12px 0; border-radius: 0 4px 4px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>DataPilot 迁移报告 — 埋点 T+1 特征定时任务</h1>
+<p class="section-meta">
+  迁移日期：2026-04-10 &nbsp;|&nbsp;
+  原文件：<code>run_t1_daily.py</code> / <code>gen_hive_sql.py</code> / <code>config.py</code> &nbsp;|&nbsp;
+  目标库：<code>ec_risk_model</code> &nbsp;|&nbsp;
+  迁移方案：方案 A（多任务拆分）
+</p>
+
+<!-- ──────────────────────── 1. 迁移概览 ──────────────────────── -->
+<h2>1. 迁移概览</h2>
+<table>
+  <tr><th>项目</th><th>旧</th><th>新</th></tr>
+  <tr><td>执行方式</td><td>本地 Python + <code>impala.dbapi</code> 直连 Hive</td><td>DataPilot PySpark 定时任务（7个任务）</td></tr>
+  <tr><td>目标库</td><td><code>yanzhang1.*</code>（临时库）</td><td><code>ec_risk_model.*</code>（长生命周期库）</td></tr>
+  <tr><td>中间表建表方式</td><td><code>CREATE TABLE ... STORED AS PARQUET AS</code></td><td>表预先在 DataPilot【表管理】建立，任务写 <code>INSERT OVERWRITE PARTITION</code></td></tr>
+  <tr><td>日期参数</td><td><code>--dt YYYY-MM-DD</code> 命令行参数</td><td><code>${p_date_iso}</code> DataPilot 内置变量（T-1）</td></tr>
+  <tr><td>并行调度</td><td><code>ThreadPoolExecutor</code> 本地并行</td><td>DataPilot 任务依赖图并行（Task03-06 配置同级并行）</td></tr>
+  <tr><td>历史回溯</td><td><code>--start / --end</code> 循环执行</td><td>DataPilot 支持手动补跑指定日期</td></tr>
+</table>
+
+<!-- ──────────────────────── 2. 生成文件清单 ──────────────────────── -->
+<h2>2. 生成文件清单</h2>
+<table>
+  <tr><th>文件</th><th>类型</th><th>说明</th></tr>
+  <tr><td><code>config_datapilot.py</code></td><td><span class="badge badge-info">配置</span></td><td>覆盖 TABLE 字典，读取加 <code>ec_risk_model.</code> 前缀，写入不加前缀；其余配置继承 <code>config.py</code></td></tr>
+  <tr><td><code>gen_hive_sql_datapilot.py</code></td><td><span class="badge badge-info">SQL生成</span></td><td>复用原始列生成函数，重写 SQL 包装层：CREATE TABLE CTAS → INSERT OVERWRITE PARTITION；新增 base 表分区过滤</td></tr>
+  <tr><td><code>gen_ddl_datapilot.py</code></td><td><span class="badge badge-info">DDL工具</span></td><td>本地运行，生成 feat_a/b/c/d/features 五张宽表的完整 CREATE TABLE SQL，粘贴到 DataPilot【表管理】建表</td></tr>
+  <tr><td><code>t1_task01_base_datapilot.py</code></td><td><span class="badge badge-ok">DataPilot任务</span></td><td>人群 base 表，每日覆写</td></tr>
+  <tr><td><code>t1_task02_daily_cnt_datapilot.py</code></td><td><span class="badge badge-ok">DataPilot任务</span></td><td>每日 event_date 分区计数</td></tr>
+  <tr><td><code>t1_task03_feat_a_datapilot.py</code></td><td><span class="badge badge-ok">DataPilot任务</span></td><td>Job A：Dim1-4 + Dim5 simple，~6,895 列</td></tr>
+  <tr><td><code>t1_task04_feat_b_datapilot.py</code></td><td><span class="badge badge-ok">DataPilot任务</span></td><td>Job B：Dim5 complex，~1,430 列</td></tr>
+  <tr><td><code>t1_task05_feat_c_datapilot.py</code></td><td><span class="badge badge-ok">DataPilot任务</span></td><td>Job C：Dim6 时间间隔，~1,300 列</td></tr>
+  <tr><td><code>t1_task06_feat_d_datapilot.py</code></td><td><span class="badge badge-ok">DataPilot任务</span></td><td>Job D：Dim7 A→B 序列，~90 列</td></tr>
+  <tr><td><code>t1_task07_merge_datapilot.py</code></td><td><span class="badge badge-ok">DataPilot任务</span></td><td>Merge：合并四 Job + 19 个跨事件比率 → features，~9,739 列</td></tr>
+</table>
+
+<!-- ──────────────────────── 3. 目标表设计 ──────────────────────── -->
+<h2>3. 目标表设计（ec_risk_model_dev）</h2>
+<table>
+  <tr><th>表名</th><th>分区键</th><th>写入任务</th><th>列数</th><th>说明</th></tr>
+  <tr><td><code>yz_event3_t1_base</code></td><td><code>dt STRING</code> yyyy-MM-dd</td><td>Task01</td><td>2</td><td>原 batch_date 列改为 dt 分区键</td></tr>
+  <tr><td><code>yz_event3_t1_daily_cnt</code></td><td><code>event_date STRING</code> yyyy-MM-dd</td><td>Task02</td><td>5</td><td>结构与原脚本一致</td></tr>
+  <tr><td><code>yz_event3_t1_feat_a</code></td><td><code>dt STRING</code> yyyy-MM-dd</td><td>Task03</td><td>~6,895</td><td>需 <code>gen_ddl_datapilot.py</code> 生成 DDL</td></tr>
+  <tr><td><code>yz_event3_t1_feat_b</code></td><td><code>dt STRING</code> yyyy-MM-dd</td><td>Task04</td><td>~1,430</td><td>需 <code>gen_ddl_datapilot.py</code> 生成 DDL</td></tr>
+  <tr><td><code>yz_event3_t1_feat_c</code></td><td><code>dt STRING</code> yyyy-MM-dd</td><td>Task05</td><td>~1,300</td><td>需 <code>gen_ddl_datapilot.py</code> 生成 DDL</td></tr>
+  <tr><td><code>yz_event3_t1_feat_d</code></td><td><code>dt STRING</code> yyyy-MM-dd</td><td>Task06</td><td>~90</td><td>需 <code>gen_ddl_datapilot.py</code> 生成 DDL</td></tr>
+  <tr><td><code>yz_event3_t1_features</code></td><td><code>dt STRING</code> yyyy-MM-dd</td><td>Task07</td><td>~9,739</td><td>需 <code>gen_ddl_datapilot.py</code> 生成 DDL</td></tr>
+</table>
+
+<!-- ──────────────────────── 4. 任务依赖图 ──────────────────────── -->
+<h2>4. DataPilot 任务依赖图</h2>
+<div class="flow">
+Task01 (base)
+  └─→ Task02 (daily_cnt)
+        ├─→ Task03 (feat_a) ──┐
+        ├─→ Task04 (feat_b) ──┤
+        │                     ├─→ Task07 (merge → features)
+Task01 ─┼─→ Task05 (feat_c) ──┤
+        └─→ Task06 (feat_d) ──┘
+</div>
+<p>在 DataPilot【任务开发】中，将 Task03/04/05/06 的前置依赖均配置为 Task02（或 Task01，视各 Job 的实际依赖），Task07 依赖 Task03-06 全部完成。</p>
+
+<!-- ──────────────────────── 5. 平台适配改写说明 ──────────────────────── -->
+<h2>5. 平台适配改写说明</h2>
+
+<h3>5.1 连接方式</h3>
+<table>
+  <tr><th>旧</th><th>新</th></tr>
+  <tr><td><code>from impala.dbapi import connect</code><br>直连 Hive（LDAP 认证，host/port 硬编码）</td><td><code>from datapilot_spark_bootstrap import spark</code><br>DataPilot 平台注入 SparkSession，无需手动管理连接</td></tr>
+</table>
+
+<h3>5.2 SQL 执行模式</h3>
+<table>
+  <tr><th>旧</th><th>新</th></tr>
+  <tr><td>每条 SQL 通过 <code>cur.execute(stmt)</code> 串行提交</td><td>单条 SQL 通过 <code>spark.sql(sql)</code> 提交，由平台调度</td></tr>
+  <tr><td><code>CREATE TABLE ... STORED AS PARQUET AS SELECT ...</code></td><td><code>INSERT OVERWRITE TABLE tbl PARTITION(dt='{dt}') SELECT ...</code></td></tr>
+  <tr><td><code>DROP TABLE IF EXISTS ...</code></td><td>禁止 DDL，改为 OVERWRITE 覆写分区</td></tr>
+</table>
+
+<h3>5.3 日期参数</h3>
+<table>
+  <tr><th>旧</th><th>新</th></tr>
+  <tr><td><code>--dt YYYY-MM-DD</code> 命令行，默认 <code>datetime.now() - 1day</code></td><td><code>dt = "${p_date_iso}"</code>，DataPilot 在执行前替换为 T-1 日期（yyyy-MM-dd）</td></tr>
+  <tr><td>代码中 <code>f"'{dt}'"</code> 生成 SQL 中的日期字面量</td><td>等价：<code>dt</code> 变量值已由平台替换为实际日期字符串</td></tr>
+</table>
+
+<h3>5.4 base 表输出字段变更</h3>
+<table>
+  <tr><th>变更项</th><th>说明</th></tr>
+  <tr><td><code>batch_date STRING</code> 列 <span class="badge badge-warn">已移除</span></td><td>原 <code>batch_date = '{dt}'</code>，迁移后改为 <code>dt</code> 分区键，业务语义等价，下游 Job A/B/C/D 以 <code>WHERE b.dt = '{dt}'</code> 替代原 <code>b.batch_date</code></td></tr>
+</table>
+
+<!-- ──────────────────────── 6. 行为差异 ──────────────────────── -->
+<h2>6. 行为差异（需关注）</h2>
+
+<div class="highlight">
+  <strong>差异 1：daily_cnt 滑窗写入 → 单天写入</strong><br>
+  原脚本：每次刷新最近 3 天分区（T-2/T-3/T-4），用于捕获迟到事件数据。<br>
+  迁移后：DataPilot 单任务只允许一个 INSERT，每次只写 <code>event_date = ${p_date_iso}</code> 分区。<br>
+  <strong>影响</strong>：迟到 2-3 天到达的事件数据不会被补刷。<br>
+  <strong>缓解</strong>：如发现上游数据延迟，手动在 DataPilot 重跑 Task02（选择对应历史日期执行）。
+</div>
+
+<div class="highlight">
+  <strong>差异 2：中间表从 CTAS 全量覆写 → 分区覆写</strong><br>
+  原脚本：每次运行 DROP TABLE + CREATE TABLE CTAS，中间表只保留当次结果。<br>
+  迁移后：中间表（feat_a/b/c/d）改为分区表，历史分区保留，便于回溯排查。<br>
+  <strong>影响</strong>：存储空间增加（保留历史分区），但下游读取时均加 <code>WHERE dt = '{dt}'</code> 过滤，无数据混淆风险。
+</div>
+
+<div class="highlight">
+  <strong>差异 3：features 最终表从非分区 → 分区表</strong><br>
+  原脚本目标表 <code>yz_event3_t1_features</code> 无分区，每次 CTAS 全量重建。<br>
+  迁移后：按 <code>dt</code> 分区，INSERT OVERWRITE 只覆盖当天分区，历史保留。<br>
+  <strong>优点</strong>：支持离线训练时精确回溯任意历史日期的特征分区，防穿越天然保证。
+</div>
+
+<!-- ──────────────────────── 7. 上线操作步骤 ──────────────────────── -->
+<h2>7. DataPilot 上线操作步骤</h2>
+
+<h3>Step 1 — 生成并建立宽表 DDL</h3>
+<pre># 本地运行（需要 config.py 在同目录）
+python3 gen_ddl_datapilot.py --output ddl/
+
+# 将 ddl/ddl_feat_a.sql 等文件内容粘贴到：
+# DataPilot → 数据开发 → 表管理 → 新建表 → 手动输入 DDL
+# 选择数据库：ec_risk_model_dev</pre>
+
+<h3>Step 2 — 上传辅助模块</h3>
+<p>将以下文件上传到 DataPilot 的文件管理或同一任务目录，确保各 Task 脚本可以 import：</p>
+<ul>
+  <li><code>config.py</code>（原文件，不修改）</li>
+  <li><code>config_datapilot.py</code></li>
+  <li><code>gen_hive_sql.py</code>（原文件，不修改）</li>
+  <li><code>gen_hive_sql_datapilot.py</code></li>
+</ul>
+
+<h3>Step 3 — 在 DataPilot 创建 7 个 PySpark 任务</h3>
+<table>
+  <tr><th>#</th><th>任务名（建议）</th><th>脚本文件</th><th>引擎</th><th>前置依赖</th></tr>
+  <tr><td>1</td><td>t1_event3_base</td><td><code>t1_task01_base_datapilot.py</code></td><td>SMART</td><td>无</td></tr>
+  <tr><td>2</td><td>t1_event3_daily_cnt</td><td><code>t1_task02_daily_cnt_datapilot.py</code></td><td>SMART</td><td>Task01</td></tr>
+  <tr><td>3</td><td>t1_event3_feat_a</td><td><code>t1_task03_feat_a_datapilot.py</code></td><td>KYUUBI_SPARK</td><td>Task02</td></tr>
+  <tr><td>4</td><td>t1_event3_feat_b</td><td><code>t1_task04_feat_b_datapilot.py</code></td><td>KYUUBI_SPARK</td><td>Task02</td></tr>
+  <tr><td>5</td><td>t1_event3_feat_c</td><td><code>t1_task05_feat_c_datapilot.py</code></td><td>KYUUBI_SPARK</td><td>Task01</td></tr>
+  <tr><td>6</td><td>t1_event3_feat_d</td><td><code>t1_task06_feat_d_datapilot.py</code></td><td>KYUUBI_SPARK</td><td>Task01</td></tr>
+  <tr><td>7</td><td>t1_event3_merge</td><td><code>t1_task07_merge_datapilot.py</code></td><td>KYUUBI_SPARK</td><td>Task03+04+05+06</td></tr>
+</table>
+<p>Task03/04/05/06 引擎建议使用 <code>KYUUBI_SPARK</code>（含窗口函数、宽表 SQL，Doris 不支持）。</p>
+
+<h3>Step 4 — 开发环境测试</h3>
+<pre># 依次手动触发（选 ec_risk_model_dev 数据库），确认每个任务：
+# 1. 无报错退出
+# 2. 目标表对应分区有数据：SELECT COUNT(*) FROM ec_risk_model_dev.yz_event3_t1_features WHERE dt='YYYY-MM-DD'
+# 3. 特征列数与预期一致（约 9,739 列）</pre>
+
+<h3>Step 5 — 发布上线</h3>
+<p>开发测试通过后，在 DataPilot【表管理】将各表从 <code>ec_risk_model_dev</code> 发布到 <code>ec_risk_model</code>，并将 7 个任务提交发布，配置每日调度时间（建议 T+1 早 8:00，等待上游 DWD 数据就绪后执行）。</p>
+
+<!-- ──────────────────────── 8. 后续历史回溯建议 ──────────────────────── -->
+<h2>8. 历史回溯建议</h2>
+<p>首次上线后需回刷历史特征数据（2025-06-01 起），建议分批：</p>
+<pre># DataPilot 支持在任务详情页选择"指定日期补跑"
+# 或通过本地脚本提交历史任务（需平台 API 支持）
+# 建议按月分批提交，每批 30 天，避免并发过高
+
+# Task02 需优先补全 daily_cnt 历史分区：
+#   2025-06-01 ~ 2026-04-09 每天一个 event_date 分区
+# 再按顺序补 Task03-07 各日期</pre>
+
+<!-- ──────────────────────── 9. 验收建议 ──────────────────────── -->
+<h2>9. 验收建议</h2>
+<p>建议使用 <code>datapilot-acceptance</code> 对以下项目进行一致性验证：</p>
+<ul>
+  <li>选取同一 <code>loan_account_id</code>，对比新旧特征值（如 <code>loanb1pageview_cnt_7d</code>、<code>postrepaymentresult_cnt_all</code>）</li>
+  <li>重点验证 Dim2 cv_daily（含 SQRT/POW 计算）、Dim5 slope（线性回归）、Dim6 intv_cv（除零保护）是否与原脚本一致</li>
+  <li>验证 daily_cnt 单天写入 vs 滑窗写入的差异对最终特征的影响范围</li>
+</ul>
+
+<hr>
+<p class="section-meta">报告生成时间：2026-04-10 &nbsp;|&nbsp; 迁移执行者：Claude Code &nbsp;|&nbsp; 原文件路径：/Users/yqg/知识库/项目/埋点T+1特征/特征开发代码/</p>
+
+</div>
+</body>
+</html>

@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c81189ff724d19b4",
+        "id": "d9f7ddfc4c745d5a",
         "type": "tabs",
         "children": [
           {
-            "id": "0e32d21b7b75f8a7",
+            "id": "c72450f57367a927",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "work/日志/2026-04-13 工作记录.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-04-13 工作记录"
             }
           }
         ]
@@ -176,11 +180,25 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0e32d21b7b75f8a7",
+  "active": "c72450f57367a927",
   "lastOpenFiles": [
+    "work/模型档案/_index.md",
+    "未命名.base",
+    "work/项目/运营Uplift模型/会议笔记0409.md",
+    "work/日志/2026-04-13 工作记录.md",
+    "归档/2026-04-13_印尼首贷特征VO盘点.xlsx",
+    "work/特征体系/V9模型VO盘点与数据框架对比.md",
+    "归档/2026-04-13_印尼风控数据分类.png",
+    "inbox/印尼首贷特征VO盘点.xlsx",
+    "work/特征体系/印尼风控数据分类框架.md",
+    "_master-index.md",
+    "归档",
+    "work/_index.md",
+    "inbox/印尼风控数据分类.png",
     "wiki/商业研究/谷歌广告套利/联盟营销与AdSense综合变现.md",
     "wiki/商业研究/谷歌广告套利/_index.md",
     "wiki/商业研究/谷歌广告套利/AdSense套利实战指南.md",
@@ -202,30 +220,17 @@
     "inbox/reddit_arbitrage_quiz_website_google_ads_adsens_posts/10_100_best_passive_income_ideas_for_nerds.json",
     "inbox/reddit_arbitrage_quiz_website_google_ads_adsens_posts/04_making_money_for_more_than_15_years_on_the_internet_from_500.json",
     "inbox/reddit_arbitrage_quiz_website_google_ads_adsens_posts/07_ama_how_i_built_a_50kmonth_remote_cleaning_business_and_now_.json",
-    "inbox/reddit_arbitrage_quiz_website_google_ads_adsens_posts/03_i_manage_350_adsense_sites_ask_me_anything.json",
-    "inbox/reddit_arbitrage_quiz_website_google_ads_adsens_posts/00_index.json",
-    "inbox/reddit_arbitrage_quiz_website_google_ads_adsens_posts/06_im_an_ex_meta_ads_engineer_and_heres_what_actually_drives_cu.json",
-    "inbox/reddit_arbitrage_quiz_website_google_ads_adsens_posts/08_link_building_in_2023_strategies_that_have_worked_over_the_l.json",
     "网站运营/QuizFunForYou-社交媒体传播SOP/_MOC.md",
     "projects/quizfun/SEO优化/_MOC.md",
     "projects/quizfun/SEO优化/_index.md",
     "wiki/技术学习/爬虫与数据采集分析/_index.md",
-    "wiki/技术学习/爬虫与数据采集分析/多源数据分析实战案例.md",
-    "wiki/技术学习/爬虫与数据采集分析/电商平台数据抓取方案.md",
-    "wiki/技术学习/爬虫与数据采集分析/反爬虫绕过与合规策略.md",
-    "wiki/技术学习/爬虫与数据采集分析/社交媒体数据采集技术.md",
-    "wiki/技术学习/爬虫与数据采集分析/应用市场评论爬取与分析.md",
-    "wiki/技术学习/_index.md",
     "wiki/技术学习/爬虫与数据采集分析/assets/多源数据分析实战案例-infographic.png",
     "wiki/技术学习/爬虫与数据采集分析/assets/应用市场评论爬取与分析-infographic.png",
     "wiki/技术学习/爬虫与数据采集分析/assets/反爬虫绕过与合规策略-infographic.png",
     "wiki/技术学习/爬虫与数据采集分析/assets/电商平台数据抓取方案-infographic.png",
     "wiki/技术学习/爬虫与数据采集分析/assets/社交媒体数据采集技术-infographic.png",
-    "wiki/技术学习/爬虫与数据采集分析/_MOC.md",
     "wiki/商业研究/联盟营销盈利闭环/assets/info-05-案例复盘.svg",
     "wiki/商业研究/联盟营销盈利闭环/assets/info-04-合规收款.svg",
-    "wiki/商业研究/联盟营销盈利闭环/assets/info-03-转化优化.svg",
-    "wiki/商业研究/联盟营销盈利闭环/assets/info-01-选品策略.svg",
-    "wiki/商业研究/联盟营销盈利闭环/assets/info-02-内容引流.svg"
+    "wiki/商业研究/联盟营销盈利闭环/assets/info-03-转化优化.svg"
   ]
 }
