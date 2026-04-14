@@ -13,6 +13,9 @@ related:
 
 # AI 新闻与模型评测
 
+![[AI新闻与模型评测-infographic.png|600]]
+
+
 > [!note] 来源
 > 本笔记整理自 [[Chase-H-AI 频道分析]] 中关于 AI 行业动态和模型评测的视频系列。
 
