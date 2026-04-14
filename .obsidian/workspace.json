@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "work/日志/2026-04-13 工作记录.md",
+                "file": "work/项目/运营Uplift模型/当前进度.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-13 工作记录"
+              "title": "当前进度"
             }
           }
         ]
@@ -184,9 +184,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "135b47461eff7593",
+  "active": "c72450f57367a927",
   "lastOpenFiles": [
+    "work/项目/运营Uplift模型/会议笔记0409.md",
     "work/项目/运营Uplift模型/当前进度.md",
+    "work/项目/运营Uplift模型/README.md",
+    "work/日志/2026-04-13 工作记录.md",
     "work/项目/运营Uplift模型/运营取数sql.sql",
     "work/项目/运营Uplift模型/运营取书sql_old.sql",
     "work/项目/埋点T+1特征/特征开发代码/backfill/ddl/ddl_backfill_features.sql",
@@ -198,8 +201,6 @@
     "work/项目/埋点T+1特征/特征开发代码/backfill/__pycache__/config.cpython-313.pyc",
     "work/项目/埋点T+1特征/特征开发代码/backfill/sql_feat_c.py",
     "work/模型档案/_index.md",
-    "work/项目/运营Uplift模型/会议笔记0409.md",
-    "work/日志/2026-04-13 工作记录.md",
     "work/特征体系/V9模型VO盘点与数据框架对比.md",
     "归档/2026-04-13_印尼风控数据分类.png",
     "work/特征体系/印尼风控数据分类框架.md",
@@ -223,7 +224,6 @@
     "output/2026-04-12-reddit数据三组汇总分析.md",
     "网站运营/QuizFunForYou-社交媒体传播SOP/_MOC.md",
     "projects/quizfun/SEO优化/_MOC.md",
-    "projects/quizfun/SEO优化/_index.md",
     "wiki/技术学习/爬虫与数据采集分析/assets/多源数据分析实战案例-infographic.png",
     "wiki/技术学习/爬虫与数据采集分析/assets/应用市场评论爬取与分析-infographic.png",
     "wiki/技术学习/爬虫与数据采集分析/assets/反爬虫绕过与合规策略-infographic.png",
