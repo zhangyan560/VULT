@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "work/项目/运营Uplift模型/运营敏感模型：现状梳理与迭代计划.md",
+                "file": "work/项目/运营Uplift模型/0415建模指令.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "运营敏感模型：现状梳理与迭代计划"
+              "title": "0415建模指令"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "work/项目/运营Uplift模型/运营敏感模型：现状梳理与迭代计划.md",
+                "file": "work/项目/运营Uplift模型/0415建模指令.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "运营敏感模型：现状梳理与迭代计划 的反向链接列表"
+              "title": "0415建模指令 的反向链接列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "work/项目/运营Uplift模型/运营敏感模型：现状梳理与迭代计划.md",
+                "file": "work/项目/运营Uplift模型/0415建模指令.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "运营敏感模型：现状梳理与迭代计划 的大纲"
+              "title": "0415建模指令 的大纲"
             }
           }
         ],
@@ -186,11 +186,11 @@
   },
   "active": "c72450f57367a927",
   "lastOpenFiles": [
-    "work/项目/运营Uplift模型/会议笔记0409.md",
-    "未命名 1.base",
-    "work/项目/运营Uplift模型/运营敏感模型：现状梳理与迭代计划.md",
     "work/项目/运营Uplift模型/运营模型现状分析.md",
     "work/项目/运营Uplift模型/0415建模指令.md",
+    "work/项目/运营Uplift模型/运营敏感模型：现状梳理与迭代计划.md",
+    "work/项目/运营Uplift模型/会议笔记0409.md",
+    "未命名 1.base",
     "work/项目/运营Uplift模型/复贷WA泳道下单uplift模型.xlsx",
     "work/项目/运营Uplift模型/当前进度.md",
     "work/项目/运营Uplift模型/README.md",
