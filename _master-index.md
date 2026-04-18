@@ -8,6 +8,7 @@
 | raw | `inbox/` | Dump anything here; human reviews, Claude digests via /digest |
 | wiki | `wiki/` | LLM-maintained knowledge base |
 | output | `output/` | Query results, reports, exports |
+| work | `work/` | 风控算法工作知识库（方法论/特征/模型/项目/日志） |
 
 ---
 
@@ -34,6 +35,17 @@
 
 ### research → `wiki/research/_index.md`
 - `wiki/research/Chase-H-AI/` — Chase-H-AI 频道分析：Claude Code 系列教程分析
+
+---
+
+## Work Domains → `work/_index.md`
+- `work/方法论/` — 可跨项目复用的建模方法论（SOP/特征工程/图网络/子分/Uplift/监控）
+- `work/特征体系/` — 按数据源分类的特征手册（CBI/IZI/AFPI/埋点/鉴权VO等10个数据源）
+- `work/模型档案/` — 具体模型技术档案（发标/二次风控/Uplift/子分等12个模型）
+- `work/业务知识/` — 印尼现金贷 & 信也科技领域背景
+- `work/工具箱/` — LightGBM/样本处理/自动化工具实践
+- `work/项目/` — 进行中项目（V14迭代/运营Uplift/埋点T+1/监控迁移）
+- `work/日志/` — 每日工作日志与历史周报（2025-08 至今）
 
 ---
 
