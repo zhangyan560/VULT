@@ -26,6 +26,10 @@
 ### 效率工具 → `wiki/效率工具/_index.md`
 - `wiki/效率工具/Claude Code省Token研究/` — Token 节省：原理/压缩/窗口管理/MCP/工作流
 - `wiki/效率工具/Claude+Obsidian工作流/` — Claude+Obsidian：集成/自动化/知识管理/插件/优化
+- `wiki/效率工具/gstack/` — gstack skill 产出归档：review/QA/设计审计/性能/监控报告
+
+### 创业 → `wiki/创业/_index.md`
+- `wiki/创业/真经.md` — YC 创业课程与核心文献笔记：发布/用户访谈/创始人建议/点子评估/Vertical AI/Superlinear Returns
 
 ### 网站运营 → `wiki/网站运营/_index.md`
 - `wiki/网站运营/QuizFunForYou-社交媒体传播SOP/` — Quiz 网站社媒 SOP：平台/内容/发布/社群/数据
