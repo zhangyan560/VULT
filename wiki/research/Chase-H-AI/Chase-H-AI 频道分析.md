@@ -22,6 +22,9 @@ related:
 
 # Chase-H-AI 频道分析
 
+![[Chase-H-AI频道分析-infographic.png|600]]
+
+
 > [!important] 频道定位
 > **Chase AI** 是专注于 Claude Code 生态的实践教学频道，目标是将"vibe coder"转变为真正的 AI 开发者。核心受众：无技术背景的非程序员、内容创作者、小团队创业者。
 

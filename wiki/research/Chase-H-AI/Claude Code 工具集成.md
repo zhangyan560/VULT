@@ -14,6 +14,9 @@ related:
 
 # Claude Code 工具集成
 
+![[Claude Code工具集成-infographic.png|600]]
+
+
 > [!note] 来源
 > 本笔记整理自 [[Chase-H-AI 频道分析]] 中关于工具集成的视频系列。
 

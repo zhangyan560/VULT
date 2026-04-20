@@ -23,3 +23,9 @@
 | `03-知识管理心法.md` | Zettelkasten，双链设计 |
 | `04-插件与MCP扩展.md` | Obsidian插件，MCP server |
 | `05-全局工作流优化方案.md` | 端到端工作流设计 |
+
+### gstack 产出归档
+| 文件 | 内容 |
+|------|------|
+| `_index.md` | 索引与命名规则 |
+| `YYYY-MM-DD-{skill}-{slug}.md` | 各 skill 产出的报告（自动同步） |

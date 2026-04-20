@@ -13,6 +13,9 @@ related:
 
 # AI 商业与效率
 
+![[AI商业与效率-infographic.png|600]]
+
+
 > [!note] 来源
 > 本笔记整理自 [[Chase-H-AI 频道分析]] 中关于 AI 商业应用和生产力转型的视频系列。
 

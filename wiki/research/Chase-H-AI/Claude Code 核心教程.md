@@ -13,6 +13,9 @@ related:
 
 # Claude Code 核心教程
 
+![[Claude Code核心教程-infographic.png|600]]
+
+
 > [!note] 来源
 > 本笔记整理自 [[Chase-H-AI 频道分析]] 频道中的基础教学类视频。
 
