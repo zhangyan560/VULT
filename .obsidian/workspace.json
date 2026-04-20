@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/智能体/相关飞书文档.md",
+                "file": "work/会议摘要/Q1季度会.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "相关飞书文档"
+              "title": "Q1季度会"
             }
           }
         ],
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/智能体/相关飞书文档.md",
+                "file": "work/会议摘要/Q1季度会.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "相关飞书文档 的反向链接列表"
+              "title": "Q1季度会 的反向链接列表"
             }
           },
           {
@@ -185,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/智能体/相关飞书文档.md",
+                "file": "work/会议摘要/Q1季度会.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "相关飞书文档 的大纲"
+              "title": "Q1季度会 的大纲"
             }
           }
         ],
@@ -215,9 +215,13 @@
   },
   "active": "2f316beeaba8dce4",
   "lastOpenFiles": [
-    "work/项目/运营Uplift模型/相关飞书文档.md",
-    "wiki/智能体/相关飞书文档.md",
+    "work/项目/运营Uplift模型/uplift样本宽表.sql",
+    "work/项目/运营Uplift模型/wa_uplift_train_v1.ipynb",
     "work/项目/V14FPD31融合模型/模型评估文档.md",
+    "work/会议摘要/Q1季度会.md",
+    "work/会议摘要",
+    "wiki/智能体/相关飞书文档.md",
+    "work/项目/运营Uplift模型/相关飞书文档.md",
     "旅行计划.md",
     "wiki/智能体",
     "work/日志/2026-04-15 工作记录.md",
@@ -237,8 +241,6 @@
     "work/项目/运营Uplift模型/运营取数sql.sql",
     "work/项目/运营Uplift模型/运营取书sql_old.sql",
     "work/项目/埋点T+1特征/特征开发代码/backfill/ddl/ddl_backfill_features.sql",
-    "work/项目/埋点T+1特征/特征开发代码/backfill/ddl/ddl_backfill_feat_d.sql",
-    "work/项目/埋点T+1特征/特征开发代码/backfill/ddl/ddl_backfill_all.sql",
     "work/模型档案/_index.md",
     "work/特征体系/V9模型VO盘点与数据框架对比.md",
     "归档/2026-04-13_印尼风控数据分类.png",
@@ -251,8 +253,6 @@
     "wiki/商业研究/谷歌广告套利/AdSense套利实战指南.md",
     "wiki/产品开发/App开发与盈利全流程/_index.md",
     "wiki/产品开发/App开发与盈利全流程/App盈利困境与框架决策2026.md",
-    "GIT-QUICKSTART.md",
-    "GIT-SETUP.md",
     "wiki/技术学习/爬虫与数据采集分析/assets/多源数据分析实战案例-infographic.png",
     "wiki/技术学习/爬虫与数据采集分析/assets/应用市场评论爬取与分析-infographic.png",
     "wiki/技术学习/爬虫与数据采集分析/assets/反爬虫绕过与合规策略-infographic.png",
