@@ -30,6 +30,7 @@ status: draft
 | Agent 自动化决策 | Agent 在审批、运营等工作流中，调用风控模型或 Uplift 模型获取预测分，辅助决策 |
 | 模型效果自动验证 | Agent 拉取样本后直接调用模型打分，与标签对比，自动输出效果报告 |
 | 多模型对比 | Agent 同时调用多个模型版本，输出分数对比用于模型迭代评估 |
+| 模型自迭代 | Agent 获取指定模型的特征列表，提 ETL 回溯任务，拉 Y 表拼接训练样本，根据 Python 模版完成模型迭代，输出模型评估报告，并推动模型上线 |
 
 ### 3. 具体需求逻辑
 
@@ -81,44 +82,23 @@ status: draft
   - threshold：推荐决策阈值（如有）
 ```
 
-#### 3.3 后端实现要求
-
-- 对接公司现有模型服务/模型仓库（如 ModelHub 或各模型的 HTTP endpoint）
-- 统一封装为标准 HTTP 服务，对外暴露 `/model/predict`、`/model/list`、`/model/info` 三个路径
-- 注册到 MCP Market（indo/prod），path 建议：`/risk-model-mcp-route`
-
-#### 3.4 认证与权限
-
-- 复用 MCP Market 现有 token 机制（`?token=<YOUR_TOKEN>`）
-- 模型调用权限按 token 归属的工号做控制，避免越权
-
-#### 3.5 MCP 注册信息（供发布参考）
-
-```
-name: risk-model-mcp
-display_name: 风控通用模型MCP
-category: risk-model
-service_url: <模型网关 K8s service>
-tags: [model, scoring, risk, uplift]
-```
-
 ### 4. 预计影响范围
 
 | 指标 | 预期影响 |
 |------|---------|
 | Agent 调用模型的接入成本 | 从人工对接降至 0（Agent 自助发现+调用） |
 | 模型接入新 Agent 工作流的时间 | 从数天缩短至分钟级（install 即用） |
-| 覆盖模型数量 | 预计覆盖现有全部在线模型（风控评分类 + 运营 Uplift 类，共约 N 个） |
+| 覆盖模型数量 | 覆盖 1000+ 在线模型（风控评分类 + 运营 Uplift 类） |
 | 后续新模型上线 | 注册到模型网关后自动纳入，无需重新发布 MCP |
 
 ### 5. 效果验证
 
-- [ ] `mcp-market install risk-model-mcp` 成功，IDE 中出现对应 MCP 工具
+- [ ] Agent 通过 MCP Market 安装服务后，IDE 中出现对应 MCP 工具
 - [ ] `model_list` 工具返回所有在线模型列表，与模型仓库一致
 - [ ] `model_predict` 传入真实特征，返回分数与直接调用模型 HTTP 接口结果一致
 - [ ] `model_info` 返回特征清单与模型文档对齐
 - [ ] Agent 工作流（如运营 Uplift 场景）通过 MCP 调用模型，打分结果可追溯（request_id 可查日志）
-- [ ] 无权限的 token 调用返回 403，不泄露模型数据
+
 
 ### 6. 需要哪些数据
 
