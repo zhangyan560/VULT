@@ -35,6 +35,7 @@
 - `wiki/网站运营/QuizFunForYou-社交媒体传播SOP/` — Quiz 网站社媒 SOP：平台/内容/发布/社群/数据
 
 ### 技术学习 → `wiki/技术学习/_index.md`
+- `wiki/技术学习/AI Agent工程师学习日志/` — AI Agent 工程师 3 个月学习日志：每日笔记模板、实操代码、复盘
 - `wiki/技术学习/爬虫与数据采集分析/` — 爬虫技术：社交媒体/电商/应用市场采集、反爬策略、情感分析
 
 ### research → `wiki/research/_index.md`
